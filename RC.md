@@ -224,6 +224,13 @@ Ping everyone listed in https://en.opensuse.org/OpenSUSE_Localization_Teams to m
 
 Fix the links to the statistics.
 
+#### update openSUSE:Localization_guide
+Responsible: AdaLovelace
+
+Update https://en.opensuse.org/openSUSE:Localization_guide to document the Weblate workflow
+
+When done, link it from https://en.opensuse.org/Portal:15.1
+
 #### disable Factory submitter
 
 disable the FCC submitter
