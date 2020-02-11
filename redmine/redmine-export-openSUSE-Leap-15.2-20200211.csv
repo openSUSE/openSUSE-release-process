@@ -1,0 +1,1060 @@
+#,Project,Tracker,Parent task,Status,Priority,Subject,Author,Assignee,Updated,Category,Target version,Start date,Due date,Estimated time,Spent time,% Done,Created,Closed,Related issues,Private,Description
+57056,openSUSE Leap 15.2,action,"",Closed,Normal,run desktop-file translation extractor,lnussel,favogt,24/09/2019 12:31 pm,Release Engineering,Alpha,20/09/2019,24/09/2019,"",0.00,100,18/09/2019 11:14 am,24/09/2019 09:12 am,Copied from #56348,No,"the extractor of desktop file translations that pushed to github needs to be run
+
+A full rebuild without build-compare is needed.
+
+on https://github.com/openSUSE/desktop-file-translations
+
+Run
+    
+    cd 51-xml
+    ./download_data.sh download
+    ./generate_and_merge_pos.sh download
+    git add */*.po */*.pot
+    git commit -m update
+    git push"
+56363,openSUSE Leap 15.2,action,"",Closed,Normal,setup :Images subproject,lnussel,favogt,29/11/2019 12:08 pm,Release Engineering,Alpha,17/06/2019,06/09/2019,"",0.00,100,02/09/2019 01:11 pm,29/11/2019 12:08 pm,Copied from #43391,No,"* create :Images and Images:ToTest subproject (use prjcopy)
+* create subproject in openSUSE:Containers
+* set release target
+* adjust and run totest manager
+* create openQA job group
+* sync to openQA
+* make obs publish to the correct directory
+* add to software.o.o"
+56276,openSUSE Leap 15.2,action,"",Resolved,Normal,clarify source code offer,lnussel,lkocman,16/01/2020 02:41 pm,Release Engineering,Alpha,02/09/2019,12/01/2020,"",0.00,50,02/09/2019 12:11 pm,16/01/2020 02:41 pm,"",Yes,"* clarify how long we need to provide the source
+* check if https://software.opensuse.org/distributions/leap not specifying methods is ok
+* check https://en.opensuse.org/Source_code is current"
+56093,openSUSE Leap 15.2,action,"",Closed,Normal,ask for scc enablement,lnussel,lnussel,02/09/2019 12:18 pm,Release Engineering,Alpha,29/08/2019,05/09/2019,"",0.00,100,29/08/2019 11:17 am,02/09/2019 12:18 pm,"",No,""
+55508,openSUSE Leap 15.2,action,"",Closed,Normal,announce start of development,lnussel,lnussel,14/08/2019 11:10 am,Release Engineering,Alpha,14/08/2019,14/08/2019,"",0.00,100,14/08/2019 11:10 am,14/08/2019 11:10 am,"",No,send mail to factory and devel to announce start of the new distro
+54611,openSUSE Leap 15.2,action,"",Resolved,Normal,Add required checks to staging projects,coolo,coolo,24/07/2019 11:06 am,Release Engineering,Alpha,24/07/2019,"","",0.00,0,24/07/2019 11:00 am,24/07/2019 11:06 am,"",No,"We need the required checks for every staging project setup manually.
+
+There is also no osc command for that atm, so it's quite manual.
+
+"
+54560,openSUSE Leap 15.2,action,"",Resolved,Normal,Update 000update-repos config.yml,mlin7442,mlin7442,15/08/2019 10:01 am,Release Engineering,Alpha,31/07/2019,16/08/2019,"",0.00,100,23/07/2019 07:44 am,15/08/2019 10:01 am,"",No,Need to update config.yml in 000update-repos after we got online channel available plus have snapshot published.
+52136,openSUSE Leap 15.2,action,"",Resolved,Normal,adjust prjconf,lnussel,lkocman,19/07/2019 09:55 am,Release Engineering,Alpha,28/05/2019,31/05/2019,"",0.00,0,27/05/2019 12:28 pm,04/07/2019 09:21 am,"",No,"after copying the sources and before the whole thing builds prjconf needs to be adjusted
+
+* replace old version with new version everywhere
+* enable %_with_betatest"
+52133,openSUSE Leap 15.2,action,"",Rejected,Normal,verify rpm changelog cutoff date,lnussel,"",07/08/2019 09:10 am,Release Engineering,Alpha,08/08/2019,12/08/2019,"",0.00,0,27/05/2019 11:59 am,07/08/2019 09:10 am,Copied from #49463,No,"RPM changelogs are cut off at a specific date. The date for that may need to be updated
+
+https://bugzilla.opensuse.org/show_bug.cgi?id=1129753"
+52130,openSUSE Leap 15.2,action,"",Resolved,Normal,update .treeinfo file to new version,lnussel,"",16/07/2019 11:32 am,Release Engineering,Alpha,10/06/2019,14/06/2019,"",0.00,0,27/05/2019 11:58 am,16/07/2019 11:32 am,Copied from #49214,No,"the treeinfo file in skelcd needs to contain the new version:
+https://github.com/openSUSE/skelcd-openSUSE/tree/master/skelcd"
+52127,openSUSE Leap 15.2,action,"",Resolved,Normal,prepare package translations,lnussel,"",16/07/2019 11:33 am,Translations,Alpha,24/10/2019,28/10/2019,"",0.00,0,27/05/2019 11:58 am,16/07/2019 11:33 am,Copied from #43115,No,Adjust https://github.com/openSUSE/packages-i18n/blob/master/50-tools/urls_opensuse.txt to include the new release. Run the extractor and push.
+52124,openSUSE Leap 15.2,action,"",Closed,Normal,enable legaldb scan,lnussel,"",02/09/2019 12:23 pm,Release Engineering,Alpha,02/06/2019,25/06/2019,"",0.00,0,27/05/2019 11:58 am,18/07/2019 09:29 pm,Copied from #42839,No,"legaldb needs to scan the newly created project. Since it was copied legaldb didn't see requests so doesn't know about the packages in it.
+
+It's configured on botmaster as /srv/go-config/legal-auto-projects-opensuse"
+52121,openSUSE Leap 15.2,action,"",Closed,Normal,copy images subproject,lnussel,"",02/09/2019 12:51 pm,Release Engineering,Alpha,17/06/2019,19/07/2019,"",0.00,0,27/05/2019 11:58 am,15/07/2019 03:50 pm,Copied from #40571,No,create the :Images and :Images:ToTest subprojects
+52118,openSUSE Leap 15.2,action,"",Closed,Normal,enable CI for YaST,lnussel,"",27/08/2019 02:32 pm,Release Engineering,Alpha,01/07/2019,14/08/2019,"",0.00,100,27/05/2019 11:58 am,27/08/2019 12:14 pm,Copied from #40439,No,"the CI for YaST needs to be configured to submit packages for the new release from the right branch
+
+* yast2-alternatives
+* yast2-slp-server
+* yast2-docker
+* skelcd-control-openSUSE"
+52115,openSUSE Leap 15.2,action,"",New,Normal,add openqa upgrade tests to/from 15.1,lnussel,mgriessmeier,16/12/2019 12:59 pm,QA,Alpha,19/08/2019,30/09/2019,"",0.00,0,27/05/2019 11:58 am,"",Copied from #39653,No,upgrade tests need to include 15.1
+52112,openSUSE Leap 15.2,action,"",Closed,Normal,create external sources list,lnussel,"",09/08/2019 12:18 pm,Release Engineering,Alpha,12/08/2019,23/08/2019,"",0.00,100,27/05/2019 11:58 am,09/08/2019 12:18 pm,Copied from #39365,No,"http://download.opensuse.org/YaST/Repos/openSUSE_Leap_15.1_Servers.xml (defined in https://github.com/yast/skelcd-control-openSUSE/blob/openSUSE-15_1/control/control.openSUSE.xml)
+
+https://github.com/openSUSE/download.o.o
+
+download.o.o pulls automatically every few hours"
+52109,openSUSE Leap 15.2,action,"",Closed,Normal,create schedule,lnussel,"",07/08/2019 01:50 pm,Release Engineering,Alpha,07/06/2019,10/06/2019,"",0.00,0,27/05/2019 11:58 am,07/08/2019 01:50 pm,"Blocks #52091, Copied from #37237",No,create a release shedule. Update https://en.opensuse.org/openSUSE:Roadmap
+52106,openSUSE Leap 15.2,action,"",Closed,Normal,set up bugzilla queries,lnussel,lnussel,16/08/2019 06:09 am,Release Engineering,Alpha,28/05/2019,09/08/2019,"",0.00,100,27/05/2019 11:58 am,16/08/2019 06:09 am,Copied from #37231,No,"set up bugzilla queries for the new release
+
+* all open bugs
+* bugs with priority p2 and higher
+* not triaged bugs (P5)
+* ship stopper candidates (Custom Search->Flags->is equal to->SHIP_STOPPER?)
+* ship stopper candidates (Custom Search->Flags->is equal to->SHIP_STOPPER+)
+
+save search with a name and share them"
+52103,openSUSE Leap 15.2,action,"",Closed,Normal,submit missing SLE packages,lnussel,"",11/11/2019 01:48 pm,Release Engineering,Alpha,25/07/2019,26/08/2019,"",0.00,100,27/05/2019 11:58 am,11/11/2019 01:48 pm,Copied from #37228,No,submit packages from SUSE:SLE-15-SP2:GA to Leap
+52100,openSUSE Leap 15.2,action,"",Closed,Normal,verify staging UEFI certificate,lnussel,"",07/08/2019 08:50 am,Release Engineering,Alpha,20/06/2019,24/06/2019,"",0.00,0,27/05/2019 11:58 am,07/08/2019 08:50 am,Copied from #37207,No,"The UEFI certificate in staging and rings needs to be equal. If there's something wrong, like openQA not booting verify by checking /etc/uefi/certs in the shim package in Leap vs Factory. Use openssl to dump the certificates:
+
+    openssl x509 -noout -text -nameopt multiline,utf8,-esc_msb -inform DER -in $file "
+52097,openSUSE Leap 15.2,action,"",Closed,Normal,ask for kernel submission,lnussel,mlin7442,27/08/2019 12:14 pm,Release Engineering,Alpha,23/09/2019,30/09/2019,"",0.00,100,27/05/2019 11:58 am,27/08/2019 12:14 pm,Copied from #37195,No,ask the kernel submission to prepare a Leap variant based on the SLE kernel
+52094,openSUSE Leap 15.2,action,"",Closed,Normal,enable bots/tools,lnussel,lnussel,18/09/2019 11:15 am,Release Engineering,Alpha,03/06/2019,21/08/2020,"",0.00,100,27/05/2019 11:58 am,18/09/2019 11:15 am,Copied from #37192,No,"enable bots and tools
+
+* totest manager
+* origin-manager (jimmy)
+* snapshot announcer (make sure to fix links in the template)
+* manager_42 (probably obsoleted by origin-manager -> jimmy)
+* update_crawler (may also be replaced by origin-manager)
+* build fail reminder
+* staging bot (jimmy)
+* openqa commments (has a different name now, ask jimmy)
+* duplicate binaries
+* support package rebuild
+* package list generator
+
+Add the new release to
+
+* trigger rebuilds"
+52091,openSUSE Leap 15.2,action,"",Closed,Normal,upload schedule internally,lnussel,lnussel,29/08/2019 07:38 am,Release Engineering,Alpha,09/08/2019,30/08/2019,"",0.00,100,27/05/2019 11:58 am,29/08/2019 07:38 am,"Blocked by #52109, Copied from #37189",No,"upload schedule to projects.suse.de
+
+https://gitlab.suse.de/OPS-Service/projects.nue.suse.com"
+52088,openSUSE Leap 15.2,action,"",New,Normal,Setup 15.2 release notes,lnussel,"",25/11/2019 09:56 am,Documentation,Alpha,13/06/2019,30/09/2019,0.00,0.00,80,27/05/2019 11:58 am,"",Copied from #37186,No,"A branch for new distribution needs to be created in the release notes git and the package adjusted accordingly.
+
+The tokens for OBS are in the factory-maintainer user. Botmaster has all accounts:
+sudo docker exec -ti go-agent-repo-checker-3 sudo -i -u go
+
+Instructions how to set up webhooks:
+https://openbuildservice.org/help/manuals/obs-user-guide/cha.obs.source_service.html#sec.obs.sserv.github.com"
+52085,openSUSE Leap 15.2,action,"",Closed,Normal,create basic wiki structure for new release,lnussel,AdaLovelace,14/08/2019 10:28 am,Documentation,Alpha,06/06/2019,31/08/2019,"",0.00,100,27/05/2019 11:58 am,14/08/2019 10:28 am,Copied from #37183,No,"Create the portal page https://en.opensuse.org/Portal:15.2 and template pages for pages that are expected to change. Eg. Screenshots_15.2
+
+Update development related pages with information about the new release
+
+* https://en.opensuse.org/openSUSE:Submitting_bug_reports
+* https://en.opensuse.org/openSUSE:Packaging_for_Leap
+* https://en.opensuse.org/Portal:Leap"
+52082,openSUSE Leap 15.2,action,"",New,Normal,submit new Factory packages to Leap,lnussel,mlin7442,07/02/2020 09:42 am,Release Engineering,Alpha,15/07/2019,19/02/2020,"",0.00,0,27/05/2019 11:58 am,"",Copied from #37180,No,"for all packages that were added to Factory after the last leap release, set up https://build.opensuse.org/project/show/openSUSE:42:Factory-Candidates-Check to check build success and activate the https://github.com/openSUSE/osc-plugin-factory/blob/master/fcc_submitter.py
+
+Make sure to talk to Bernhard to turn off the bug bot to avoid spamming bugzilla."
+52079,openSUSE Leap 15.2,action,"",Resolved,Normal,prepare software.opensuse.org,lnussel,lkocman,29/01/2020 03:17 pm,Infrastructure,Alpha,13/01/2020,17/01/2020,"",0.00,0,27/05/2019 11:58 am,29/01/2020 03:17 pm,Copied from #37177,No,"prepare software.opensuse.org to show the testing distribution
+
+https://github.com/openSUSE/software-o-o"
+52076,openSUSE Leap 15.2,action,"",Resolved,Normal,verify betaversion in product files,lnussel,"",15/07/2019 03:55 pm,Release Engineering,Alpha,29/05/2019,07/06/2019,"",0.00,0,27/05/2019 11:58 am,15/07/2019 03:55 pm,Copied from #37174,No,"*.product need to refer to the correct snapshot name in the <betaversion> tag
+
+Changes there will trigger rebuild so has to be done in advance"
+52073,openSUSE Leap 15.2,action,"",Closed,Normal,make sure test updates are in the patterns,lnussel,"",18/09/2019 11:40 am,Release Engineering,Alpha,10/06/2019,31/08/2019,"",0.00,100,27/05/2019 11:58 am,18/09/2019 11:40 am,Copied from #37171,No,the default patterns should include the update test packages so test updates actually get installed. This is triggered by betatest macro in prjconf. So after a first initial full rebuild verify that the default pattern pulls in the update-test pattern.
+52070,openSUSE Leap 15.2,action,"",Closed,Normal,create test plan for manual testing,lnussel,lkocman,19/08/2019 09:53 am,QA,Alpha,07/08/2019,07/08/2019,"",0.00,100,27/05/2019 11:58 am,19/08/2019 09:53 am,Copied from #37168,No,"create a test plan for people to manually test the distribution
+
+New Plan for Leap 15.2:
+https://docs.google.com/spreadsheets/d/1AGKijKpKiJCB616-bHVoNQuhWHpQLHPWCb3m1p6gXPc/edit#gid=94909276"
+52067,openSUSE Leap 15.2,action,"",Closed,Normal,enable sle15 syncing to OBS,lnussel,"",19/08/2019 08:46 am,Release Engineering,Alpha,27/06/2019,10/07/2019,"",0.00,100,27/05/2019 11:58 am,19/08/2019 08:46 am,Copied from #37165,No,tell SLE release engineers to sync SLE15 to OBS
+52064,openSUSE Leap 15.2,action,"",Resolved,Normal,adjust lookup file,lnussel,"",09/08/2019 09:07 am,Release Engineering,Alpha,03/06/2019,07/06/2019,"",0.00,0,27/05/2019 11:58 am,15/07/2019 03:59 pm,Copied from #37162,No,"00Meta/lookup.yml needs to be adjusted.
+All references to Factory, 15.0, FORK or Devel; need point to 15.1"
+52061,openSUSE Leap 15.2,action,"",Resolved,Normal,release maintenance test updates,lnussel,mschnitzer,01/10/2019 05:28 am,Maintenance,Alpha,13/06/2019,16/08/2019,"",0.00,100,27/05/2019 11:58 am,16/09/2019 10:19 am,"Blocked by #52058, Copied from #37159",No,maintenance needs to release test updates in the update channel
+52058,openSUSE Leap 15.2,action,"",Resolved,Normal,create update channel,lnussel,lkocman,12/09/2019 12:34 pm,Maintenance,Alpha,07/06/2019,07/08/2019,"",0.00,20,27/05/2019 11:58 am,12/09/2019 12:34 pm,"Blocks #52061, Copied from #37156",No,"In contrast to the main project (#52034) the update projects are meant to start empty. So we create them manually
+
+* The update projects (don't forget :NonFree) need to be created, including attributes (excl OBS:Maintained which will be added later).
+* add the new projects to openSUSE:Maintenance meta
+* The obs backend mapping file needs to be adjusted to to sync the repos to the correct place on download.opensuse.org"
+52055,openSUSE Leap 15.2,action,"",Closed,Normal,publishing and mirror setup,lnussel,lnussel,14/08/2019 10:23 am,Release Engineering,Alpha,10/06/2019,09/08/2019,"",0.00,100,27/05/2019 11:58 am,14/08/2019 10:23 am,Copied from #37147,No,"Set up OBS and Mirror system to handle the new distribution
+
+The ISOs and ftp tree needs to be set to be publish=enabled in OBS. If TTM is not set up yet, enable publishing from :ToTest manually:
+
+     <enable arch=""local"" repository=""images""/>
+
+There is a script somewhere on the obs backend that determines what gets pushed where. Adrian or Coolo know. It needs to be adjusted to handle the new distribution.
+
+On pontifex /etc/rsyncd-internal.conf needs to have modules to allow obs to push to the right locations.
+The publish_distro config needs to be adjusted too https://github.com/openSUSE/publish_distro
+
+Checklist:
+
+* BSConfig.pm
+* publish script on obs backend
+* rsync module on pontifex
+* publish_distro on pontifex
+* /etc/xinetd.d/scan-updates on pontifex
+* enable publishing in project meta 
+* notify ports maintainers so they do the same
+* write mirror@opensuse.org that a new distro is coming"
+52052,openSUSE Leap 15.2,action,"",Closed,Normal,update all packages that hardcode the distribution version,lnussel,"",27/08/2019 12:11 pm,Release Engineering,Alpha,29/05/2019,14/08/2019,"",0.00,100,27/05/2019 11:58 am,27/08/2019 12:11 pm,Copied from #37144,No,"All packages that hardcode the distribution version somehow need to be updated with the current version number
+
+* openSUSE.product.in and openSUSE-Addon-NonOss.product.in in 000package-groups
+* skelcd-control-openSUSE
+* build
+* branding-openSUSE
+* kiwi-boot-descriptions
+* MozillaFirefox-branding-openSUSE
+
+if needed add local hacks. getting the fix into the build package for example usually takes a way too long time for us. track any local hacks here and don't close ticket before done. Otherwise we may forget them.
+
+
+Problably only for major versions:
+
+* installation-images"
+52049,openSUSE Leap 15.2,action,"",Resolved,Normal,enable iso syncing to openQA,lnussel,okurz,19/07/2019 09:50 am,QA,Alpha,29/05/2019,24/06/2019,"",0.00,0,27/05/2019 11:58 am,19/07/2019 09:50 am,"Blocked by #52040, Copied from #37141",No,"the rsync.pl script needs to be adjust to sync the isos to openQA
+
+when doing that the directory for changes needs to be created
+  # cd /var/lib/snapshot-changes/opensuse/
+  # mkdir 15.1
+  # chown factory-news 15.1
+  # setfacl -m u:geekotest:rwx 15.1
+
+run rsync.pl and make sure an entry is created in snapshot-changes. Then symlink the current build:
+  # sudo -u geekotest ln -s $BUILDNR current
+
+edit /etc/apache2/conf.d/factory-package-news.conf for the new release"
+52046,openSUSE Leap 15.2,action,"",Closed,Normal,Add new version in Bugzilla,lnussel,"",27/05/2019 12:14 pm,Release Engineering,Alpha,23/05/2019,10/06/2019,"",0.00,100,27/05/2019 11:58 am,27/05/2019 12:14 pm,Copied from #37132,No,https://et.innerweb.novell.com/project_pages/prod_bugz_edit_vrsms.jsp?bcid=1&lid=0&pid=53824
+52040,openSUSE Leap 15.2,action,"",Resolved,Normal,setup openQA,lnussel,okurz,18/07/2019 02:40 pm,QA,Alpha,28/05/2019,24/06/2019,"",0.00,0,27/05/2019 11:57 am,18/07/2019 02:40 pm,"Blocks #52049, Copied from #37105",No,"update job group for new release: https://openqa.opensuse.org/parent_group_overview/3
+
+adjust description and link of the parent group if needed
+
+
+Dump the templates of the previous distribution, change version and import again. E.g.
+
+script/dump_templates --host https://openqa.opensuse.org --group ""openSUSE Leap 42.3"" --full > leap
+
+Same with staging projects. Afterwards review and adjust accordingly
+
+Add BETA=1
+The staging group may need to be renamed an re-created in order to preserve old results and allow for build numbers to repeat
+
+
+add upgrade tests from previous release"
+52037,openSUSE Leap 15.2,action,"",Resolved,Normal,bootstrap,lnussel,mlin7442,22/08/2019 03:07 pm,Release Engineering,Alpha,28/05/2019,24/06/2019,"",0.00,100,27/05/2019 11:57 am,30/07/2019 11:10 am,Copied from #36790,No,"* build ring0 against ring0 of the previous release
+* when ring0 is built remove the bootstrap aid
+* bootstrap ring1
+* let the whole project build (later)
+* undo any bootstrap changes, such as brp-extract-translations"
+52034,openSUSE Leap 15.2,action,"",Resolved,Normal,copy sources of previous release,lnussel,lkocman,20/07/2019 12:22 pm,Release Engineering,Alpha,27/05/2019,10/06/2019,"",0.00,20,27/05/2019 11:57 am,15/07/2019 03:36 pm,"Blocks #50465, Copied from #36787",No,"First, ask an obs admin to prepare the ""partitioning"" setup of OBS for the new release. That makes sure rings and stagings end up on the correct backend.
+Also ask for dispatchprios to be adjusted.
+
+When done copy old project to new one with full history:
+
+	$ osc api /source/openSUSE:Leap:15.2?cmd=copy\&oproject=openSUSE:Leap:15.1\&withhistory=1\&comment=branch+from+15.1 -X POST
+
+Adjust prj meta, add reviews etc (check previous release)
+
+        $ osc meta prj -e openSUSE:Leap:15.2
+
+Then copy the rest:
+
+	$ for i in \
+		NonFree \
+		Rings \
+		Rings:0-Bootstrap \
+		Rings:1-MinimalX \
+		Staging Staging:A \
+		Staging:A:DVD; do \
+		echo $i; \
+		osc api /source/openSUSE:Leap:15.2:$i?cmd=copy\&oproject=openSUSE:Leap:15.1:$i\&withhistory=1\&comment=branch+from+15.1 -X POST; \
+		done
+
+Ask an obs admin to copy the signkey for the staging projects from the previous release
+
+To adjust link files osc co -u the project, then
+
+	sed -i -e 's/openSUSE:Leap:15.1/openSUSE:Leap:15.2/' */_link
+
+Fix non oss release file:
+
+        osc api /source/openSUSE:Leap:15.2:NonFree/000release-packages/_aggregate -e
+
+* make sure prjconf contains _with_betatest macros
+* don't forget _service in _project
+
+Fix rpmlint-AGGR in ring0
+
+        osc api /source/openSUSE:Leap:15.2:Rings:0-Bootstrap/rpmlint-mini-AGGR/_aggregate -e
+
+
+"
+51221,openSUSE Leap 15.2,action,"",Resolved,Normal,upgrade windows 10 image in openQA,lnussel,lkocman,21/10/2019 08:35 am,QA,Alpha,27/05/2019,07/08/2019,"",0.00,0,07/05/2019 08:29 am,21/10/2019 06:44 am,"Related to #56927, Related to #56840",No,"get QA to upgrade the Windows 10 image in openQA, it's based on a very old version meanwhile and doesn't reflect reality anymore."
+50960,openSUSE Leap 15.2,action,"",Closed,Normal,*update AppStream,lnussel,"",14/08/2019 10:29 am,Release Engineering,Alpha,24/06/2019,16/08/2019,"",0.00,100,30/04/2019 02:34 pm,14/08/2019 10:29 am,"",No,"AppStream had to be forked in 15.1 for ARM. it's not useful for anything in SLE. sync it up again in SP2 for the sake of it
+
+https://bugzilla.opensuse.org/show_bug.cgi?id=1125898"
+50465,openSUSE Leap 15.2,action,"",In Progress,Normal,rename product from openSUSE to Leap,lnussel,lkocman,14/01/2020 01:22 pm,Release Engineering,Alpha,01/07/2019,30/11/2019,"",0.00,10,16/04/2019 02:24 pm,"",Blocked by #52034,No,"The CPE id of Leap should be ""cpe:/o:opensuse:leap:15.2"" as reported by /etc/os-release
+
+os-release is currently hacked manually. The real change needs to be in 000package-groups/openSUSE.product.in. It needs to be it needs to be renamed to Leap.product.in:
+
+        <vendor>openSUSE</vendor>
+        <name>Leap</name>
+        <version>15.2</version>
+
+That has various implications like openSUSE-release.spec renaming to Leap-release.spec with currently unknown consequences to how eg zypp behaves.
+
+The non-oss product also needs to be adopted
+
+
+TODO list from etherpad so we don't lose it: https://etherpad.nue.suse.com/p/leap_product_rename
+openSUSE.product produces a product called ""openSUSE"" from vendor ""openSUSE"". What we actually have are products called ""Leap"" and Tumbleweed"" from vendor ""openSUSE"" though. In order to properly support SCC registration the information OBS has needs to be consistent. Therefore it's desirable to rename the product from openSUSE to Leap.
+
+openSUSE.product.in -> Leap.product.in
+openSUSE-release.spec.in -> Leap-release.spec.in
+
+Issues:
+    - Quite some packages require openSUSE-release. So there is a compat package that just requires Leap-release.
+    - installation-images pulls in openSUSE-release and then fails to resolve deps as the flavor package is missing. So far the flavors were build ignored via prjconf. installation-images also had an extra config to ignore an unresolvable openSUSE-release package. To avoid patching installation-images we just pull in the mini flavor:
+        Prefer: Leap-release:Leap-release-mini
+     - pkglistgen updating relpkgs will parsing *.product in 000product, but due to the issues below 000product don't have the proper data. Result: old openSUSE release flavor spec file were added back
+     - first step of pkglistgen pipe(repochecker) failed due to openSUSE-release package is duplicated. Workaround: installcheck-ignore-duplicated-binaries = openSUSE-release
+     - pkglistgen fails in progress due to openSUSE.product.in was renamed however it's required by pkglistgen-locales-from
+     - change pkglistgen-locales-from will breaks other stagings and main product build
+     - solution: languages list moved to pkglistgen-locale attribute and leave pkglistgen-locales-from empty, thus pkglistgen fetch languages list from an attribute instead of a file
+     - remember to update pkglistgen-delete-kiwis-rings and pkglistgen-delete-kiwis-staging otherwise unneeded kiwi file were there
+     - update product name in the OSRT:ToTestMnagerConfig - otherwise ttm won't release snapshot to ToTest
+     - repository loction needs to update in rsync_opensuse
+     - the obs dashboard hardcodes the dvd name so needs to be adjusted src/api/app/models/obs_factory/distribution_strategy_*
+     - rsync.pl needs to sync the new product name Leap-dvd5 instead of openSUSE-dvd5
+     - NonFree/000release-packages/_aggregate needs to get the right release package
+     - rsync.pl for the main repo also needs to sync correct names. The non-oss ftp tree had an inconsistent name though.
+     - upgrade tests fail as the openSUSE product vanished and gets replaced by the Leap product. YaST doesnt like that and displays summary in red. https://openqa.opensuse.org/tests/1062080#step/disable_grub_timeout/2
+       - needed to add Provides: product() = openSUSE
+       - weakremovers handling: http://bugzilla.opensuse.org/show_bug.cgi?id=1155819
+       - FIXME: flavor package replacement doesnt work?
+         https://github.com/openSUSE/obs-service-product_converter/pull/7
+       - baseproduct symlink needs to be taken care of
+"
+56387,openSUSE Leap 15.2,action,"",New,Normal,submit translation packages,lnussel,"",02/09/2019 01:13 pm,Translations,Beta,19/03/2020,20/03/2020,"",0.00,0,02/09/2019 01:13 pm,"",Copied from #49544,No,"Packages that contain translations may need to be updated and submitted
+
+- package-translations : system:install:head
+- desktop-translations : X11:common:Factory
+- yast2-trans : YaST:Head                    (submit directly to YaST:Head, it does not accept SRs)
+- skelcd-openSUSE : system:install:head
+- openSUSE-EULAs : devel:openSUSE:Factory
+
+    
+    osc rm *.tar.xz
+    osc service dr
+    osc addremove
+    osc vc         # beautify *.changes: 'M-x sort-lines' and 'M-x delete-duplicate-lines'
+    osc ci
+    osc sr"
+56384,openSUSE Leap 15.2,action,"",New,Normal,clean up SLE-workarounds,lnussel,mlin7442,13/01/2020 11:33 am,Release Engineering,Beta,06/03/2020,13/03/2020,"",0.00,0,02/09/2019 01:13 pm,"",Copied from #48896,No,clean up the SLE-workarounds subproject. Check which packages got merged and remove them. Verify the remaining ones are progressing.
+56381,openSUSE Leap 15.2,action,"",New,Normal,get rid of repochecker failures,lnussel,mlin7442,13/01/2020 11:33 am,Release Engineering,Beta,06/03/2020,13/03/2020,"",0.00,0,02/09/2019 01:13 pm,"",Copied from #48890,No,"remaining repo checker failures need to be fixed:
+https://build.opensuse.org/package/view_file/openSUSE:Leap:15.1:Staging/dashboard/repo_checker
+
+Also, the whitelist should be reviewed if it lists too much"
+56378,openSUSE Leap 15.2,action,"",New,Normal,ask community to add repo xml,lnussel,"",02/09/2019 01:13 pm,Infrastructure,Beta,03/02/2020,05/04/2020,"",0.00,0,02/09/2019 01:13 pm,"",Copied from #47507,No,"Make sure the community repo list gets created:
+https://opensuse-community.org/openSUSE_Leap_150_Community_Additional.xml
+
+check the old file for names of people who could do it
+http://opensuse-community.org/openSUSE_Leap_423_Community_Additional.xml
+
+then update https://github.com/openSUSE/download.o.o and add the link there"
+56375,openSUSE Leap 15.2,action,"",New,Normal,verify sle sync,lnussel,lkocman,29/01/2020 03:18 pm,Release Engineering,Beta,20/01/2020,24/01/2020,"",0.00,0,02/09/2019 01:12 pm,"",Copied from #47282,No,"a mix of stuck tools and other breakages usually leads to packages deviating from SLE.
+Compare packages in SLE vs Leap and identify differences to sync up again.
+Update SLE-workarounds as needed."
+56372,openSUSE Leap 15.2,action,"",New,Normal,create 15.2 component in weblate,lnussel,"",03/09/2019 07:18 am,Translations,Beta,30/01/2020,14/02/2020,"",0.00,60,02/09/2019 01:12 pm,"",Copied from #46925,No,a Leap 15.2 component needs to be created in weblate to collect all projects related to translating leap 15.2
+56369,openSUSE Leap 15.2,action,"",New,Normal,enable i586 packages that need it,lnussel,mlin7442,13/01/2020 11:34 am,Release Engineering,Beta,17/02/2020,21/02/2020,"",0.00,0,02/09/2019 01:12 pm,"",Copied from #44936,No,"i586 packages with baselibs.conf need to be explicitly enabled by adding them to the whitelist in prjconf.
+
+https://github.com/openSUSE/openSUSE-release-tools/blob/master/biarchtool.py may help with that."
+56366,openSUSE Leap 15.2,action,"",In Progress,High,interlock,lnussel,lkocman,30/01/2020 03:01 pm,Release Engineering,Beta,05/11/2019,07/02/2020,"",0.00,50,02/09/2019 01:12 pm,"",Copied from #43448,No,"- prepare interlock lock slides
+- send content to individual stakeholders for approval
+- ask for date for erf interlock
+- present"
+56360,openSUSE Leap 15.2,action,"",Resolved,Normal,sync prjconf to build package,lnussel,mlin7442,30/01/2020 10:42 am,Release Engineering,Beta,31/10/2019,30/01/2020,"",0.00,0,02/09/2019 01:11 pm,30/01/2020 10:42 am,Copied from #43232,No,make sure the prjconf of the distr is added to the build package via pull request upstream
+56354,openSUSE Leap 15.2,action,"",Resolved,Normal,mirror the release internally,lnussel,lkocman,14/01/2020 03:26 pm,Release Engineering,Beta,10/11/2019,10/11/2019,"",0.00,0,02/09/2019 01:10 pm,14/01/2020 03:26 pm,Copied from #39488,No,there are some developers that like to have the release accessible internally via NFS. Ask Rudi to mirror it.
+56351,openSUSE Leap 15.2,action,"",New,Normal,update openSUSE-release package,lnussel,mlin7442,13/01/2020 11:35 am,Release Engineering,Beta,05/02/2020,07/02/2020,"",0.00,0,02/09/2019 01:09 pm,"",Copied from #39485,No,"the openSUSE-release package lists some suggested packages, eg java. That may need updating before the release."
+56348,openSUSE Leap 15.2,action,"",New,Normal,run desktop-file translation extractor,lnussel,"",02/09/2019 01:08 pm,Translations,Beta,27/01/2020,30/01/2020,"",0.00,0,02/09/2019 01:08 pm,"","Copied from #39482, Copied to #57056",No,"the extractor of desktop file translations that pushed to github needs to be enabled
+
+on https://github.com/openSUSE/desktop-file-translations
+
+Run
+    
+    cd 51-xml
+    ./download_data.sh download
+    ./generate_and_merge_pos.sh download
+    git add */*.po */*.pot
+    git commit -m update
+    git push"
+56345,openSUSE Leap 15.2,action,"",New,Normal,update copyright year in release notes,lnussel,lkocman,16/01/2020 03:02 pm,Documentation,Beta,31/12/2019,30/01/2020,"",0.00,0,02/09/2019 01:08 pm,"",Copied from #39479,No,"Make sure current year and release date are correct
+
+https://doc.opensuse.org/release-notes/x86_64/openSUSE/Leap/15.1/"
+56339,openSUSE Leap 15.2,action,"",New,Normal,notify all package maintainers that their package is in Leap,lnussel,"",02/09/2019 01:07 pm,Release Engineering,Beta,02/03/2020,13/03/2020,"",0.00,0,02/09/2019 01:07 pm,"",Copied from #39467,No,"notify all maintainers who have packages in Leap about the fact
+
+https://github.com/openSUSE/openSUSE-release-tools/blob/master/devel-project.py"
+56336,openSUSE Leap 15.2,action,"",New,Normal,update rpm-groups.pot,lnussel,"",02/09/2019 01:07 pm,Translations,Beta,02/03/2020,18/04/2020,"",0.00,0,02/09/2019 01:07 pm,"",Copied from #39455,No,"rpm-groups.pot is not created automatically. Run once to generate the pot file
+
+https://github.com/yast/yast-translations"
+56333,openSUSE Leap 15.2,action,"",New,Normal,notify cloud/container/appliance teams of the upcoming release,lnussel,"",02/09/2019 01:07 pm,Release Engineering,Beta,31/01/2020,31/01/2020,"",0.00,0,02/09/2019 01:07 pm,"",Copied from #39452,No,"There is a number of clouds/3rd party hosting out there where openSUSE is
+available as option. The responsible people need to be notified of the
+schedule in time:
+
+Contacts:
+Azure: Alexander Osthof
+EC2: Robert Schweickert
+Docker: Fabian Vogt
+WSL: Rich Williams
+Vagrant: Dan Cermak"
+56330,openSUSE Leap 15.2,action,"",New,Normal,enable openQA maintenance testing,lnussel,"",05/09/2019 01:26 pm,QA,Beta,09/03/2020,03/04/2020,"",0.00,0,02/09/2019 01:07 pm,"",Copied from #39449,No,openQA and the bot needs to be set up to also test maintenance updates for the new release
+56327,openSUSE Leap 15.2,action,"",New,Normal,verify betaversion in product files,lnussel,"",13/11/2019 02:36 pm,Release Engineering,Beta,03/02/2020,04/02/2020,"",0.00,0,02/09/2019 01:06 pm,"",Copied from #39431,No,"openSUSE:Leap:42.2/_product/*.product need to refer to the correct snapshot name in the <betaversion> tag
+also change the PublishFlags setting
+
+Changes there will trigger rebuild so has to be done in advance"
+56324,openSUSE Leap 15.2,action,"",New,Normal,submit translation packages,lnussel,"",02/09/2019 01:06 pm,Translations,Beta,02/03/2020,06/03/2020,"",0.00,0,02/09/2019 01:06 pm,"",Copied from #39419,No,"Packages that contain translations may need to be updated and submitted
+
+* [] system:install:head/package-translations
+* [] X11:common:Factory/desktop-translations
+* [] YaST:Head/yast2-trans
+* [] system:install:head/yast2-slide-show
+* [] system:install:head/skelcd-openSUSE
+* [] devel:openSUSE:Factory/openSUSE-EULAs
+"
+56321,openSUSE Leap 15.2,action,"",New,Normal,submit translation packages,lnussel,"",02/09/2019 01:05 pm,Translations,Beta,03/02/2020,12/02/2020,"",0.00,0,02/09/2019 01:05 pm,"",Copied from #39416,No,"Packages that contain translations may need to be updated and submitted
+
+* package-translations
+* desktop-translations : X11:common:Factory
+* yast2-trans : YaST:Head
+* yast2-slide-show : system:install:head
+* skelcd-openSUSE : system:install:head
+* openSUSE-EULAs: devel:openSUSE:Factory"
+56318,openSUSE Leap 15.2,action,"",New,Normal,Security Audit,lnussel,jsegitz,02/09/2019 03:10 pm,Security,Beta,17/02/2020,21/02/2020,"",0.00,0,02/09/2019 01:05 pm,"",Copied from #39413,No,"Security needs to take a look at the current snapshot
+
+https://bugzilla.suse.com/show_bug.cgi?id=1090647
+https://pes.suse.de/Maintenance-Security/Products/leap_sles/"
+56315,openSUSE Leap 15.2,action,"",New,Normal,check which packages turned into a fork,lnussel,lkocman,16/01/2020 03:03 pm,Release Engineering,Beta,13/01/2020,27/03/2020,"",0.00,0,02/09/2019 01:05 pm,"",Copied from #39410,No,"Some packages in 15.0 turned into a Fork after the lookup file for 15.1 was created. Update crawler would therefore continue to try to submit from the original location instead of 15.0.
+
+So the lookup file of 15.1 needs to be checked for forks. Maybe maintenance can help."
+56312,openSUSE Leap 15.2,action,"",New,Normal,Publish announcement of Beta,lnussel,"",02/09/2019 01:04 pm,Marketing,Beta,31/01/2020,31/01/2020,"",0.00,0,02/09/2019 01:04 pm,"",Copied from #39404,No,internally and externally
+56309,openSUSE Leap 15.2,action,"",New,Normal,tell nvidia packager to upload drivers,lnussel,"",02/09/2019 01:04 pm,Release Engineering,Beta,03/02/2020,14/02/2020,"",0.00,0,02/09/2019 01:04 pm,"",Copied from #39401,No,the nvidia drivers need to be uploaded as soon as the kernel ABI is stable enough
+56303,openSUSE Leap 15.2,action,"",New,Normal,Call for testing - BetaPizza Parties,lnussel,"",02/09/2019 01:04 pm,Marketing,Beta,10/02/2020,28/02/2020,"",0.00,0,02/09/2019 01:04 pm,"",Copied from #39389,No,""
+56300,openSUSE Leap 15.2,action,"",New,Normal,get signed shim,lnussel,"",20/12/2019 10:47 am,Release Engineering,Beta,24/01/2020,27/03/2020,"",0.00,0,02/09/2019 01:03 pm,"",Copied from #39383,No,"Talk to security to request and submit a properly signed shim
+
+Shim is mean to be built on a stable distro, eg $Leap-.1. During the submission period to Microsoft it may not be possible to update some packages, eg binutils or openssl to make sure the build stays reproducible. After acquiring the new signature, submit shim to the stable distro to get it officially built and released. Fetch the rpm and put it in the ""shim-leap"" package for repacking in other code streams like $Leap and TW."
+56297,openSUSE Leap 15.2,action,"",New,Normal,call for translation,lnussel,"",02/09/2019 01:03 pm,Translations,Beta,28/02/2020,06/03/2020,"",0.00,0,02/09/2019 01:03 pm,"",Copied from #39380,No,"The most important languages in the distro, esp those on the DVD need to be translated. Remind translation teams.
+
+https://en.opensuse.org/openSUSE:Localization_status"
+56294,openSUSE Leap 15.2,action,"",New,Normal,verify release notes correctly setup,lnussel,"",02/09/2019 01:03 pm,Documentation,Beta,06/07/2019,30/08/2019,"",0.00,0,02/09/2019 01:03 pm,"",Copied from #39377,No,"make sure release notes for the new release appear in
+https://doc.opensuse.org/release-notes/x86_64/openSUSE/"
+56288,openSUSE Leap 15.2,action,"",New,Normal,add new release to OBS distributions,lnussel,lkocman,16/01/2020 03:02 pm,Infrastructure,Beta,26/12/2019,29/01/2020,"",0.00,0,02/09/2019 01:03 pm,"",Copied from #39368,No,"obs needs a button to easily add the new distro as build repo. Eg. https://build.opensuse.org/project/add_repository_from_default_list/Base:System
+
+Talk to Adrian or some other build service admin
+"
+61599,openSUSE Leap 15.2,action,"",New,Normal,update desktop file translations,lnussel,"",20/12/2019 01:04 pm,Translations,RC,20/04/2020,20/04/2020,"",0.00,0,20/12/2019 01:04 pm,"",Copied from #50840,No,"* in weblate commit all pending changes
+
+In desktop-file-translations:
+
+* check 51-xml/download_data.sh
+* export password
+* run make
+* verify and check"
+61593,openSUSE Leap 15.2,action,"",New,Normal,clean up build fails,lnussel,"",20/12/2019 01:04 pm,Release Engineering,RC,06/04/2020,08/04/2020,"",0.00,0,20/12/2019 01:04 pm,"",Copied from #50513,No,"be more agressive with build fails
+- harass maintainers
+- wipebinaries of failed packages after checking whatdependson
+- wipebinaries of unresolvables
+- file delete requests"
+61590,openSUSE Leap 15.2,action,"",New,Normal,set up redirects for repository structure on download.o.o,lnussel,"",20/12/2019 01:03 pm,Infrastructure,RC,07/04/2020,10/04/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #50444,No,"The paths referenced in this view:
+https://api.opensuse.org/public/source/openSUSE:Leap:15.1/000product?view=productrepositories&product=openSUSE
+
+should be reflected on http://download.opensuse.org/repositories/
+
+Should be just a matter of installing some redirects."
+61587,openSUSE Leap 15.2,action,"",New,Normal,eliminate duplicate binaries,lnussel,"",20/12/2019 01:03 pm,Release Engineering,RC,14/02/2020,21/02/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #48326,No,"packages with duplicate binaries need to be cleaned up as OBS has undefined behavior with those
+
+https://build.opensuse.org/package/view_file/openSUSE:Leap:15.1:Staging/dashboard/duplicate_binaries?expand=1"
+61569,openSUSE Leap 15.2,action,"",New,Normal,compile a list of packages that are from sle but not maintained there,lnussel,"",20/12/2019 01:03 pm,Release Engineering,RC,12/02/2020,01/04/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47819,No,some packages are marked as coming from SLE even though not all or none of it's source packages are actually maintained there. Need to compute a list and discuss with maintenance.
+61566,openSUSE Leap 15.2,action,"",Feedback,Normal,update branding,lnussel,hellcp,03/02/2020 03:31 pm,Design,RC,22/08/2019,06/03/2020,"",0.00,90,20/12/2019 01:03 pm,"",Copied from #47816,No,"the new release needs a new branding
+
+* <del>yast color scheme</del>
+* <del>yast headline image</del>
+* wallpapers
+  * KDE
+  * GNOME
+  * icewm
+* plymouth boot splash screen
+* grub2 theme
+* syslinux theme
+* displaymanager themes
+  * sddm
+  * gdm
+  * lightdm"
+61542,openSUSE Leap 15.2,action,"",New,Normal,make sure new maintenance packages end up in the release,lnussel,"",20/12/2019 01:03 pm,Maintenance,RC,12/03/2020,15/03/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47792,No,maintenance probably released several packages that are new in the previous release. We need to make sure to collect them for the new release
+61518,openSUSE Leap 15.2,action,"",New,Normal,release manager checklist,lnussel,"",20/12/2019 01:03 pm,Infrastructure,RC,20/04/2020,20/04/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47768,No,"To branch the current ftp tree and isos for a milestone, log in to download.opensuse.org as mirror user and run:
+
+    distro_hardlink_copy 42.2-Current 42.2-RC1
+
+Remove x bit for others from the directory so only staging mirrors can pull it but it's not visible on download.o.o
+
+on release day every once in a while scan for mirrors as mirror user:
+
+    mb scan -a -d /distribution/leap/42.2-RC1 -j4
+
+In the morning add the x bit again to make the content show up and give mirrors time to catch up adding the x bit.
+
+At release time:
+
+- change the symlink to the new milestone
+
+  distro_symlink 42.2 42.2-RC1
+
+- sync the staging are to the area shown in download.opensuse.org
+
+    publish_opensuse
+
+You may want to add '-n' before to check what it's doing and not deleting files"
+61515,openSUSE Leap 15.2,action,"",New,Normal,enable OBS:Maintained attribute in :Update project,lnussel,"",20/12/2019 01:03 pm,Maintenance,RC,04/05/2020,04/05/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47765,No,"The :Update project needs to have
+
+    <attributes>
+    <attribute name=""Maintained"" namespace=""OBS""/>
+    <attribute name=""BranchTarget"" namespace=""OBS""/>
+    <attribute name=""ApprovedRequestSource"" namespace=""OBS""/>
+    </attributes>
+
+=>
+
+    $ osc meta attribute -c -a OBS:Maintained openSUSE:Leap:15.1:Update
+
+And set update project:
+
+    $ osc meta attribute -c -a OBS:UpdateProject -s openSUSE:Leap:15.1:Update openSUSE:Leap:15.1"
+61509,openSUSE Leap 15.2,action,"",New,Normal,remove beta marks,lnussel,"",20/12/2019 01:03 pm,Release Engineering,RC,01/04/2020,07/04/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47759,No,"* remove %_with_betatest from prjconf
+* remove beta tag from openSUSE.product
+* remove BETA=1 from openQA"
+61506,openSUSE Leap 15.2,action,"",New,Normal,verify release counters for update,lnussel,"",20/12/2019 01:02 pm,Release Engineering,RC,29/03/2020,04/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47756,No,release number needs to be higher than in previous distributions. Make sure the are. mls knows how to.
+61503,openSUSE Leap 15.2,action,"",New,Normal,openSUSE-EULAs up to date,lnussel,"",20/12/2019 01:02 pm,Release Engineering,RC,28/03/2020,30/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47753,No,"devel:openSUSE:Factory/openSUSE-EULAs needs to be up to date to include all relevant licenses. Ie licenses that require explicit agreement via dialog by the user. That affects mostly packages in the openSUSE:Leap:15.0:NonFree project.
+
+The sources are at github: https://github.com/openSUSE/openSUSE-EULAs"
+61500,openSUSE Leap 15.2,action,"",New,Normal,submit translation packages,lnussel,"",20/12/2019 01:02 pm,Translations,RC,08/04/2020,14/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47750,No,"Packages that contain translations may need to be updated and submitted
+
+- package-translations : system:install:head
+- desktop-translations : X11:common:Factory
+- yast2-trans : YaST:Head                    (submit directly to YaST:Head, it does not accept SRs)
+- skelcd-openSUSE : system:install:head
+- openSUSE-EULAs : devel:openSUSE:Factory
+
+    
+    osc rm *.tar.?z
+    osc service dr
+    osc addremove
+    osc vc         # beautify *.changes: 'M-x sort-lines' and 'M-x delete-duplicate-lines'
+    osc ci
+    osc sr
+"
+61314,openSUSE Leap 15.2,action,"",New,Normal,Security Audit,lnussel,"",20/12/2019 01:00 pm,Security,RC,02/04/2020,17/04/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47561,No,Security needs to take a look at the current snapshot
+61284,openSUSE Leap 15.2,action,"",New,Normal,verify piwik works,lnussel,"",20/12/2019 01:00 pm,Marketing,RC,17/04/2020,17/04/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47528,No,""
+61278,openSUSE Leap 15.2,action,"",New,Normal,submit translation packages,lnussel,"",20/12/2019 01:00 pm,Translations,RC,28/03/2020,03/04/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47519,No,"Packages that contain translations may need to be updated and submitted
+
+- package-translations : system:install:head
+- desktop-translations : X11:common:Factory
+- yast2-trans : YaST:Head                    (submit directly to YaST:Head, it does not accept SRs)
+- skelcd-openSUSE : system:install:head
+- openSUSE-EULAs : devel:openSUSE:Factory
+
+    
+    osc rm *.tar.gz
+    osc service dr
+    osc addremove
+    osc vc         # beautify *.changes: 'M-x sort-lines' and 'M-x delete-duplicate-lines'
+    osc ci
+    osc sr"
+61275,openSUSE Leap 15.2,action,"",New,Normal,make sure nvidia packages are ready for GA,lnussel,"",20/12/2019 12:59 pm,Release Engineering,RC,30/03/2020,10/04/2020,"",0.00,0,20/12/2019 12:59 pm,"",Copied from #47516,No,NVidia drivers are nowadays usually ready way before GA. Ping the driver maintainer to make sure that is the case actually.
+61272,openSUSE Leap 15.2,action,"",New,Normal,merge back maintenance updates,lnussel,"",20/12/2019 12:59 pm,Release Engineering,RC,29/03/2020,29/03/2020,"",0.00,0,20/12/2019 12:59 pm,"",Copied from #47513,No,"maintenance updates from the update project need to be merged back into the main repo
+
+* use osc checkupdate (https://github.com/coolo/factory-auto/osc-plugin-checkupdate.py) to find updated packages
+* copy them back using 'osc copypac -e openSUSE:13.2:Update openSUSE:13.2 -m ""Update to match Update channel update#.""'; On purpose do it by hand without automation to avoid screwups
+* adjust the release number to be higher than in the update repo using FIXME¹
+* remove updates from the update repo by using ""osc killupdate NUMBER""
+
+
+[1] adjust the release number by checking the state of the package 'osc getbinaries openSUSE:13.2:Update . standard x86_64' and then writting higher revision to .spec file. To submit this update to repository just use 'osc ci --noservice -m ""Add revision to ensure new-enough over Update channel.""'
+There should be a way to do this by means of obs
+"
+61269,openSUSE Leap 15.2,action,"",New,Normal,make counter.o.o/link point to new portal,lnussel,"",20/12/2019 12:59 pm,Infrastructure,RC,16/03/2020,10/04/2020,"",0.00,0,20/12/2019 12:59 pm,"",Copied from #47510,No,"https://counter.opensuse.org/link/ should point to https://en.opensuse.org/Portal:15.1?pk_campaign=counter
+"
+61266,openSUSE Leap 15.2,action,"",New,Normal,prepare software.opensuse.org,lnussel,"",20/12/2019 12:59 pm,Infrastructure,RC,03/04/2020,03/04/2020,"",0.00,0,20/12/2019 12:59 pm,"",Copied from #47504,No,"prepare software.opensuse.org for RC1
+
+* https://github.com/openSUSE/software-o-o, app/controllers/main_controller.rb
+* Wait for package to build https://build.opensuse.org/package/show/openSUSE:infrastructure:software.opensuse.org/software_opensuse_org
+* Deploy when mirrors are ready"
+61260,openSUSE Leap 15.2,action,"",New,Normal,EULA review/update,lnussel,"",20/12/2019 12:59 pm,Release Engineering,RC,29/01/2020,28/03/2020,"",0.00,0,20/12/2019 12:59 pm,"",Copied from #47498,No,"Ask Legal to review and potentially adjust the EULA.
+
+The request form can be found in innerweb
+
+Current license is at https://github.com/openSUSE/skelcd-openSUSE/blob/master/license/license.txt
+
+The year can be adjusted by means of sed before sending to Legal.
+
+Wiki: https://en.opensuse.org/openSUSE:License"
+61245,openSUSE Leap 15.2,action,"",New,Normal,announce package freeze,lnussel,"",20/12/2019 12:59 pm,Release Engineering,RC,30/03/2020,09/04/2020,"",0.00,0,20/12/2019 12:59 pm,"",Copied from #39461,No,send anounncement internally and externally to warn about the package freeze
+61242,openSUSE Leap 15.2,action,"",New,Normal,enable countdown on www.opensuse.org,lnussel,"",20/12/2019 12:59 pm,Infrastructure,RC,02/03/2020,10/04/2020,"",0.00,0,20/12/2019 12:59 pm,"",Copied from #39458,No,the javascript countdown on www.opensuse.org needs to be enabled
+61236,openSUSE Leap 15.2,action,"",Resolved,Normal,update OpenSUSE_Localization_Teams ,lnussel,AdaLovelace,11/02/2020 10:31 am,Translations,RC,24/01/2020,14/02/2020,"",0.00,100,20/12/2019 12:59 pm,11/02/2020 10:31 am,Copied from #39428,No,"Ping everyone listed in https://en.opensuse.org/OpenSUSE_Localization_Teams to make sure translation teams are aware of the release and are available
+
+Fix the links to the statistics."
+61233,openSUSE Leap 15.2,action,"",Resolved,Normal,update openSUSE:Localization_guide ,lnussel,AdaLovelace,28/01/2020 07:19 am,Translations,RC,20/01/2020,31/01/2020,"",0.00,100,20/12/2019 12:59 pm,28/01/2020 07:19 am,Copied from #39425,No,"Update https://en.opensuse.org/openSUSE:Localization_guide to document the Weblate workflow
+
+When done, link it from https://en.opensuse.org/Portal:15.1"
+61230,openSUSE Leap 15.2,action,"",New,Normal,disable Factory submitter,lnussel,"",20/12/2019 12:59 pm,Release Engineering,RC,08/04/2020,08/04/2020,"",0.00,0,20/12/2019 12:59 pm,"",Copied from #39422,No,disable the FCC submitter
+62546,openSUSE Leap 15.2,action,"",New,High,old files kept in pontifex2:/srv/ftp/pub/opensuse/distribution/leap/15.2/repo/oss/,bmwiedemann,lkocman,22/01/2020 01:47 pm,Infrastructure,GM,22/01/2020,"","",0.00,0,22/01/2020 01:35 pm,"","",No,"I found that there are many old files kept in pontifex2:/srv/ftp/pub/opensuse/distribution/leap/15.2/repo/oss/
+
+time ls -l /srv/ftp/pub/opensuse/distribution/leap/15.2/repo/oss/x86_64/|wc
+ 111800 1006193 10718652
+
+real    1m18.951s
+user    0m1.206s
+sys     0m2.576s
+
+vs the 20 k files in 15.1
+
+OBS team (Marco) said, they upload their files to pontifex2 and there is only the latest version in the upload dir."
+61617,openSUSE Leap 15.2,action,"",New,Normal,tag docker images,lnussel,"",20/12/2019 01:04 pm,Release Engineering,GM,13/05/2020,13/05/2020,"",0.00,0,20/12/2019 01:04 pm,"",Copied from #51587,No,"On the release day and time the new release needs to be marked latest in prjconf:
+
+https://build.opensuse.org/project/prjconf/openSUSE:Containers:Leap
+
+some bot also may need adjustment"
+61614,openSUSE Leap 15.2,action,"",New,Normal,prepare GM on download server,lnussel,"",20/12/2019 01:04 pm,Release Engineering,GM,08/05/2020,09/05/2020,"",0.00,0,20/12/2019 01:04 pm,"",Copied from #51515,No,"Plan for 15.1
+
+* log in to download.opensuse.org (pontifex) before ttm released GM to download.o.o!
+* hardlink files from 15.1/iso into e.g. 15.1/iso-devel in ftp-stage
+* wait for some mirrors to catch up
+* sync the change to ftp
+* install a redirect rule 15.1/iso into 15.1/iso-devel
+* wait for ttm to release final build and publish_distro to do it's initial work
+* disable rsync pushing for 15.1 in /etc/rsyncd-internal.conf so obs can't spoil the fun
+* remove world access from iso/ so only staging mirrors can pull it
+* disable publish_distro for 15.1 (~mirror/bin)
+* rename iso images to final names"
+61608,openSUSE Leap 15.2,action,"",New,Normal,remind maintenance to enable their update crawler,lnussel,"",20/12/2019 01:04 pm,Release Engineering,GM,04/05/2020,07/05/2020,"",0.00,0,20/12/2019 01:04 pm,"",Copied from #51422,No,maintenance needs to enable their update crawler as soon as we switch to maintenance mode
+61605,openSUSE Leap 15.2,action,"",New,Normal,communicate submission for mainteance to maintenance,lnussel,"",20/12/2019 01:04 pm,Release Engineering,GM,04/05/2020,06/05/2020,"",0.00,0,20/12/2019 01:04 pm,"",Copied from #51419,No,Some submission may not have made it into GM. Communicate to maintenance to submit them as update instead.
+61602,openSUSE Leap 15.2,action,"",New,Normal,create publish filter for NON_FTP_PACKAGES,lnussel,"",27/12/2019 10:41 am,Maintenance,GM,23/04/2020,06/05/2020,"",0.00,0,20/12/2019 01:04 pm,"",Copied from #50969,No,"need to add PublishFilter: lines to prjconf of the :Update project to prevent packages in NON_FTP_PACKAGES.group from publishing in maintenance updates
+
+use nonftp2publishfilter.py tool"
+61584,openSUSE Leap 15.2,action,"",New,Normal,clean up SLE-workarounds,lnussel,"",20/12/2019 01:03 pm,Release Engineering,GM,14/04/2020,01/05/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47834,No,clean up the SLE-workarounds subproject. Check which packages got merged and remove them. Verify the remaining ones are progressing.
+61581,openSUSE Leap 15.2,action,"",New,Normal,sync with SLE,lnussel,"",20/12/2019 01:03 pm,Release Engineering,GM,06/04/2020,10/04/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47831,No,some packages accidentally diverge from sle. try to merge as many as possible
+61578,openSUSE Leap 15.2,action,"",New,Normal,sync :NonFree,lnussel,"",20/12/2019 01:03 pm,Release Engineering,GM,01/04/2020,07/04/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47828,No,I think we forgot to activate the update crawler for the :NonFree project. So we should sync with Factory at least once now.
+61575,openSUSE Leap 15.2,action,"",New,Normal,eliminate duplicate binaries,lnussel,"",20/12/2019 01:03 pm,Release Engineering,GM,01/04/2020,06/04/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47825,No,"packages with duplicate binaries need to be cleaned up as OBS has undefined behavior with those
+
+https://build.opensuse.org/package/view_file/openSUSE:Leap:15.1:Staging/dashboard/duplicate_binaries?expand=1"
+61572,openSUSE Leap 15.2,action,"",New,Normal,get rid of repochecker failures,lnussel,"",20/12/2019 01:03 pm,Release Engineering,GM,31/03/2020,03/04/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47822,No,"remaining repo checker failures need to be fixed:
+https://build.opensuse.org/package/view_file/openSUSE:Leap:15.1:Staging/dashboard/repo_checker
+
+Also, the whitelist should be reviewed if it lists too much"
+61560,openSUSE Leap 15.2,action,"",New,Normal,get iso images signed,lnussel,"",20/12/2019 01:03 pm,Release Engineering,GM,07/05/2020,08/05/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47810,No,"* rename iso and .sha256 file to not include Build* anymore
+* fix name in .sha256 files
+* ask autobuild to sign the files"
+61557,openSUSE Leap 15.2,action,"",New,Normal,turn off tools,lnussel,"",20/12/2019 01:03 pm,Release Engineering,GM,04/05/2020,12/05/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47807,No,"* switch off bots
+  * <del>totest manager</del>
+  * <del>snapshot announcer</del>
+  * <del>manager_42</del>
+  * <del>update_crawler</del>
+  * <del>build fail reminder</del>
+  * <del>staging bot</del>
+  * <del>staaging report</del>
+* remove 15.1 from
+  * <del>trigger rebuilds</del>
+  * <del>pkglistgen</del>"
+61548,openSUSE Leap 15.2,action,"",New,Normal,communicate translation deadline,lnussel,AdaLovelace,20/12/2019 03:18 pm,Translations,GM,15/04/2020,16/04/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47798,No,last translation packages should be submitted Monday of the GM week. So the deadline should be Sunday.
+61539,openSUSE Leap 15.2,action,"",New,Normal,update instlux files,lnussel,"",20/12/2019 01:03 pm,Release Engineering,GM,09/02/2020,06/03/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47789,No,the instlux files on the isos need to be updated to show the current version
+61524,openSUSE Leap 15.2,action,"",New,Normal,submit translation packages,lnussel,"",20/12/2019 01:03 pm,Translations,GM,20/04/2020,20/04/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47774,No,"Packages that contain translations may need to be updated and submitted
+
+* package-translations
+* desktop-translations : X11:common:Factory
+* yast2-trans : YaST:Head
+* yast2-slide-show : system:install:head
+* skelcd-openSUSE : system:install:head
+* openSUSE-EULAs: devel:openSUSE:Factory "
+61521,openSUSE Leap 15.2,action,"",New,Normal,release manager checklist for GA,lnussel,"",20/12/2019 01:03 pm,Release Engineering,GM,13/05/2020,13/05/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47771,No,"On download.o.o:
+
+on release day every once in a while scan for mirrors as mirror user:
+
+    mb scan -a -d /distribution/leap/15.1 -j4
+
+In the morning of the release day add the access bits again to make the
+content show up and give mirrors time to catch up adding the bits.
+
+Remove the redirect rule before 12:00 UTC
+"
+61512,openSUSE Leap 15.2,action,"",New,Normal,translate openSUSE-EULAs,lnussel,"",20/12/2019 01:03 pm,Translations,GM,10/04/2020,12/04/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47762,No,"Since we use openSUSE-EULAs for a warning text we also need a translation for it:
+https://github.com/openSUSE/openSUSE-EULAs"
+61497,openSUSE Leap 15.2,action,"",New,Normal,fix link on openqa.opensuse.org for goldmaster DVD,lnussel,"",20/12/2019 01:02 pm,QA,GM,08/05/2020,12/05/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47747,No,the maintenance tests expect a goldmaster DVD. A hard or symlink was installed during beta phase at /var/lib/openqa/factory/iso/fixed that points to a specific build. Change the link to point to the iso that is the goldmaster.
+61317,openSUSE Leap 15.2,action,"",New,Normal,Security Audit,lnussel,"",20/12/2019 01:00 pm,Security,GM,01/05/2020,03/05/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47567,No,Security needs to take a look at the current snapshot
+61308,openSUSE Leap 15.2,action,"",New,Normal,evaluate results of manual testing with release manager,lnussel,"",20/12/2019 01:00 pm,QA,GM,22/04/2020,23/04/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47555,No,The results of the manual testing initiative should be talked over with the release manager to determine whether the release is ready for release.
+61305,openSUSE Leap 15.2,action,"",New,Normal,call to update release notes,lnussel,"",20/12/2019 01:00 pm,Documentation,GM,19/04/2020,23/04/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47552,No,ask people to review and update https://doc.opensuse.org/release-notes/x86_64/openSUSE/Leap/42.3/ via https://github.com/openSUSE/release-notes-openSUSE
+61302,openSUSE Leap 15.2,action,"",New,Normal,merge back maintenance updates,lnussel,"",20/12/2019 01:00 pm,Maintenance,GM,22/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47549,No,"Caution: potentially outdated instructions. Nowadays it's mostly only deleting the obsolete test updates. May need to verify release numbers nevertheless.
+
+maintenance updates from the update project need to be merged back into the main repo
+
+* use osc checkupdate (https://github.com/coolo/factory-auto/osc-plugin-checkupdate.py) to find updated packages
+* copy them back using 'osc copypac -e openSUSE:13.2:Update openSUSE:13.2 -m ""Update to match Update channel update#.""'; On purpose do it by hand without automation to avoid screwups
+* adjust the release number to be higher than in the update repo using FIXME¹
+* remove updates from the update repo by using ""osc killupdate NUMBER""
+
+
+[1] adjust the release number by checking the state of the package 'osc getbinaries openSUSE:13.2:Update . standard x86_64' and then writting higher revision to .spec file. To submit this update to repository just use 'osc ci --noservice -m ""Add revision to ensure new-enough over Update channel.""'
+There should be a way to do this by means of obs
+"
+61299,openSUSE Leap 15.2,action,"",New,Normal,verify test updates are removed from the patterns,lnussel,"",20/12/2019 01:00 pm,Release Engineering,GM,22/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47546,No,verify that the Supplements in the test update pattern is gone. Should happen automatically via betatest macro but package may not be rebuilt. so better safe than sorry.
+61296,openSUSE Leap 15.2,action,"",New,Normal,IPRQ,lnussel,"",20/12/2019 01:00 pm,Release Engineering,GM,15/04/2020,08/05/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47543,No,"create IPRQ document
+
+Some information about IPRQ document:
+
+  The IPRQ document is a SUSE internal document used for tracking Intellectual Property.
+
+All ECR/IPRQ documents should be revised by Ciaran"
+61293,openSUSE Leap 15.2,action,"",New,Normal,Send Gold Master announcement for developers,lnussel,"",20/12/2019 01:00 pm,Release Engineering,GM,07/05/2020,13/05/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47540,No,send the information that 15.1 is Gold to opensuse-factory and devel@
+61290,openSUSE Leap 15.2,action,"",New,Normal,check manual was generated for OSP,lnussel,"",20/12/2019 01:00 pm,Documentation,GM,22/04/2020,26/04/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47537,No,ping docu team and ask if the pdf was generated and sent to OSP
+61287,openSUSE Leap 15.2,action,"",New,Normal,announce GM deadline internally,lnussel,"",20/12/2019 01:00 pm,Release Engineering,GM,22/04/2020,27/04/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47534,No,we should announce the GM deadline internally just as SLE does
+61257,openSUSE Leap 15.2,action,"",New,Normal,set end of life attribute in product file,lnussel,lkocman,15/01/2020 10:26 am,Release Engineering,GM,01/11/2019,01/04/2020,"",0.00,0,20/12/2019 12:59 pm,"",Copied from #47495,No,/etc/products.d/openSUSE.prod should have the endoflife option set
+61239,openSUSE Leap 15.2,action,"",New,Normal,submit translation packages,lnussel,"",20/12/2019 12:59 pm,Translations,GM,04/05/2020,04/05/2020,"",0.00,0,20/12/2019 12:59 pm,"",Copied from #39446,No,"Packages that contain translations may need to be updated and submitted
+
+* package-translations
+* desktop-translations : X11:common:Factory
+* yast2-trans : YaST:Head
+* yast2-slide-show : system:install:head
+* skelcd-openSUSE : system:install:head
+* openSUSE-EULAs: devel:openSUSE:Factory"
+61596,openSUSE Leap 15.2,action,"",New,Normal,set link to /distributions/leap in countdown on www.o.o,lnussel,"",20/12/2019 01:04 pm,Marketing,GA,13/05/2020,13/05/2020,"",0.00,0,20/12/2019 01:04 pm,"",Copied from #50687,No,The countdown on www.opensuse.org links to /distributions/testing. It needs to point to distributions/leap on the release day unless https://github.com/openSUSE/software-o-o/issues/542 gets implemented.
+61563,openSUSE Leap 15.2,action,action #61404: Release Announcement,New,Normal,send announcement to opensuse-announce,lnussel,"",20/12/2019 01:03 pm,Marketing,GA,13/05/2020,13/05/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47813,No,the release needs to be  be announced on the opensuse-announce list
+61545,openSUSE Leap 15.2,action,"",New,Normal,set attribute to reject requests,lnussel,"",20/12/2019 01:03 pm,Release Engineering,GA,07/05/2020,09/05/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47795,No,"
+Need to reject requests to the new distro and set update project if not done already:
+
+    osc meta attribute openSUSE:Leap:42.3 -c -a OBS:RejectRequests -s ""Please submit to openSUSE:Leap:42.3:Update""
+    osc meta attribute openSUSE:Leap:42.3 -c -a OBS:UpdateProject -s openSUSE:Leap:42.3:Update
+
+    osc meta attribute openSUSE:Leap:42.3:NonFree -c -a OBS:RejectRequests -s ""Please submit to openSUSE:Leap:42.3:NonFree:Update""
+    osc meta attribute openSUSE:Leap:42.3:NonFree -c -a OBS:UpdateProject -s openSUSE:Leap:42.3:NonFree:Update
+"
+61536,openSUSE Leap 15.2,action,"",New,Normal,add lock tags,lnussel,"",20/12/2019 01:03 pm,Release Engineering,GA,06/05/2020,08/05/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47786,No,"lock the main project and NonFree
+
+  <lock>
+    <enable/>
+  </lock>
+"
+61533,openSUSE Leap 15.2,action,"",New,Normal,update release number in IRC channel topic,lnussel,"",20/12/2019 01:03 pm,Infrastructure,GA,13/05/2020,13/05/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47783,No,"#opensuse-project (and maybe also other channels) mention 42.1 in the channel /topic
+
+This needs to be updated to 42.2 by an IRC channel admin
+
+<blockquote>
+/query chanserv access #opensuse-project list
+</blockquote>"
+61530,openSUSE Leap 15.2,action,"",New,Normal,notify studio team about Goldmaster,lnussel,"",20/12/2019 01:03 pm,Infrastructure,GA,29/04/2020,29/04/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47780,No,notify studio team about GM and release time
+61527,openSUSE Leap 15.2,action,"",New,Normal,update web site with new languages,lnussel,AdaLovelace,20/12/2019 03:17 pm,Infrastructure,GA,11/05/2020,15/05/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47777,No,"both landing page and search page got translations for new languages. The languages need to be added to index.html
+
+https://github.com/openSUSE/landing-page
+https://github.com/openSUSE/searchPage"
+61494,openSUSE Leap 15.2,action,action #61251: Social media marketing,New,Normal,translate social media messages,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,22/04/2020,29/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47744,No,call for translators for the social media messages
+61491,openSUSE Leap 15.2,action,action #61251: Social media marketing,New,Normal,Make sure we have the right people prepared to send out the social media messages,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,30/03/2020,29/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47741,No,"Wiki page with social media contact people:
+https://en.opensuse.org/openSUSE:Social_media_contacts
+
+Contact them, find the missing people & languages and sync with them about the social media messages. Ideal would be if they create links to the translations in the social media messages we send out etc."
+61488,openSUSE Leap 15.2,action,action #61251: Social media marketing,New,Normal,Create social media messages,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,30/03/2020,29/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47738,No,"Create social media messages based on our release announcement & top features. See the openSUSE wiki:
+https://en.opensuse.org/openSUSE:Social_media_launch_plan
+
+Remember that one goal of these messages is to 'go viral': connect the release to cool stuff but don't push it. Something more widely funny or interesting has more chance of being spread. Including ""pls rt"" or ""pls share"" or ""share the news:"" makes a big difference in how often things are shared, according to research. Worth trying this year."
+61485,openSUSE Leap 15.2,action,action #61473: Release Parties,New,Normal,release party poster,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,08/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47735,No,"There used to be poster for release parties to be used in e.g. universities:
+https://en.opensuse.org/openSUSE:Launch_parties
+
+Needs to be updated to current version or be made more generic"
+61482,openSUSE Leap 15.2,action,action #61473: Release Parties,New,Normal,"Create event pages on Facebook, Google+",lnussel,"",20/12/2019 01:02 pm,Marketing,GA,08/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47732,No,"Create event pages for the release on facebook, G+ and other social media!"
+61479,openSUSE Leap 15.2,action,action #61473: Release Parties,New,Normal,Update release party wiki pages,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,08/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47729,No,Update https://en.opensuse.org/openSUSE:Launch_parties
+61476,openSUSE Leap 15.2,action,action #61473: Release Parties,New,Normal,Write release party invitation article,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,08/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47726,No,"Base it on the article(s) in the last years.
+
+https://en.opensuse.org/openSUSE:Launch_parties
+https://news.opensuse.org/2013/11/11/get-ready-to-party-release-is-around-the-corner/"
+61473,openSUSE Leap 15.2,action,"",New,Normal,Release Parties,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,08/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47723,No,"Organize release parties!
+* Write release party invitation article
+* Update release party wiki pages
+* Organize release party in Nue
+* Organize release party in Prague
+* More?
+
+The marketing/ambassador team can and should do this!"
+61470,openSUSE Leap 15.2,action,"",New,Normal,software.opensuse.org,lnussel,"",20/12/2019 01:02 pm,Infrastructure,GA,13/05/2020,13/05/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47720,No,"Verify software.o.o has the correct data and links.
+Usually the -Current links are wrong."
+61467,openSUSE Leap 15.2,action,action #61404: Release Announcement,New,Normal,translate release announcement,lnussel,"",20/12/2019 01:02 pm,Translations,GA,22/04/2020,26/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47717,No,"as usual, we need ping translators to translate release announcement, e.g.
+
+http://lists.opensuse.org/opensuse-translation/2013-11/msg00009.html"
+61464,openSUSE Leap 15.2,action,action #61449: Write the Feature Guide,New,Normal,Gather info from major pieces of our release onto Major_features page,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,08/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47714,No,"RC1 is out, so we know what we will ship.
+
+Get the KDE stuff from the KDE announcement, the GNOME stuff from the GNOME announcement, the kernel stuff from kernelnewbies.org and the H kernel archives etc and put the info on the https://en.opensuse.org/openSUSE:Major_features page!
+
+Kick people in the marketing team to help with this."
+61461,openSUSE Leap 15.2,action,action #61449: Write the Feature Guide,New,Normal,Add features from distrowatch,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,08/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47711,No,"Check the packages from http://distrowatch.com/table.php?distribution=suse and add what's new. Check other sources, see what's hot and what's not etc. and keep kicking people all around!
+
+Once this is added, the feature page should be ready in terms of content and can be reviewed for technical correctness."
+61458,openSUSE Leap 15.2,action,action #61449: Write the Feature Guide,New,Normal,Get technical review,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,22/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47708,No,"The technical people in the openSUSE team need to go over the feature guide, check if it is correct and tell you what is missing."
+61455,openSUSE Leap 15.2,action,action #61449: Write the Feature Guide,New,Normal,Get features page finished,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,08/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47705,No,"Time to get that feature page finished.
+Remember, try to talk at least about the packages from http://distrowatch.com/table.php?distribution=suse!!
+
+Also, integrate the screenshots. They should be created by now but more are always welcome as you'll note while trying to make the feature page pretty.
+
+Note that the major features need to be on this page by the time you start working on the announcement, which is also during this time!"
+61452,openSUSE Leap 15.2,action,action #61449: Write the Feature Guide,New,Normal,Move Major Features to feature guide page,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,08/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47702,No,"Move content from https://en.opensuse.org/openSUSE:Major_features to https://en.opensuse.org/Features_42.2. Make sure the Major_features page links to this page, directs developers there. Tell them they're late adding their features ;-)"
+61449,openSUSE Leap 15.2,action,action #61404: Release Announcement,New,Normal,Write the Feature Guide,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,08/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47699,No,"The Feature Guide forms the base of our release marketing. It is a large list of the most important features in openSUSE 13.1 with screenshots and a good organisation. See https://en.opensuse.org/Features
+
+Find a how-to on writing them here: http://en.opensuse.org/openSUSE:Product_highlights_writing
+
+We've learned some lessons during the 12.3 product highlights writing, take these into account:
+* do NOT try to be 'complete'. Going through ALL the changelogs of ALL packages with a script and then filtering out the interesting stuff (we did that, yes) is just way too much work.
+* Instead, focus on the most important packages, eg look at http://distrowatch.com/table.php?distribution=suse and pick from the packages there.
+* Kick the community to add their features to https://en.opensuse.org/openSUSE:Major_features and use that as a major guide. It is the 'start' of the product highlights.
+** for 13.1, Michal send scripted mails to packagers who did 'major stuff'. This seems to have worked quite well: https://github.com/openSUSE-Team/features-reminder
+* Get the KDE stuff from the KDE announcement, the GNOME stuff from the GNOME announcement, the kernel stuff from kernelnewbies.org and the H kernel archives as soon as you know which versions we'll ship! Put them on the Major_features page so you're ready with that.
+* Kick the artwork team: they need to get the final art in in time so the screenshots can be made! It is a blocker, also for the press kit."
+61446,openSUSE Leap 15.2,action,action #61434: Create a Press Kit and send it to the press,New,Normal,send press kit,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,08/05/2020,13/05/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47696,No,"Get our list of press contacts and create SEPARATE mails for each of them. If you know them personally, try to add a special touch to the emails to make them really personal. Stay formal for those you don't know. Send out the mails... And be ready to reply to their questions and responses.
+
+Keep in mind that this can easily take a day with the nr of contacts we have and the replies they might sent."
+61443,openSUSE Leap 15.2,action,action #61434: Create a Press Kit and send it to the press,New,Normal,Assemble press kit.,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,24/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47693,No,Gather everything and put it in a zip file in github (or somewhere else)
+61440,openSUSE Leap 15.2,action,action #61434: Create a Press Kit and send it to the press,New,Normal,"Write 'reviewers guide', the mail for the press",lnussel,"",20/12/2019 01:02 pm,Marketing,GA,08/04/2020,22/04/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47690,No,"We send the press a 'personalized' email. It contains some personal notes from whoever sends it (usually Jos/the CM).
+
+Be sure to have it reviewed.
+
+Example text below from the 12.3 release:
+Hi XXX,
+
+As the openSUSE community manager, I am pleased to provide to you the final version of openSUSE 12.3 for your evaluation in advance of its worldwide release on March 13. openSUSE 12.3 comes only six months after our previous release, which means we are back to our usual eight month cycle (12.2 was delayed by two months). Below is a link to the openSUSE 12.3 GoldMaster (final) for your testing pleasure. Also included is a feature overview and press release. The announcement is embargoed until Wednesday, March 13, 2013 at 14:00 UTC. 
+
+Notable in openSUSE 12.3 is the addition of OpenStack (Folsom) packages as well as the move to MariaDB as default database. MySQL is still a part of our distribution, so not much will change for the average user as both databases have been part of openSUSE for a long time already. 
+
+And there is of course the ARM and ARM 64bit work our ARM team has been doing. We're currently at over 4000 build packages, putting us well ahead of any other Linux distribution supporting ARM's AArch64 architecture. Preview images for installation and testing will be made available when 12.3 is released. The ARM 32bit efforts are progressing too. We plan to release a stable openSUSE 12.3 for ARMv7 shortly after the x86 and x86_64 versions to be released on Wednesday the 13th.
+
+In case you wonder and have followed the controversy, we support UEFI in this release and there's Secure Boot. But, in proper openSUSE fashion, we're not 200% confident about Secure Boot, in part due to the issues with Sony laptops (we will carry the patches making the issue less likely to hit our users). A wiki page is being built on https://en.opensuse.org/openSUSE:UEFI to keep our users informed of our ongoing efforts to solve Secure Boot. 
+
+There will be new SUSE Studio images for 12.3 available on release day. Upgrading existing images/appliances will also be possible on Wednesday, March 13.
+
+http://software.opensuse.org has been building openSUSE 12.3 packages for a while and much software is already available. For example, the just released plasmate 1.0 is already built for 12.3!
+
+I'm quite proud of what our desktop teams have done for this release. See http://news.opensuse.org/?p=15318 if you are interested in a preview. There's an awesome video introducing our default desktop, KDE, made by a volunteer (you won't believe he did that in his free time if you see it).
+
+If you have any questions or would like an interview with someone from the openSUSE team, the wider community, the board or me, just let me know.
+
+Kind regards,
+Jos Poortvliet
+openSUSE Community Manager
+
+*Materials we have for you*
+
+The goldmaster link:
+http://download.opensuse.org/xxx
+username 'xxx' pw 'xxx'
+
+PLEASE do NOT share this, except perhaps with colleagues who will also observe the EMBARGO!
+
+The official press announcement which we will send on March 13, 14:00
+https://github.com/openSUSE/Press-Kit/raw/master/English/openSUSE%20123%20announcement.pdf
+
+The feature guide, detailing many of the features coming in the 12.3 release.
+https://github.com/openSUSE/Press-Kit/raw/master/English/Feature%20Guide.pdf
+
+Here's a link to a zip on github containing the above as well as over 40 screen shots you can use any way you like. Note that I included some shots of ARM 64bit, cloud and server stuff (those are text screens mostly).
+https://github.com/openSUSE/Press-Kit/archive/master.zip 
+
+preview of the announcement article on news.opensuse.org:
+https://news.opensuse.org/?p=15299&preview=true"
+61437,openSUSE Leap 15.2,action,action #61434: Create a Press Kit and send it to the press,New,Normal,Create list of people who can be interviewed,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,27/03/2020,03/05/2020,"",0.00,0,20/12/2019 01:02 pm,"",Copied from #47687,No,"Release team, board members etc.
+
+Ask them, get times and dates which are convenient (in the week between GM and GA). Put in a PDF...
+
+Details needed:
+
+* Some idea of times/dates of availability during the 7 days before and a few days after the release (Nov 12 to 23 or so). Think timezone, like ""most days from 17:00-23:00 UTC"", specific appointments are made with the journalists.
+* email address and phone number
+
+"
+61434,openSUSE Leap 15.2,action,action #61404: Release Announcement,New,Normal,Create a Press Kit and send it to the press,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,27/03/2020,13/05/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47684,No,"This is the thing which gets us awesome reviews and ""blogs like this"":http://www.linux-magazine.com/Online/Blogs/Off-the-Beat-Bruce-Byfield-s-Blog/openSUSE-shows-how-to-promote-a-release
+
+We create an awesome presskit containing:
+* Press announcement
+* Community announcement on news.o.o (link to the preview and if possible a PDF version if it)
+* Product highlights (PDF)
+* Feature guide (in PDF. Terribly much work, yes, painful, yes worth it, yes)
+* Screenshots (include 'bonus' screenshots, if you can)
+* a link to the GM
+* A document with quotes from the openSUSE team, the board and other people about their favorite features
+* reviewers guide
+* list of people who can be interviewed"
+61431,openSUSE Leap 15.2,action,action #61419: Write Press Announcement,New,Normal,Get quotes from important people,lnussel,"",20/12/2019 01:01 pm,Marketing,GA,08/04/2020,22/04/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47681,No,"We usually quote one 'important' SUSE person first, putting the release into perspective. The second quote is usually a non-SUSE community member providing their viewpoint on how awesome the release is.
+
+openSUSE team, the board and other people about their favorite features
+
+Making up the quotes as part of the drafting is the usual way: then let people look at them, modify the quotes and/or OK them."
+61428,openSUSE Leap 15.2,action,action #61419: Write Press Announcement,New,Normal,Let our PR Agencies have one last look at the announcement,lnussel,"",20/12/2019 01:01 pm,Marketing,GA,24/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47678,No,After this it should be really ready to get into the press kit... No more changes!
+61425,openSUSE Leap 15.2,action,action #61419: Write Press Announcement,New,Normal,Get feedback on the draft press announce,lnussel,"",20/12/2019 01:01 pm,Marketing,GA,19/04/2020,19/04/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47675,No,Show the announce to people both engineering and in SUSE marketing for feedback. Incorporate changes.
+61422,openSUSE Leap 15.2,action,action #61419: Write Press Announcement,New,Normal,Create a draft press announcement,lnussel,"",20/12/2019 01:01 pm,Marketing,GA,16/04/2020,19/04/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47672,No,"Take the feature highlights and use them to compose a first draft press announcement.
+Some tips:
+* Remember the 3x3! From those, pick the most important features to be mentioned. Again, First, Best, Only: something noteworthy.
+* The headline summarizes that we released our product (""openSUSE released 13.1""), the sub-title has the most important features that our awesome distro delivers. The following paragraph expands on those and leads to the details that follow.
+* Those not reading beyond the first paragraph must know the most important news! So, most important info there. Make sure to clearly answer the 5 W's & H in the first paragraph: Who is this about? What is the actual news? When does this happen? Where does this even take place? Why this is news? How is this happening?
+* Include details, numbers, facts and quotes.
+* 1 page is best, 2 pages absolute maximum.
+
+Check our previous announcements for more details. 12.3 is here: http://lists.opensuse.org/opensuse-announce/2013-03/msg00001.html"
+61419,openSUSE Leap 15.2,action,action #61404: Release Announcement,New,Normal,Write Press Announcement,lnussel,"",20/12/2019 01:01 pm,Marketing,GA,08/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47669,No,Take the feature highlights and use them to compose a press announcement. Look at earlier announcements for the how
+61413,openSUSE Leap 15.2,action,action #61404: Release Announcement,New,Normal,Write community announcement for news.o.o,lnussel,"",20/12/2019 01:01 pm,Marketing,GA,08/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47666,No,"Based on the announcement and the feature guide & esp highlights, write a draft announcement for news.opensuse.org. This is the MAJOR announcement everybody will link to so it has to KICK ASS!
+"
+61410,openSUSE Leap 15.2,action,action #61404: Release Announcement,New,Normal,Get screenshots taken,lnussel,"",20/12/2019 01:01 pm,Marketing,GA,01/04/2020,24/04/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47663,No,"Bug the openSUSE Artwork team and get help from the openSUSE team: we need screenshots. See https://en.opensuse.org/Screenshots
+
+We need them as soon as the Artwork is final. Start at RC1 and finish at RC2. See the Screenshot Guidelines in the https://en.opensuse.org/openSUSE:Product_highlights_writing wiki page!"
+61407,openSUSE Leap 15.2,action,action #61404: Release Announcement,New,Normal,Assemble the Product highlights,lnussel,"",20/12/2019 01:01 pm,Marketing,GA,13/03/2020,24/04/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47660,No,"This is about creating a short-list of the best, most awesome, coolest features in openSUSE Leap 42.2. It is CRUCIAL in writing the press announcement, the openSUSE Leap 42.2 portal wiki page and the news.o.o announcement as well as for the press.
+
+Some marketing rules are applied to this list, as they determine what the press will talk about:
+* 3x3: 3 main areas with each 3 main feature improvements. Not a black and white rule but keep the total features under 10 and the area's at 3 or 4.
+* First, Best, Only: these are the qualities you are looking for in the features. Otherwise, press won't pick up on them, why bother when openSUSE catches up to the rest of the world?
+* Impact on users, Resolving major issues, Relevant today: these are less important but relevant properties. Impactful changes, things that change important problems or things tying into recent events or relevant trends are worth having on the list.
+
+The best way of getting to product highlights is to organize a meet with some technical and non-technical folk. Not just the openSUSE team, include Will, Henne, Andreas Jaeger, possibly people from SUSE Marketing and management (Roland perhaps?). Introduce the goal and the how of it (see bullets above), then go over the feature list, pick the things which are important together.
+
+Once done, put them on https://en.opensuse.org/Portal:15.1/Features
+"
+61404,openSUSE Leap 15.2,action,"",New,Normal,Release Announcement,lnussel,"",20/12/2019 01:02 pm,Marketing,GA,13/03/2020,13/05/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47657,No,"Main task for everything around the release announcement:
+* Press announcement
+* Community announcement mail
+* Community announcement on news.o.o
+* Product highlights
+* Feature guide
+* Screenshots
+and finally, the press kit for the press which contains all of the above in addition to a link to the GM, quotes, reviewers guide, list of people who can be interviewed, and gets send to them a week before the release.
+"
+61401,openSUSE Leap 15.2,action,action #61392: shop.opensuse.org,New,Normal,Shop: update wiki,lnussel,"",20/12/2019 01:01 pm,Marketing,GA,15/04/2020,01/05/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47654,No,"* https://en.opensuse.org/Buy_openSUSE
+* https://de.opensuse.org/openSUSE_kaufen"
+61398,openSUSE Leap 15.2,action,action #61392: shop.opensuse.org,New,Normal,update shop.opensuse.org,lnussel,"",20/12/2019 01:01 pm,Marketing,GA,15/04/2020,01/05/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47651,No,"source code is at
+
+https://github.com/openSUSE/shop.o.o"
+61395,openSUSE Leap 15.2,action,action #61392: shop.opensuse.org,New,Normal,request new box image and link,lnussel,"",20/12/2019 01:01 pm,Marketing,GA,15/04/2020,01/05/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47648,No,"request new box image to put on the home page
+request link to shop
+
+contact is Gerlinde Regensburger <gr@opensourcepress.de>"
+61392,openSUSE Leap 15.2,action,"",New,Normal,shop.opensuse.org,lnussel,"",20/12/2019 01:01 pm,Marketing,GA,15/04/2020,01/05/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47645,No,""
+61389,openSUSE Leap 15.2,action,"",New,Normal,notify mirror admins,lnussel,"",20/12/2019 01:01 pm,Release Engineering,GA,08/05/2020,12/05/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47642,No,notify mirror@opensuse.org about the release
+61386,openSUSE Leap 15.2,action,"",New,Normal,set up update-test project,lnussel,"",20/12/2019 01:01 pm,Maintenance,GA,09/03/2020,18/03/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47639,No,the update test repo needs to be set up
+61383,openSUSE Leap 15.2,action,"",New,Normal,adjust knapsack for GM,lnussel,"",20/12/2019 01:01 pm,Infrastructure,GA,06/05/2020,12/05/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47636,No,adjust the knapsack for GM
+61380,openSUSE Leap 15.2,action,"",New,Normal,change openSUSE-current ,lnussel,"",20/12/2019 01:01 pm,Release Engineering,GA,13/05/2020,13/05/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47633,No,"change symlink openSUSE-current in distribution/, update/, source/ and debug/ to point to new release "
+61377,openSUSE Leap 15.2,action,"",New,Normal,Switch count down to hourly rendering ,lnussel,"",20/12/2019 01:01 pm,Infrastructure,GA,12/05/2020,12/05/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47630,No,Remind darix to switch the cron job that renders the countdown to hourly if not already done.
+61374,openSUSE Leap 15.2,action,"",New,Normal,make GM images available,lnussel,"",20/12/2019 01:01 pm,Release Engineering,GA,08/05/2020,08/05/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47627,No,"several parties need access to the GM images
+
+Usually via password protected place on http://download.opensuse.org/press/"
+61371,openSUSE Leap 15.2,action,"",New,Normal,install google alerts,lnussel,"",20/12/2019 01:01 pm,Marketing,GA,25/04/2020,03/05/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47624,No,"install google alerts in order to measure press impact later
+
+keywords e.g. ""opensuse release"", ""opensuse 13.2"", ""suse 13.2"" "
+61368,openSUSE Leap 15.2,action,"",New,Normal,Update the rsync modules to include new ISO and repo,lnussel,"",20/12/2019 01:01 pm,Infrastructure,GA,08/05/2020,11/05/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47621,No,"We have rsync-160hotstuff module and we need to make sure ISOs and repo of the new release is included. at least the popular parts of the distribution from the repo.
+
+It would be good to have this for monday, so 160GB mirrors fetch the repo till release day."
+61365,openSUSE Leap 15.2,action,"",New,Normal,Publish an article asking people to help promote the upcoming release.,lnussel,"",20/12/2019 01:01 pm,Marketing,GA,16/03/2020,23/04/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47618,No,"Write an article like https://news.opensuse.org/2013/10/07/help-promote-opensuse-13-1/ and promote our badges, backgrounds and counter!
+
+
+https://news.opensuse.org/2019/04/30/help-promote-opensuse-leap-15-1/"
+61362,openSUSE Leap 15.2,action,"",New,Normal,Adapt http://mirrors.opensuse.org to list the new release,lnussel,"",20/12/2019 01:01 pm,Infrastructure,GA,01/04/2020,20/04/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47615,No,"Adapt the mirrorbrain ""markers"" and the index header template to list which mirrors provide the new release
+
+Template file is
+olaf.i.o.o:/srv/www/vhosts/mirrors.opensuse.org/index.html"
+61359,openSUSE Leap 15.2,action,"",New,Normal,get openSUSE in the Cloud,lnussel,"",20/12/2019 01:01 pm,Release Engineering,GA,08/05/2020,13/05/2020,"",0.00,0,20/12/2019 01:01 pm,"",Copied from #47612,No,"There is a number of clouds/3rd party hosting out there where openSUSE is
+available as option. Leap needs to be uploaded there.
+
+Contacts:
+Azure: Alexander Osthof
+EC2: Robert Schweickert
+
+"
+61356,openSUSE Leap 15.2,action,"",New,Normal,tell maintenance&security about GM,lnussel,"",20/12/2019 01:00 pm,Maintenance,GA,08/05/2020,08/05/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47609,No,security@suse.de and maintenance@opensuse.org should know that the new release is in maintenance mode now. Also remind the about the GA date so they are extra careful about not releasing stuff that could spoil the GA experience.
+61353,openSUSE Leap 15.2,action,"",New,Normal,ask maintenance to remove the test updates,lnussel,"",20/12/2019 01:00 pm,Maintenance,GA,30/04/2020,30/04/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47606,No,"the test updates need to be removed from the update channel at some point before GA. Ask maintenance@opensuse.org
+
+There needs to be some maintenance update left always, otherwise YOU complains. So execute only when there are real updates."
+61350,openSUSE Leap 15.2,action,"",New,Normal,find external BT seeders,lnussel,"",20/12/2019 01:00 pm,Infrastructure,GA,08/05/2020,13/05/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47600,No,"For future reference: .torrent files are added into pontifex:/var/lib/hefurd and the service needs a restart.
+
+.torrent files can be pulled from mirrorbrain / via the download.o.o iso metalink page
+
+ask for volunteers to seed
+
+The below is old/outdated:
+put torrent in separate directories
+
+Torrents are created using /work/cd/bin/torrent-wrapper.pl
+
+This requires make_torrent and dump_torrent from git/libtorrent/examples
+To build: zypper in boost-devel libtorrent-rasterbar-devel libtorrent-devel"
+61347,openSUSE Leap 15.2,action,"",New,Normal,remind opensuse.org admins of release,lnussel,"",20/12/2019 01:00 pm,Infrastructure,GA,11/05/2020,13/05/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47597,No,remind heroes@opensuse.org admins about the upcoming release and to verify that the HA proxy can handle the load
+61344,openSUSE Leap 15.2,action,"",New,Normal,marketing brainstorm session,lnussel,"",20/12/2019 01:00 pm,Marketing,GA,16/03/2020,10/04/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47594,No,create a hangout with all the marketing guys to come up with creative things how to promote the release (to find ideas like the green smoke thing on 12.3)
+61341,openSUSE Leap 15.2,action,"",New,Normal,communicate GM issues to marketing,lnussel,"",20/12/2019 01:00 pm,Release Engineering,GA,04/05/2020,08/05/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47591,No,If there are any known issues in GM marketing needs to know about them to decide how to communicate them
+61338,openSUSE Leap 15.2,action,"",New,Normal,publish docu,lnussel,"",20/12/2019 01:00 pm,Documentation,GA,12/05/2020,13/05/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47588,No,"doc.opensuse.org
+https://en.opensuse.org/SDB:Official_documentation
+
+Ping Frank Sundermeyer about it"
+61335,openSUSE Leap 15.2,action,action #61320: update opensuse wiki,New,Normal,fix upgrade instructions in wiki,lnussel,"",20/12/2019 01:00 pm,Documentation,GA,03/04/2020,30/04/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47585,No,http://en.opensuse.org/Upgrade needs to be adjusted for new release
+61332,openSUSE Leap 15.2,action,action #61320: update opensuse wiki,New,Normal,check all wiki pages on release day,lnussel,"",20/12/2019 01:00 pm,Documentation,GA,13/05/2020,13/05/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47582,No,make sure all 15.1 pages are in good shape and the links between pages work
+61329,openSUSE Leap 15.2,action,action #61320: update opensuse wiki,New,Normal,install Leap 15.1 wiki pages as default,lnussel,"",20/12/2019 01:00 pm,Documentation,GA,24/04/2020,13/05/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47579,No,move e.g. https://en.opensuse.org/Features_42.1 to https://en.opensuse.org/Features
+61326,openSUSE Leap 15.2,action,action #61320: update opensuse wiki,New,Normal,update wiki pages,lnussel,"",20/12/2019 01:00 pm,Documentation,GA,28/04/2020,08/05/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47576,No,"Make sure all pages reference $VERSION correctly
+
+* http://en.opensuse.org/Welcome_to_openSUSE.org
+* http://en.opensuse.org/Roadmap
+* http://de.opensuse.org/OpenSUSE_kaufen
+* http://en.opensuse.org/Portal:Installation
+* http://en.opensuse.org/Sysreqs
+* https://en.opensuse.org/openSUSE:Build_Service_cross_distribution_howto
+* https://en.opensuse.org/Portal:Leap
+* https://en.opensuse.org/Buy_openSUSE
+* https://en.opensuse.org/Package_repositories
+* https://en.opensuse.org/Additional_package_repositories"
+61323,openSUSE Leap 15.2,action,action #61320: update opensuse wiki,New,Normal,move previous release to archive,lnussel,"",20/12/2019 01:00 pm,Documentation,GA,03/04/2020,30/04/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47573,No,move all $VERSION-1 articles to Archive
+61320,openSUSE Leap 15.2,action,"",New,Normal,update opensuse wiki,lnussel,"",20/12/2019 01:00 pm,Marketing,GA,03/04/2020,13/05/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47570,No,""
+61311,openSUSE Leap 15.2,action,"",New,Normal,[functional][u] disable iso download in openQA,lnussel,"",20/12/2019 01:00 pm,QA,GA,06/05/2020,08/05/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47558,No,"smartypants go to openQA to download the final iso. Needs to be disable to avoid overloading the server.
+
+Either by removing permission from the files or apache access rules."
+61281,openSUSE Leap 15.2,action,"",New,Normal,update roadmap,lnussel,"",20/12/2019 01:00 pm,Release Engineering,GA,01/05/2020,01/05/2020,"",0.00,0,20/12/2019 01:00 pm,"",Copied from #47525,No,mark milestone as released in https://en.opensuse.org/openSUSE:Roadmap
+61263,openSUSE Leap 15.2,action,"",New,Normal,Create release counter,lnussel,"",20/12/2019 12:59 pm,Design,GA,24/01/2020,28/02/2020,"",0.00,0,20/12/2019 12:59 pm,"",Copied from #47501,No,"Start kicking the artwork team: we need the release counter updated!
+
+https://github.com/openSUSE/countdown.o.o"
+61254,openSUSE Leap 15.2,action,action #61251: Social media marketing,New,Normal,Create social media backgrounds and badges,lnussel,"",20/12/2019 12:59 pm,Marketing,GA,30/03/2020,29/04/2020,"",0.00,0,20/12/2019 12:59 pm,"",Copied from #47492,No,"We need a series of badges and social media backgrounds. Think twitter, facebook, G+ and website banners in various sizes. Ask the artwork team!"
+61251,openSUSE Leap 15.2,action,"",New,Normal,Social media marketing,lnussel,"",20/12/2019 12:59 pm,Marketing,GA,30/03/2020,29/04/2020,"",0.00,0,20/12/2019 12:59 pm,"",Copied from #47489,No,"Create a social media plan and social media messages; and get them translated. Also, prepare our social media channels for this: we need to know who will tweet from eg Chinese channels, or at least that SOMEBODY will, otherwise, why bother translating?
+
+Wiki page with social media plan:
+https://en.opensuse.org/openSUSE:Social_media_launch_plan
+Wiki page with social media contact people:
+https://en.opensuse.org/openSUSE:Social_media_contacts"
+61248,openSUSE Leap 15.2,action,"",New,Normal,Update Maintenance Documentation,lnussel,"",20/12/2019 12:59 pm,Maintenance,GA,13/04/2020,13/05/2020,"",0.00,0,20/12/2019 12:59 pm,"",Copied from #47486,No,"The maintenance pages need some updating to reflect the current work flow
+
+https://en.opensuse.org/openSUSE:Maintenance_update_process
+https://en.opensuse.org/Portal:Maintenance"
+63169,openSUSE Leap 15.2,action,"",Resolved,Normal,Update prefers for nodejs in project config ,lkocman,mlin7442,07/02/2020 09:41 am,"","",05/02/2020,17/02/2020,"",0.00,100,05/02/2020 04:44 pm,07/02/2020 09:41 am,"",No,"From Adam Mayer:
+
+The Prefer: line in 15.2 project config should probably be nodejs12 and npm12 instead of others.
+
+Max I'd prefer for rebuild to happen before we do any changes that could trigger yet another rebuild.
+Do you agree with proposal from Adam?"
+61070,openSUSE Leap 15.2,action,"",Rejected,Normal,Missing OSS debug repo for ports,ggardet_arm,"",20/12/2019 10:25 am,"","",16/12/2019,"","",0.00,0,16/12/2019 12:53 pm,20/12/2019 10:25 am,"",No,"Ports are missing OSS debug repo.
+
+Initial report is here: https://bugzilla.opensuse.org/show_bug.cgi?id=1156011
+
+Once fixed, additional steps should be added to the Leap checklist.
+"
+59978,openSUSE Leap 15.2,action,"",Closed,Normal,Add Repotype: staticlinks for Leap:15.2:ports:PowerPC or ARM project conf,michel_mno,"",20/11/2019 12:44 pm,"","",18/11/2019,"","",0.00,0,18/11/2019 05:50 pm,20/11/2019 12:44 pm,"",No,"Add ""Repotype: staticlinks"" for Leap:15.2:ports:PowerPC project conf (1)
+to have current isos to refer to last published ones.
+I do not know if we need all other lines as those in Leap 15.1 project conf
+
+(1) https://build.opensuse.org/projects/openSUSE:Leap:15.2:PowerPC:ToTest/prjconf ,empty today
+    http://download.opensuse.org/ports/ppc/distribution/leap/15.2/iso/?C=M;O=D
+(2) https://build.opensuse.org/projects/openSUSE:Leap:15.1:PowerPC:ToTest/prjconf
+    http://download.opensuse.org/ports/ppc/distribution/leap/15.1/iso/?C=M;O=D
+
+
+
+I assume need to be done also for ARM subproject."
+57455,openSUSE Leap 15.2,action,"",Resolved,Normal,bootstrap ppc64le for Leap 15.2,michel_mno,mlin7442,05/11/2019 07:21 am,"","",27/09/2019,"","",0.00,100,27/09/2019 11:42 am,05/11/2019 07:21 am,"",No,"bootstrap ppc64le for Leap 15.2
+
+now that related subproject (1) was created with closed issue#55226 (2)
+need to do some bootrap to be able to generate images and isos.
+
+I do not have details of required actions, is it documented somewhere ?
+but for sure some missing files in (1) compared to ARM subproject.
+
+(1) https://build.opensuse.org/project/show/openSUSE:Leap:15.2:PowerPC
+(2) https://progress.opensuse.org/issues/55226 
+(3) https://build.opensuse.org/project/show/openSUSE:Leap:15.2:ARM"
+56159,openSUSE Leap 15.2,action,"",Closed,Normal,add link to openSUSE project,lnussel,"",30/08/2019 12:57 pm,Release Engineering,"",30/08/2019,"","",0.00,100,30/08/2019 12:57 pm,30/08/2019 12:57 pm,"",No,"osc meta prj openSUSE -e
+
+    <link project=""openSUSE:Leap:15.2:Update""/>
+"
+56144,openSUSE Leap 15.2,action,"",Closed,Normal,set up :Images subproject,lnussel,"",30/08/2019 11:45 am,Release Engineering,"",01/07/2019,01/07/2019,"",0.00,0,30/08/2019 11:45 am,30/08/2019 11:45 am,"",No,"set up the :Images subproject, including Containers: namespace. Use project copy as with main project"
+55559,openSUSE Leap 15.2,action,"",Resolved,Normal,Make sure hot-patched change being upstreamed,mlin7442,mlin7442,26/11/2019 12:16 pm,"","",15/08/2019,"","",0.00,100,15/08/2019 09:00 am,26/11/2019 12:16 pm,"",No,"We've hot-patched change in the several packages, those change should go to upstream either to github or OBS."
+55226,openSUSE Leap 15.2,action,"",Closed,Normal,Create openSUSE:Leap:15.2:,michel_mno,"",14/08/2019 10:34 am,"","",08/08/2019,"","",0.00,0,08/08/2019 09:40 am,14/08/2019 10:34 am,"",No,""
+54530,openSUSE Leap 15.2,action,"",Closed,Normal,please add http://download.opensuse.org/ports/aarch64/distribution/leap/15.2/,dirkmueller,"",14/08/2019 10:57 am,"","",22/07/2019,"","",0.00,0,22/07/2019 12:41 pm,14/08/2019 10:57 am,"",No,"Hi,
+
+there should be some magic OBS publishing hooks for publishing Leap 15.2 to distribution/leap/15.2, and it looks those need to be also put in place
+for openSUSE:Leap:15.2:ARM . could you please do that? There is currently an aarch64 distribution in place that is waiting to be published.
+
+TIA,
+Dirk
+
+"
+54527,openSUSE Leap 15.2,action,"",Resolved,Normal,Create openSUSE:Leap:15.2:ARM,dirkmueller,mlin7442,23/07/2019 07:41 am,"","",22/07/2019,"","",0.00,100,22/07/2019 12:40 pm,23/07/2019 07:41 am,"",No,"Hi, 
+
+please create a project  openSUSE:Leap:15.2:ARM and assign maintainership to me so that we can start bootstrapping the distribution and download paths..
+
+"
+61611,openSUSE Leap 15.2,action,"",New,Normal,[functional][u] lift access restrictions to iso in openQA,lnussel,"",20/12/2019 01:04 pm,QA,Postprocessing,13/05/2020,20/05/2020,"",0.00,0,20/12/2019 01:04 pm,"",Copied from #51506,No,iso downloads in openQA were disabled for he final build. the restrictions can be removed again after GM
+61554,openSUSE Leap 15.2,action,"",New,Normal,openQA cleanup,lnussel,"",20/12/2019 01:03 pm,QA,Postprocessing,11/05/2020,22/05/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47804,No,"- tag the GM build
+- reduce job group size
+- delete obsolete assets"
+61551,openSUSE Leap 15.2,action,"",New,Normal,tag/branch all translations in git,lnussel,"",20/12/2019 01:03 pm,Translations,Postprocessing,11/05/2020,15/05/2020,"",0.00,0,20/12/2019 01:03 pm,"",Copied from #47801,No,"add tags or branches for all translations in git, in case they need to be updated from that specific branch later
+
+* package-translations (git@github.com:openSUSE/packages-i18n.git)
+* desktop-translations (git@github.com:openSUSE/desktop-file-translations.git)
+* yast2-trans (git@github.com:yast/yast-translations.git)
+* yast2-slide-show (git@github.com:openSUSE/yast-slide-show.git)
+* skelcd-openSUSE (git@github.com:openSUSE/skelcd-openSUSE.git)
+* openSUSE-EULAs (git@github.com:openSUSE/openSUSE-EULAs.git)
+
+Example:
+    $ osc ls openSUSE:Leap:15.1 skelcd-openSUSE | grep tar
+    skelcd-openSUSE-84.87.20170712.1dc7ffa.tar.xz
+    $ git show 1dc7ffa
+    $ git tag Leap_15.1-GM 1dc7ffa
+    $ git push origin Leap_15.1-GM
+    Total 0 (delta 0), reused 0 (delta 0)
+    To github.com:openSUSE/skelcd-openSUSE.git
+    * [new tag]         Leap_15.1-GM -> Leap_15.1-GM
+
+"
