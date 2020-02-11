@@ -67,6 +67,16 @@ Responsible: rel-mgmt
 - ask for date for erf interlock
 - present
 
+#### sync prjconf to build package
+Responsible: rel-eng
+
+make sure the prjconf of the distr is added to the build package via pull request upstream
+
+#### mirror the release internally
+Responsible: rel-mgmt
+
+there are some developers that like to have the release accessible internally via NFS. Ask Rudi to mirror it.
+
 #### update openSUSE-release package
 Responsible: rel-eng
 
