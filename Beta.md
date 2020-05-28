@@ -126,7 +126,7 @@ Contacts:
 Azure: Alexander Osthof
 EC2: Robert Schweickert
 Docker: Fabian Vogt
-WSL: Rich Williams
+WSL: Scott Reeves
 Vagrant: Dan Cermak
 
 #### enable openQA maintenance testing

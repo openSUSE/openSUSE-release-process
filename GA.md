@@ -401,7 +401,9 @@ EC2: Robert Schweickert
 
 #### tell maintenance&security about GM
 
-security@suse.de and maintenance@opensuse.org should know that the new release is in maintenance mode now. Also remind the about the GA date so they are extra careful about not releasing stuff that could spoil the GA experience.
+security@suse.de and maintenance@opensuse.org should know that the new release is in maintenance mode now.
+Also remind the about the GA date so they are extra careful about not releasing stuff that could spoil the GA experience.
+This was agreed to be done 3 weeks prior GA. So teams have time to test the setup.
 
 #### ask maintenance to remove the test updates
 
