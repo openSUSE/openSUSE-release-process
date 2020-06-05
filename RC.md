@@ -215,7 +215,8 @@ send anounncement internally and externally to warn about the package freeze
 
 #### enable countdown on www.opensuse.org
 
-the javascript countdown on www.opensuse.org needs to be enabled
+* Update the Leap release date in https://github.com/openSUSE/landing-page/blob/master/assets/js/countdown.js#L4
+* Update the assets in a way described in the [readme](https://github.com/openSUSE/landing-page/#2-last-steps-build-and-test)
 
 #### update OpenSUSE_Localization_Teams
 Responsible: AdaLovelace
