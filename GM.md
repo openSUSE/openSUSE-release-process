@@ -175,13 +175,23 @@ verify that the Supplements in the test update pattern is gone. Should happen au
 
 #### IPRQ
 
-create IPRQ document
-
+Create the IPRQ document for upcoming release, ensure that data matches current roadmap and send it to legal for review.
 Some information about IPRQ document:
 
   The IPRQ document is a SUSE internal document used for tracking Intellectual Property.
 
-All ECR/IPRQ documents should be revised by Ciaran
+Gitlab project can be found here https://gitlab.suse.de/opensuse/iprq
+
+```
+vim git/IPRQ-openSUSE_Leap_X.Y.odt # see document for previous releases
+sudo zypper in perl-Spreadsheet-WriteExcel perl-IO-String perl-Text-CSV_XS perl-Data-Dump # required to run make
+make
+mv git/IPRQ-openSUSE_Leap_X.Y.odt to the newly created directory YYYY-MM-DD_*/
+git add YYYY-MM-DD_* # submit only contnet in the directory not the generated data directly in iprq/
+git commit && git push
+```
+
+All ECR/IPRQ documents (newly generated tarbal from the iprq/) should be revised by Ciaran
 
 #### Send Gold Master announcement for developers
 
