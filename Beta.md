@@ -171,13 +171,6 @@ Security needs to take a look at the current snapshot
 https://bugzilla.suse.com/show_bug.cgi?id=1090647
 https://pes.suse.de/Maintenance-Security/Products/leap_sles/
 
-#### check which packages turned into a fork
-Responsible: rel-mgmt
-
-Some packages in 15.0 turned into a Fork after the lookup file for 15.1 was created. Update crawler would therefore continue to try to submit from the original location instead of 15.0.
-
-So the lookup file of 15.1 needs to be checked for forks. Maybe maintenance can help.
-
 #### Publish announcement of Beta
 
 internally and externally
