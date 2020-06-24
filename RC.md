@@ -61,32 +61,6 @@ the new release needs a new branding
 
 maintenance probably released several packages that are new in the previous release. We need to make sure to collect them for the new release
 
-#### release manager checklist
-
-To branch the current ftp tree and isos for a milestone, log in to download.opensuse.org as mirror user and run:
-
-    distro_hardlink_copy 42.2-Current 42.2-RC1
-
-Remove x bit for others from the directory so only staging mirrors can pull it but it's not visible on download.o.o
-
-on release day every once in a while scan for mirrors as mirror user:
-
-    mb scan -a -d /distribution/leap/42.2-RC1 -j4
-
-In the morning add the x bit again to make the content show up and give mirrors time to catch up adding the x bit.
-
-At release time:
-
-- change the symlink to the new milestone
-
-  distro_symlink 42.2 42.2-RC1
-
-- sync the staging are to the area shown in download.opensuse.org
-
-    publish_opensuse
-
-You may want to add '-n' before to check what it's doing and not deleting files
-
 #### enable OBS:Maintained attribute in :Update project
 
 The :Update project needs to have
