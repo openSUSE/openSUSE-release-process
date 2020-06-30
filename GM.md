@@ -16,13 +16,6 @@ vs the 20 k files in 15.1
 
 OBS team (Marco) said, they upload their files to pontifex2 and there is only the latest version in the upload dir.
 
-#### tag docker images
-
-On the release day and time the new release needs to be marked latest in prjconf:
-
-https://build.opensuse.org/project/prjconf/openSUSE:Containers:Leap
-
-some bot also may need adjustment
 
 #### prepare GM on download server
 

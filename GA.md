@@ -388,6 +388,14 @@ Adapt the mirrorbrain "markers" and the index header template to list which mirr
 Template file is
 olaf.i.o.o:/srv/www/vhosts/mirrors.opensuse.org/index.html
 
+#### tag docker images
+
+On the release day and time the new release needs to be marked latest in prjconf:
+
+https://build.opensuse.org/project/prjconf/openSUSE:Containers:Leap
+
+some bot also may need adjustment
+
 #### get openSUSE in the Cloud
 
 There is a number of clouds/3rd party hosting out there where openSUSE is
