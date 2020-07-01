@@ -344,10 +344,6 @@ notify mirror@opensuse.org about the release
 
 the update test repo needs to be set up
 
-#### adjust knapsack for GM
-
-adjust the knapsack for GM
-
 #### change openSUSE-current
 
 change symlink openSUSE-current in distribution/, update/, source/ and debug/ to point to new release 
