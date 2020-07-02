@@ -436,7 +436,8 @@ To build: zypper in boost-devel libtorrent-rasterbar-devel libtorrent-devel
 remind following teams about the upcomming release
 
 heroes@opensuse.org - verify that the HA proxy can handle the load
-buildops@suse.de - no OBS maintenance on that day
+buildops@suse.de - no OBS backend maintenance on that day
+bs-team@suse.de - no OBS frontend maintenance on that day
 create ticket for infra team such as https://sd.suse.com/servicedesk/customer/portal for heads up to Infra team
 
 #### marketing brainstorm session
@@ -524,4 +525,3 @@ The maintenance pages need some updating to reflect the current work flow
 
 https://en.opensuse.org/openSUSE:Maintenance_update_process
 https://en.opensuse.org/Portal:Maintenance
-
