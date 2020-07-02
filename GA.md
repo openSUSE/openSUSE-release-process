@@ -431,9 +431,14 @@ Torrents are created using /work/cd/bin/torrent-wrapper.pl
 This requires make_torrent and dump_torrent from git/libtorrent/examples
 To build: zypper in boost-devel libtorrent-rasterbar-devel libtorrent-devel
 
-#### remind opensuse.org admins of release
+#### remind opensuse.org admins, builds and infra of the release
 
-remind heroes@opensuse.org admins about the upcoming release and to verify that the HA proxy can handle the load
+remind following teams about the upcomming release
+
+heroes@opensuse.org - verify that the HA proxy can handle the load
+buildops@suse.de - no OBS backend maintenance on that day
+bs-team@suse.de - no OBS frontend maintenance on that day
+create ticket for infra team such as https://sd.suse.com/servicedesk/customer/portal for heads up to Infra team
 
 #### marketing brainstorm session
 
@@ -520,4 +525,3 @@ The maintenance pages need some updating to reflect the current work flow
 
 https://en.opensuse.org/openSUSE:Maintenance_update_process
 https://en.opensuse.org/Portal:Maintenance
-
