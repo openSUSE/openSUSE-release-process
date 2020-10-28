@@ -1,4 +1,5 @@
 # GM
+Calendar: ${Product}: Gold Master build is done
 
 #### old files kept in pontifex2:/srv/ftp/pub/opensuse/distribution/leap/15.2/repo/oss/
 Responsible: rel-mgmt
@@ -109,7 +110,7 @@ Packages that contain translations may need to be updated and submitted
 * yast2-trans : YaST:Head
 * yast2-slide-show : system:install:head
 * skelcd-openSUSE : system:install:head
-* openSUSE-EULAs: devel:openSUSE:Factory 
+* openSUSE-EULAs: devel:openSUSE:Factory
 
 #### release manager checklist for GA
 
@@ -213,4 +214,3 @@ Packages that contain translations may need to be updated and submitted
 * yast2-slide-show : system:install:head
 * skelcd-openSUSE : system:install:head
 * openSUSE-EULAs: devel:openSUSE:Factory
-

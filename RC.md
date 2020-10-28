@@ -1,4 +1,5 @@
 # RC
+Calendar: ${Product}: RC build is done
 
 #### update desktop file translations
 
@@ -105,7 +106,7 @@ Packages that contain translations may need to be updated and submitted
 - skelcd-openSUSE : system:install:head
 - openSUSE-EULAs : devel:openSUSE:Factory
 
-    
+
     osc rm *.tar.?z
     osc service dr
     osc addremove
@@ -132,7 +133,7 @@ Packages that contain translations may need to be updated and submitted
 - skelcd-openSUSE : system:install:head
 - openSUSE-EULAs : devel:openSUSE:Factory
 
-    
+
     osc rm *.tar.gz
     osc service dr
     osc addremove
@@ -209,4 +210,3 @@ When done, link it from https://en.opensuse.org/Portal:15.1
 #### disable Factory submitter
 
 disable the FCC submitter
-

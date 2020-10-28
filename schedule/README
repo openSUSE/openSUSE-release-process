@@ -1,0 +1,7 @@
+# Genearting the ics file
+
+# Schedule2vcalendar was created by an internal tool and is availble
+# here gitlab@gitlab.suse.de:sle-prjmgr/product-vcal.git
+# Anyone is welcome to write a new one
+
+schedule2vcalendar Leap-15.3-Schedule-0_1.txt > Leap-15.3-Schedule.ics
