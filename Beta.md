@@ -1,4 +1,5 @@
 # Beta
+Calendar: ${Product}: Beta build is done
 
 #### submit translation packages
 
@@ -10,7 +11,7 @@ Packages that contain translations may need to be updated and submitted
 - skelcd-openSUSE : system:install:head
 - openSUSE-EULAs : devel:openSUSE:Factory
 
-    
+
     osc rm *.tar.xz
     osc service dr
     osc addremove
@@ -89,7 +90,7 @@ the extractor of desktop file translations that pushed to github needs to be ena
 on https://github.com/openSUSE/desktop-file-translations
 
 Run
-    
+
     cd 51-xml
     ./download_data.sh download
     ./generate_and_merge_pos.sh download
@@ -206,5 +207,3 @@ Responsible: rel-mgmt
 obs needs a button to easily add the new distro as build repo. Eg. https://build.opensuse.org/project/add_repository_from_default_list/Base:System
 
 Talk to Adrian or some other build service admin
-
-

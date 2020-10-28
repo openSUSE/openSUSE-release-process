@@ -1,4 +1,5 @@
 # Alpha
+Calendar: ${Product}:Start of Development phase
 
 #### run desktop-file translation extractor
 Responsible: favogt
@@ -10,7 +11,7 @@ A full rebuild without build-compare is needed.
 on https://github.com/openSUSE/desktop-file-translations
 
 Run
-    
+
     cd 51-xml
     ./download_data.sh download
     ./generate_and_merge_pos.sh download
@@ -141,7 +142,7 @@ submit packages from SUSE:SLE-15-SP2:GA to Leap
 
 The UEFI certificate in staging and rings needs to be equal. If there's something wrong, like openQA not booting verify by checking /etc/uefi/certs in the shim package in Leap vs Factory. Use openssl to dump the certificates:
 
-    openssl x509 -noout -text -nameopt multiline,utf8,-esc_msb -inform DER -in $file 
+    openssl x509 -noout -text -nameopt multiline,utf8,-esc_msb -inform DER -in $file
 
 #### ask for kernel submission
 Responsible: rel-eng
@@ -273,7 +274,7 @@ Checklist:
 * rsync module on pontifex
 * publish_distro on pontifex
 * /etc/xinetd.d/scan-updates on pontifex
-* enable publishing in project meta 
+* enable publishing in project meta
 * notify ports maintainers so they do the same
 * write mirror@opensuse.org that a new distro is coming
 
@@ -446,5 +447,3 @@ Issues:
        - FIXME: flavor package replacement doesnt work?
          https://github.com/openSUSE/obs-service-product_converter/pull/7
        - baseproduct symlink needs to be taken care of
-
-

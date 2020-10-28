@@ -1,4 +1,5 @@
 # GA
+Calendar: ${Product}: Public Availability of the Release
 
 #### set link to /distributions/leap in countdown on www.o.o
 
@@ -31,7 +32,7 @@ lock the main project and NonFree
 
 #### update release number in IRC channel topic
 
-#opensuse-project (and maybe also other channels) mention 42.1 in the channel /topic
+opensuse-project (and maybe also other irc channels) mention 42.1 in the channel /topic
 
 This needs to be updated to 42.2 by an IRC channel admin
 
@@ -177,13 +178,13 @@ Be sure to have it reviewed.
 Example text below from the 12.3 release:
 Hi XXX,
 
-As the openSUSE community manager, I am pleased to provide to you the final version of openSUSE 12.3 for your evaluation in advance of its worldwide release on March 13. openSUSE 12.3 comes only six months after our previous release, which means we are back to our usual eight month cycle (12.2 was delayed by two months). Below is a link to the openSUSE 12.3 GoldMaster (final) for your testing pleasure. Also included is a feature overview and press release. The announcement is embargoed until Wednesday, March 13, 2013 at 14:00 UTC. 
+As the openSUSE community manager, I am pleased to provide to you the final version of openSUSE 12.3 for your evaluation in advance of its worldwide release on March 13. openSUSE 12.3 comes only six months after our previous release, which means we are back to our usual eight month cycle (12.2 was delayed by two months). Below is a link to the openSUSE 12.3 GoldMaster (final) for your testing pleasure. Also included is a feature overview and press release. The announcement is embargoed until Wednesday, March 13, 2013 at 14:00 UTC.
 
-Notable in openSUSE 12.3 is the addition of OpenStack (Folsom) packages as well as the move to MariaDB as default database. MySQL is still a part of our distribution, so not much will change for the average user as both databases have been part of openSUSE for a long time already. 
+Notable in openSUSE 12.3 is the addition of OpenStack (Folsom) packages as well as the move to MariaDB as default database. MySQL is still a part of our distribution, so not much will change for the average user as both databases have been part of openSUSE for a long time already.
 
 And there is of course the ARM and ARM 64bit work our ARM team has been doing. We're currently at over 4000 build packages, putting us well ahead of any other Linux distribution supporting ARM's AArch64 architecture. Preview images for installation and testing will be made available when 12.3 is released. The ARM 32bit efforts are progressing too. We plan to release a stable openSUSE 12.3 for ARMv7 shortly after the x86 and x86_64 versions to be released on Wednesday the 13th.
 
-In case you wonder and have followed the controversy, we support UEFI in this release and there's Secure Boot. But, in proper openSUSE fashion, we're not 200% confident about Secure Boot, in part due to the issues with Sony laptops (we will carry the patches making the issue less likely to hit our users). A wiki page is being built on https://en.opensuse.org/openSUSE:UEFI to keep our users informed of our ongoing efforts to solve Secure Boot. 
+In case you wonder and have followed the controversy, we support UEFI in this release and there's Secure Boot. But, in proper openSUSE fashion, we're not 200% confident about Secure Boot, in part due to the issues with Sony laptops (we will carry the patches making the issue less likely to hit our users). A wiki page is being built on https://en.opensuse.org/openSUSE:UEFI to keep our users informed of our ongoing efforts to solve Secure Boot.
 
 There will be new SUSE Studio images for 12.3 available on release day. Upgrading existing images/appliances will also be possible on Wednesday, March 13.
 
@@ -212,7 +213,7 @@ The feature guide, detailing many of the features coming in the 12.3 release.
 https://github.com/openSUSE/Press-Kit/raw/master/English/Feature%20Guide.pdf
 
 Here's a link to a zip on github containing the above as well as over 40 screen shots you can use any way you like. Note that I included some shots of ARM 64bit, cloud and server stuff (those are text screens mostly).
-https://github.com/openSUSE/Press-Kit/archive/master.zip 
+https://github.com/openSUSE/Press-Kit/archive/master.zip
 
 preview of the announcement article on news.opensuse.org:
 https://news.opensuse.org/?p=15299&preview=true
@@ -346,7 +347,7 @@ the update test repo needs to be set up
 
 #### change openSUSE-current
 
-change symlink openSUSE-current in distribution/, update/, source/ and debug/ to point to new release 
+change symlink openSUSE-current in distribution/, update/, source/ and debug/ to point to new release
 
 #### Switch count down to hourly rendering
 
@@ -362,7 +363,7 @@ Usually via password protected place on http://download.opensuse.org/press/
 
 install google alerts in order to measure press impact later
 
-keywords e.g. "opensuse release", "opensuse 13.2", "suse 13.2" 
+keywords e.g. "opensuse release", "opensuse 13.2", "suse 13.2"
 
 #### Update the rsync modules to include new ISO and repo
 

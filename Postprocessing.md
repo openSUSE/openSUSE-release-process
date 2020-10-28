@@ -1,4 +1,18 @@
 # Postprocessing
+Calendar: ${Product}: Public Release
+
+
+#### Release Retrospective is open
+Calendar:  ${Product}: Release retrospective survey is open
+
+Make to publish a release retro poll "what went well/What didn't go too well?" on survey.opensuse.org
+
+Instance is managed by Heroes. Release Manager has rights to publish anonymous polls.
+
+#### Review Release Retrospective
+Calendar:  ${Product}: Review of the retrospective feedback
+
+Create a public session(s) to go over all the feedback from Release Retrospective at survey.opensuse.org
 
 #### [functional][u] lift access restrictions to iso in openQA
 
@@ -30,6 +44,3 @@ Example:
     Total 0 (delta 0), reused 0 (delta 0)
     To github.com:openSUSE/skelcd-openSUSE.git
     * [new tag]         Leap_15.1-GM -> Leap_15.1-GM
-
-
-

@@ -1,0 +1,70 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                           openSUSE Leap                               !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+openSUSE Leap 15.3 roadmap of deadlines and snapshots
+==================================================
+
+Version:                0.2
+Date:                   2020-11-28
+Product:                openSUSE Leap 15.3
+
+Leap Release Manager:   Lubos Kocman
+Editors:                Lubos Kocman
+
+------------------------------------------------------------------------------
+Wed, Nov 04, 2020       Start of Development phase
+
+o openSUSE Leap and Backports OBS projects are set up.
+o openSUSE Leap 15.3 is Alpha.
+
+------------------------------------------------------------------------------
+Fri, Feb 12, 2021       Checkin Deadline for Beta
+
+o Deadline is at 15:00 UTC
+o Also a deadline for any package removals.
+
+------------------------------------------------------------------------------
+Wed, Feb 17, 2021       Beta build is done
+
+o openSUSE Leap 15.3 is Beta
+
+------------------------------------------------------------------------------
+Fri, May 21, 2020       Checkin Deadline for RC
+
+o Deadline is at 15:00 UTC
+
+------------------------------------------------------------------------------
+Wed, Jun 2, 2020       RC build is done
+
+o RC build is done
+o Maintenance setup is done
+o Code freeze.
+
+------------------------------------------------------------------------------
+Mon, Jun 21, 2020       Deadline for Documentation and Translations
+
+o All translations were pulled this has to happen prior GM
+
+------------------------------------------------------------------------------
+Wed, Jun 30, 2020       Gold Master build is done
+
+o Gold Master followed by a public release the next week on Wednesday
+
+------------------------------------------------------------------------------
+Wed, Jul 7, 2020       Public Availability of the Release
+
+o openSUSE Leap 15.3 will be released to the public at 12:00 UTC
+
+------------------------------------------------------------------------------
+Wed, Jul 7, 2020       Release retrospective survey is open
+
+o Release retro on survey.opensuse.org is open right after GA
+
+------------------------------------------------------------------------------
+Fri, Jul 21, 2020       Release retrospective survey is open
+
+o Share feedback of the retrospective with community.
+
+------------------------------------------------------------------------------
