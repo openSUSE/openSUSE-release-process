@@ -63,7 +63,7 @@ Wed, Jul 7, 2020       Release retrospective survey is open
 o Release retro on survey.opensuse.org is open right after GA
 
 ------------------------------------------------------------------------------
-Fri, Jul 21, 2020       Release retrospective survey is open
+Fri, Jul 21, 2020     Collect feedback from the retrospective
 
 o Share feedback of the retrospective with community.
 
