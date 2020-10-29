@@ -119,7 +119,15 @@ download.o.o pulls automatically every few hours
 
 #### create schedule
 
-create a release shedule. Update https://en.opensuse.org/openSUSE:Roadmap
+create a release shedule.
+
+Schedule is stored in https://github.com/openSUSE/openSUSE-release-process/schedule
+Simply copy Leap*schedule.txt file previous release and follow instructions in schedule/README.
+Make sure to commit changes to both .txt and .ics file
+
+Update https://en.opensuse.org/openSUSE:Roadmap with information from the new .txt file
+Note: The .ics file is used for integration of openSUSE-release-process with progress.opensuse.org (redmine)
+
 
 #### set up bugzilla queries
 Responsible: rel-mgmt
