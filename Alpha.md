@@ -1,6 +1,24 @@
 # Alpha
 Calendar: ${Product}:Start of Development phase
 
+#### Create openSUSE:Leap:X.Y project in OBS
+Responsible: rel-eng
+
+Send email to autobuild@suse.de to setup the openSUSE:Leap:X.Y project.
+
+#### add link to openSUSE project
+
+Please replace X.Y with the version of the previous Leap release. E.g. 15.2:Update during development of Leap 15.3
+
+osc meta prj openSUSE -e
+
+    <link project="openSUSE:Leap:X.Y:Update"/> 
+
+#### set up :Images subproject
+
+set up the :Images subproject, including Containers: namespace. Use project copy as with main project
+
+
 #### run desktop-file translation extractor
 Responsible: favogt
 
