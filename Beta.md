@@ -207,3 +207,8 @@ Responsible: rel-mgmt
 obs needs a button to easily add the new distro as build repo. Eg. https://build.opensuse.org/project/add_repository_from_default_list/Base:System
 
 Talk to Adrian or some other build service admin
+
+#### Make sure hot-patched change being upstreamed
+Responsible: rel-eng
+
+We've hot-patched change in the several packages, those change should go to upstream either to github or OBS.

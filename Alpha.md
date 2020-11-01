@@ -1,6 +1,24 @@
 # Alpha
 Calendar: ${Product}:Start of Development phase
 
+#### Create openSUSE:Leap:X.Y project in OBS
+Responsible: rel-eng
+
+Send email to autobuild@suse.de to setup the openSUSE:Leap:X.Y project.
+
+#### add link to openSUSE project
+
+Please replace X.Y with the version of the previous Leap release. E.g. 15.2:Update during development of Leap 15.3
+
+osc meta prj openSUSE -e
+
+    <link project="openSUSE:Leap:X.Y:Update"/> 
+
+#### set up :Images subproject
+
+set up the :Images subproject, including Containers: namespace. Use project copy as with main project
+
+
 #### run desktop-file translation extractor
 Responsible: favogt
 
@@ -46,7 +64,11 @@ Responsible: rel-mgmt
 #### announce start of development
 Responsible: rel-mgmt
 
-send mail to factory and devel to announce start of the new distro
+Send mail to factory and devel mailing lists to announce start of the development phase for a new new distro. 
+
+Schedule a short online kickoff event  for the community (1-2h), with announcement at least a week ahead.
+Prepare a short introduction covering change in the new version of openSUSE Leap.
+
 
 #### Add required checks to staging projects
 Responsible: coolo
@@ -119,7 +141,15 @@ download.o.o pulls automatically every few hours
 
 #### create schedule
 
-create a release shedule. Update https://en.opensuse.org/openSUSE:Roadmap
+create a release shedule.
+
+Schedule is stored in https://github.com/openSUSE/openSUSE-release-process/schedule
+Simply copy Leap*schedule.txt file previous release and follow instructions in schedule/README.
+Make sure to commit changes to both .txt and .ics file
+
+Update https://en.opensuse.org/openSUSE:Roadmap with information from the new .txt file
+Note: The .ics file is used for integration of openSUSE-release-process with progress.opensuse.org (redmine)
+
 
 #### set up bugzilla queries
 Responsible: rel-mgmt
