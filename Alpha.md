@@ -64,7 +64,11 @@ Responsible: rel-mgmt
 #### announce start of development
 Responsible: rel-mgmt
 
-send mail to factory and devel to announce start of the new distro
+Send mail to factory and devel mailing lists to announce start of the development phase for a new new distro. 
+
+Schedule a short online kickoff event  for the community (1-2h), with announcement at least a week ahead.
+Prepare a short introduction covering change in the new version of openSUSE Leap.
+
 
 #### Add required checks to staging projects
 Responsible: coolo
