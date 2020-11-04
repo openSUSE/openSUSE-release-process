@@ -260,9 +260,26 @@ create a test plan for people to manually test the distribution
 New Plan for Leap 15.2:
 https://docs.google.com/spreadsheets/d/1AGKijKpKiJCB616-bHVoNQuhWHpQLHPWCb3m1p6gXPc/edit#gid=94909276
 
-#### enable sle15 syncing to OBS
+#### Enable sync sources and binaries from releavant SUSE:SLE project from IBS to OBS
 
-tell SLE release engineers to sync SLE15 to OBS
+Please send a request to autobuild@suse.de to sync binaries and sources for SUSE:SLE sources and binaries
+Blacklist for packages that need to be skipped from sync can be found here https://en.opensuse.org/Portal:Leap:Jump/OBS/Blacklist
+
+This should ideally be send at least day ahead of the SLE-X-SPY Beta1 date.
+
+mailto: autobuild@suse.de
+subject: please sync sources and binaries for SUSE:SLE-X-SPY:GA to OBS after Beta1
+
+Hello Autobuild team,
+
+could you please enable sync of sources and binaries for SUSE:SLE-X-SPY:GA to OBS right after the Beta1
+which is expected happen on DD.MM.YYYY. We need them as openSUSE Leap is based on these binaries.
+
+Here is a list of packages that should remain blacklisted: (please describe changes if any)
+https://en.opensuse.org/Portal:Leap:Jump/OBS/Blacklist
+
+
+Thank you
 
 #### adjust lookup file
 
