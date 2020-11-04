@@ -36,39 +36,39 @@ Wed, Feb 17, 2021       Beta build is done
 o openSUSE Leap 15.3 is Beta
 
 ------------------------------------------------------------------------------
-Fri, May 21, 2020       Checkin Deadline for RC
+Fri, May 21, 2021       Checkin Deadline for RC
 
 o Deadline is at 15:00 UTC
 
 ------------------------------------------------------------------------------
-Wed, Jun 2, 2020       RC build is done
+Wed, Jun 2, 2021       RC build is done
 
 o RC build is done
 o Maintenance setup is done
 o Code freeze.
 
 ------------------------------------------------------------------------------
-Mon, Jun 21, 2020       Deadline for Documentation and Translations
+Mon, Jun 21, 2021       Deadline for Documentation and Translations
 
 o All translations were pulled this has to happen prior GM
 
 ------------------------------------------------------------------------------
-Wed, Jun 30, 2020       Gold Master build is done
+Wed, Jun 30, 2021       Gold Master build is done
 
 o Gold Master followed by a public release the next week on Wednesday
 
 ------------------------------------------------------------------------------
-Wed, Jul 7, 2020       Public Availability of the Release
+Wed, Jul 7, 2021       Public Availability of the Release
 
 o openSUSE Leap 15.3 will be released to the public at 12:00 UTC
 
 ------------------------------------------------------------------------------
-Wed, Jul 7, 2020       Release retrospective survey is open
+Wed, Jul 7, 2021       Release retrospective survey is open
 
 o Release retro on survey.opensuse.org is open right after GA
 
 ------------------------------------------------------------------------------
-Fri, Jul 21, 2020     Collect feedback from the retrospective
+Fri, Jul 21, 2021     Collect feedback from the retrospective
 
 o Share feedback of the retrospective with community.
 
