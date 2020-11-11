@@ -203,8 +203,7 @@ Add the new release to
 #### upload schedule internally
 Responsible: rel-mgmt
 
-upload schedule to projects.suse.de
-
+Update schedule and other project references (index.htm) at
 https://gitlab.suse.de/OPS-Service/projects.nue.suse.com
 
 #### Setup 15.2 release notes
