@@ -7,12 +7,15 @@ Responsible: rel-eng
 Send email to autobuild@suse.de to setup the openSUSE:Leap:X.Y project.
 
 #### add link to openSUSE project
+Blocks: ask for scc enablement
 
-Please replace X.Y with the version of the previous Leap release. E.g. 15.2:Update during development of Leap 15.3
+This can be done by editing top level openSUSE project config
 
 osc meta prj openSUSE -e
-
     <link project="openSUSE:Leap:X.Y:Update"/> 
+
+This will also make Leap X.Y record visible at https://api.opensuse.org/public/source/openSUSE?view=productlist&expand=1
+    <product name="Leap" cpe="cpe:/o:opensuse:leap:X.Y" originproject="openSUSE:Leap:X.Y" originpackage="000product" mtime="1606202898"/>
 
 #### set up :Images subproject
 
