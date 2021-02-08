@@ -25,13 +25,13 @@ Fri, Nov 20, 2020       Sync of SLE 15 SP3 sources and binaries to OBS
 o SLE 15 sources and binaries can't be published until its Beta1 milestone due to changes containing NDA content. Leap 15.3 core will be based on SLES-15-SP2:Update until that happens.
 
 ------------------------------------------------------------------------------
-Fri, Feb 12, 2021       Checkin Deadline for Beta
+Wed, Feb 17, 2021       Checkin Deadline for Beta
 
 o Deadline is at 15:00 UTC
 o Also a deadline for any package removals.
 
 ------------------------------------------------------------------------------
-Wed, Feb 17, 2021       Beta build is done
+Wed, Feb 24, 2021       Beta build is done
 
 o openSUSE Leap 15.3 is Beta
 
