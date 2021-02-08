@@ -209,9 +209,12 @@ Responsible: rel-mgmt
 Update schedule and other project references (index.htm) at
 https://gitlab.suse.de/OPS-Service/projects.nue.suse.com
 
-#### Setup 15.2 release notes
+#### Setup release notes
 
-A branch for new distribution needs to be created in the release notes git and the package adjusted accordingly.
+A branch (typically.g. Leap_X.Y) for new distribution needs to be created in https://github.com/openSUSE/release-notes-openSUSE and the package adjusted accordingly.
+Make sure to update release version in release-notes.ent. You may validate your changes to the release by running make and checking index.html in the build dir subtree.
+
+The new branch needs to be set as a default branch for the project. This can be done in project branch settings.
 
 The tokens for OBS are in the factory-maintainer user. Botmaster has all accounts:
 sudo docker exec -ti go-agent-repo-checker-3 sudo -i -u go
