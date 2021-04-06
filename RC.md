@@ -35,10 +35,6 @@ packages with duplicate binaries need to be cleaned up as OBS has undefined beha
 
 https://build.opensuse.org/package/view_file/openSUSE:Leap:15.1:Staging/dashboard/duplicate_binaries?expand=1
 
-#### compile a list of packages that are from sle but not maintained there
-
-some packages are marked as coming from SLE even though not all or none of it's source packages are actually maintained there. Need to compute a list and discuss with maintenance.
-
 #### update branding
 Responsible: hellcp
 
