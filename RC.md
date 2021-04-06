@@ -35,25 +35,6 @@ packages with duplicate binaries need to be cleaned up as OBS has undefined beha
 
 https://build.opensuse.org/package/view_file/openSUSE:Leap:15.1:Staging/dashboard/duplicate_binaries?expand=1
 
-#### update branding
-Responsible: hellcp
-
-the new release needs a new branding
-
-* <del>yast color scheme</del>
-* <del>yast headline image</del>
-* wallpapers
-  * KDE
-  * GNOME
-  * icewm
-* plymouth boot splash screen
-* grub2 theme
-* syslinux theme
-* displaymanager themes
-  * sddm
-  * gdm
-  * lightdm
-
 #### make sure new maintenance packages end up in the release
 
 maintenance probably released several packages that are new in the previous release. We need to make sure to collect them for the new release
