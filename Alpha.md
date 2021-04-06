@@ -330,6 +330,28 @@ Checklist:
 * notify ports maintainers so they do the same
 * write mirror@opensuse.org that a new distro is coming
 
+#### update branding
+Responsible: hellcp
+
+the new release needs a new branding
+
+* <del>yast color scheme</del>
+* <del>yast headline image</del>
+* wallpapers
+  * KDE
+  * GNOME
+  * icewm
+* plymouth boot splash screen
+* grub2 theme
+* <del>syslinux theme</del>
+* displaymanager themes
+  * sddm
+  * gdm
+  * lightdm
+* KDE loading screen
+* Headline image for Yast sidebar
+
+
 #### update all packages that hardcode the distribution version
 
 All packages that hardcode the distribution version somehow need to be updated with the current version number
