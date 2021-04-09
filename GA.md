@@ -103,9 +103,9 @@ Organize release parties!
 
 The marketing/ambassador team can and should do this!
 
-#### software.opensuse.org
+#### get.opensuse.org
 
-Verify software.o.o has the correct data and links.
+Verify get.o.o has the correct data and links.
 Usually the -Current links are wrong.
 
 ##### translate release announcement

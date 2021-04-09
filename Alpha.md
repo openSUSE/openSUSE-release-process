@@ -50,13 +50,13 @@ Responsible: favogt
 * create openQA job group
 * sync to openQA
 * make obs publish to the correct directory
-* add to software.o.o
+* add to get.o.o
 
 #### clarify source code offer
 Responsible: rel-mgmt
 
 * clarify how long we need to provide the source
-* check if https://software.opensuse.org/distributions/leap not specifying methods is ok
+* check if https://get.opensuse.org/leap not specifying methods is ok
 * check https://en.opensuse.org/Source_code is current
 
 #### ask for scc enablement
@@ -240,12 +240,12 @@ for all packages that were added to Factory after the last leap release, set up 
 
 Make sure to talk to Bernhard to turn off the bug bot to avoid spamming bugzilla.
 
-#### prepare software.opensuse.org
+#### prepare get.opensuse.org
 Responsible: rel-mgmt
 
-prepare software.opensuse.org to show the testing distribution
+prepare get.opensuse.org to show the testing distribution
 
-https://github.com/openSUSE/software-o-o
+https://github.com/openSUSE/get-o-o
 
 #### verify betaversion in product files
 
