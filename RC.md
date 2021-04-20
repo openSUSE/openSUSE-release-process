@@ -91,11 +91,6 @@ Packages that contain translations may need to be updated and submitted
     osc ci
     osc sr
 
-
-#### Security Audit
-
-Security needs to take a look at the current snapshot
-
 #### verify piwik works
 
 
