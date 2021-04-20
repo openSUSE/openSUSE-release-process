@@ -141,13 +141,12 @@ There should be a way to do this by means of obs
 https://counter.opensuse.org/link/ should point to https://en.opensuse.org/Portal:15.1?pk_campaign=counter
 
 
-#### prepare software.opensuse.org
+#### prepare get.opensuse.org
 
-prepare software.opensuse.org for RC1
+prepare get.opensuse.org for RC1
 
-* https://github.com/openSUSE/software-o-o, app/controllers/main_controller.rb
-* Wait for package to build https://build.opensuse.org/package/show/openSUSE:infrastructure:software.opensuse.org/software_opensuse_org
-* Deploy when mirrors are ready
+* https://github.com/openSUSE/get-o-o, _data/releases.yml, _data/15X.yml
+* Sync with hellcp to deploy update when mirrors are ready
 
 #### EULA review/update
 
