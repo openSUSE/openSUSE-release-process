@@ -68,6 +68,7 @@ Blocks: remove README.beta from oss repository
 
 Login to pontifex.infra.opensuse.org and remove README.BETA from /srv/ftp-{stage,prod}/pub/opensuse/distribution/leap/15.3/repo/oss/ directory so only README file remains.
 If we keep README.BETA then user would receive still Beta warning during Leap RC build installation.
+The ftp-prod is crucial, please double check there.
 
 #### verify release counters for update
 
