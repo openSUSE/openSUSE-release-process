@@ -33,6 +33,8 @@ Should be just a matter of installing some redirects.
 
 packages with duplicate binaries need to be cleaned up as OBS has undefined behavior with those
 
+run `osc staging -p PROJECT check_duplicate_binaries`
+
 https://build.opensuse.org/package/view_file/openSUSE:Leap:15.1:Staging/dashboard/duplicate_binaries?expand=1
 
 #### make sure new maintenance packages end up in the release
@@ -61,12 +63,19 @@ And set update project:
 Blocks: remove README.beta from oss repository
 
 * remove %_with_betatest from prjconf
-* remove beta tag from openSUSE.product
+* remove beta tag from .product.in in 000package-group, well be acked by pkglistgen
 * remove BETA=1 from openQA
+* rebuild patterns-base and skelcd-openSUSE
 
-#### remove README.beta from oss repository
+#### remove README.BETA from oss repository
 
-Login to pontifex.infra.opensuse.org and remove README.BETA from /srv/ftp-{stage,prod}/pub/opensuse/distribution/leap/15.3/repo/oss/ directory so only README file remains.
+README.BETA is from skelcd-openSUSE, rebuild skelcd-openSUSE after the betamark removal then README.BETA should not present in skelcd-openSUSE.
+However due to rsync mechanism, there are two things have to be done manually,
+
+1. Login to openQA server and remove README.BETA from /var/lib/openqa/factory/repo/FTP_ASSET_PATH, including the BuildXXX asset and the currect asset.
+
+2. Login to pontifex.infra.opensuse.org and remove README.BETA from /srv/ftp-{stage,prod}/pub/opensuse/distribution/leap/15.3/repo/oss/ directory so only README file remains.
+
 If we keep README.BETA then user would receive still Beta warning during Leap RC build installation.
 The ftp-prod is crucial, please double check there.
 
