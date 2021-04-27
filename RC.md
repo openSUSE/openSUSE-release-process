@@ -157,14 +157,14 @@ prepare get.opensuse.org for RC1
 
 #### EULA review/update
 
-Ask Legal to review and potentially adjust the EULA.
+Please adjust year in the EULA with e.g. sed and update wiki accordingly.
+No action neeeded if we're changing just a version bump.
 
-The request form can be found in innerweb
+In any other case Ask Legal to review and potentially adjust the EULA.
+
+The request form can be found in innerweb, otherwise please contact Ciarran.
 
 Current license is at https://github.com/openSUSE/skelcd-openSUSE/blob/master/license/license.txt
-
-The year can be adjusted by means of sed before sending to Legal.
-
 Wiki: https://en.opensuse.org/openSUSE:License
 
 #### announce package freeze
