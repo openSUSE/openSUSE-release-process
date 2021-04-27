@@ -58,10 +58,16 @@ And set update project:
     $ osc meta attribute -c -a OBS:UpdateProject -s openSUSE:Leap:15.1:Update openSUSE:Leap:15.1
 
 #### remove beta marks
+Blocks: remove README.beta from oss repository
 
 * remove %_with_betatest from prjconf
 * remove beta tag from openSUSE.product
 * remove BETA=1 from openQA
+
+#### remove README.beta from oss repository
+
+Login to pontifex.infra.opensuse.org and remove README.BETA from /srv/ftp-{stage,prod}/pub/opensuse/distribution/leap/15.3/repo/oss/ directory so only README file remains.
+If we keep README.BETA then user would receive still Beta warning during Leap RC build installation.
 
 #### verify release counters for update
 
