@@ -79,10 +79,6 @@ However due to rsync mechanism, there are two things have to be done manually,
 If we keep README.BETA then user would receive still Beta warning during Leap RC build installation.
 The ftp-prod is crucial, please double check there.
 
-#### verify release counters for update
-
-release number needs to be higher than in previous distributions. Make sure the are. mls knows how to.
-
 #### openSUSE-EULAs up to date
 
 devel:openSUSE:Factory/openSUSE-EULAs needs to be up to date to include all relevant licenses. Ie licenses that require explicit agreement via dialog by the user. That affects mostly packages in the openSUSE:Leap:15.0:NonFree project.
