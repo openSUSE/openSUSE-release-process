@@ -120,6 +120,10 @@ It's configured on botmaster as /srv/go-config/legal-auto-projects-opensuse
 
 create the :Images and :Images:ToTest subprojects
 
+#### copy WSL subproject
+
+create the :WSL and :WSL:ToTest subprojects
+
 #### enable CI for YaST
 
 the CI for YaST needs to be configured to submit packages for the new release from the right branch
