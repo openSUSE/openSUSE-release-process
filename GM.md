@@ -47,10 +47,6 @@ need to add PublishFilter: lines to prjconf of the :Update project to prevent pa
 
 use nonftp2publishfilter.py tool
 
-#### clean up SLE-workarounds
-
-clean up the SLE-workarounds subproject. Check which packages got merged and remove them. Verify the remaining ones are progressing.
-
 #### sync with SLE
 
 some packages accidentally diverge from sle. try to merge as many as possible
