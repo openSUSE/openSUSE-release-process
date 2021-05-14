@@ -198,7 +198,7 @@ we should announce the GM deadline internally just as SLE does
 #### set end of life attribute in product file
 Responsible: rel-mgmt
 
-/etc/products.d/openSUSE.prod should have the endoflife option set
+/etc/products.d/Leap.prod should have the endoflife option set
 
 #### submit translation packages
 
