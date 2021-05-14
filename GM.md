@@ -174,7 +174,7 @@ Gitlab project can be found here https://gitlab.suse.de/opensuse/iprq
 
 ```
 vim git/IPRQ-openSUSE_Leap_X.Y.odt # see document for previous releases
-sudo zypper in perl-Spreadsheet-WriteExcel perl-IO-String perl-Text-CSV_XS perl-Data-Dump # required to run make
+sudo zypper in perl-Spreadsheet-WriteExcel perl-IO-String perl-Text-CSV_XS perl-Data-Dump perl-DBI perl-DBD-SQLite # required to run make
 make
 mv git/IPRQ-openSUSE_Leap_X.Y.odt to the newly created directory YYYY-MM-DD_*/
 git add YYYY-MM-DD_* # submit only contnet in the directory not the generated data directly in iprq/
