@@ -143,6 +143,21 @@ The results of the manual testing initiative should be talked over with the rele
 
 ask people to review and update https://doc.opensuse.org/release-notes/x86_64/openSUSE/Leap/42.3/ via https://github.com/openSUSE/release-notes-openSUSE
 
+Please double check that release notes are building and that cronjob for deployments is running
+
+Example for Leap 15.3
+
+```
+Double check that release-notes-openSUSE_Leap_* is building
+https://build.opensuse.org/package/show/Documentation:Auto/release-notes-openSUSE_Leap_15.3
+
+$ ssh -p2206 relsync@gate.opensuse.org
+$ crontab -l
+```
+
+Internal docs reference:
+https://confluence.suse.com/pages/viewpage.action?spaceKey=documentation&title=Managing+and+packaging+release+notes
+
 #### merge back maintenance updates
 
 Caution: potentially outdated instructions. Nowadays it's mostly only deleting the obsolete test updates. May need to verify release numbers nevertheless.
