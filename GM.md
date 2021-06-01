@@ -47,10 +47,6 @@ need to add PublishFilter: lines to prjconf of the :Update project to prevent pa
 
 use nonftp2publishfilter.py tool
 
-#### clean up SLE-workarounds
-
-clean up the SLE-workarounds subproject. Check which packages got merged and remove them. Verify the remaining ones are progressing.
-
 #### sync with SLE
 
 some packages accidentally diverge from sle. try to merge as many as possible
@@ -178,7 +174,7 @@ Gitlab project can be found here https://gitlab.suse.de/opensuse/iprq
 
 ```
 vim git/IPRQ-openSUSE_Leap_X.Y.odt # see document for previous releases
-sudo zypper in perl-Spreadsheet-WriteExcel perl-IO-String perl-Text-CSV_XS perl-Data-Dump # required to run make
+sudo zypper in perl-Spreadsheet-WriteExcel perl-IO-String perl-Text-CSV_XS perl-Data-Dump perl-DBI perl-DBD-SQLite # required to run make
 make
 mv git/IPRQ-openSUSE_Leap_X.Y.odt to the newly created directory YYYY-MM-DD_*/
 git add YYYY-MM-DD_* # submit only contnet in the directory not the generated data directly in iprq/
@@ -202,7 +198,7 @@ we should announce the GM deadline internally just as SLE does
 #### set end of life attribute in product file
 Responsible: rel-mgmt
 
-/etc/products.d/openSUSE.prod should have the endoflife option set
+/etc/products.d/Leap.prod should have the endoflife option set
 
 #### submit translation packages
 
