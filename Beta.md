@@ -1,6 +1,12 @@
 # Beta
 Calendar: ${Product}: Beta build is done
 
+#### Maintenance openQA setup
+Responsible: qa
+
+Give quality assurance a heads up that Beta build is done. So they can work on the mainteannce setup and start with testing.
+Please create request for QA and loop in openSUSE Maintenance team.
+
 #### submit translation packages
 
 Packages that contain translations may need to be updated and submitted
