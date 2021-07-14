@@ -1,6 +1,12 @@
 # Beta
 Calendar: ${Product}: Beta build is done
 
+#### Maintenance openQA setup
+Responsible: qa
+
+Maintenance openQA setup is available with entering Beta phase
+Please create request for QA and loop in openSUSE Maintenance team
+
 #### submit translation packages
 
 Packages that contain translations may need to be updated and submitted
