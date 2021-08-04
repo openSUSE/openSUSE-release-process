@@ -69,6 +69,7 @@ o All translations were pulled this has to happen prior GM
 Wed, May 11, 2022       Gold Master code submission deadline
 
 o Gold Master followed by a public release the next week on Wednesday
+
 ------------------------------------------------------------------------------
 Fri, May 27, 2022       Gold Master build is done
 
