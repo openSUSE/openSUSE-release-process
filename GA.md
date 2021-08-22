@@ -5,7 +5,7 @@ Calendar: ${Product}: Public Availability of the Release
 
 The countdown on www.opensuse.org links to /distributions/testing. It needs to point to distributions/leap on the release day unless https://github.com/openSUSE/software-o-o/issues/542 gets implemented.
 
-##### send announcement to opensuse-announce
+#### send announcement to opensuse-announce
 
 the release needs to be  be announced on the opensuse-announce list
 
@@ -52,40 +52,40 @@ both landing page and search page got translations for new languages. The langua
 https://github.com/openSUSE/landing-page
 https://github.com/openSUSE/searchPage
 
-##### translate social media messages
+#### translate social media messages
 
 call for translators for the social media messages
 
-##### Make sure we have the right people prepared to send out the social media messages
+#### Make sure we have the right people prepared to send out the social media messages
 
 Wiki page with social media contact people:
 https://en.opensuse.org/openSUSE:Social_media_contacts
 
 Contact them, find the missing people & languages and sync with them about the social media messages. Ideal would be if they create links to the translations in the social media messages we send out etc.
 
-##### Create social media messages
+#### Create social media messages
 
 Create social media messages based on our release announcement & top features. See the openSUSE wiki:
 https://en.opensuse.org/openSUSE:Social_media_launch_plan
 
 Remember that one goal of these messages is to 'go viral': connect the release to cool stuff but don't push it. Something more widely funny or interesting has more chance of being spread. Including "pls rt" or "pls share" or "share the news:" makes a big difference in how often things are shared, according to research. Worth trying this year.
 
-##### release party poster
+#### release party poster
 
 There used to be poster for release parties to be used in e.g. universities:
 https://en.opensuse.org/openSUSE:Launch_parties
 
 Needs to be updated to current version or be made more generic
 
-##### Create event pages on Facebook, Google+
+#### Create event pages on Facebook, Google+
 
 Create event pages for the release on facebook, G+ and other social media!
 
-##### Update release party wiki pages
+#### Update release party wiki pages
 
 Update https://en.opensuse.org/openSUSE:Launch_parties
 
-##### Write release party invitation article
+#### Write release party invitation article
 
 Base it on the article(s) in the last years.
 
@@ -108,13 +108,13 @@ The marketing/ambassador team can and should do this!
 Verify get.o.o has the correct data and links.
 Usually the -Current links are wrong.
 
-##### translate release announcement
+#### translate release announcement
 
 as usual, we need ping translators to translate release announcement, e.g.
 
 http://lists.opensuse.org/opensuse-translation/2013-11/msg00009.html
 
-##### Gather info from major pieces of our release onto Major_features page
+#### Gather info from major pieces of our release onto Major_features page
 
 RC1 is out, so we know what we will ship.
 
@@ -122,17 +122,17 @@ Get the KDE stuff from the KDE announcement, the GNOME stuff from the GNOME anno
 
 Kick people in the marketing team to help with this.
 
-##### Add features from distrowatch
+#### Add features from distrowatch
 
 Check the packages from http://distrowatch.com/table.php?distribution=suse and add what's new. Check other sources, see what's hot and what's not etc. and keep kicking people all around!
 
 Once this is added, the feature page should be ready in terms of content and can be reviewed for technical correctness.
 
-##### Get technical review
+#### Get technical review
 
 The technical people in the openSUSE team need to go over the feature guide, check if it is correct and tell you what is missing.
 
-##### Get features page finished
+#### Get features page finished
 
 Time to get that feature page finished.
 Remember, try to talk at least about the packages from http://distrowatch.com/table.php?distribution=suse!!
@@ -141,11 +141,11 @@ Also, integrate the screenshots. They should be created by now but more are alwa
 
 Note that the major features need to be on this page by the time you start working on the announcement, which is also during this time!
 
-##### Move Major Features to feature guide page
+#### Move Major Features to feature guide page
 
 Move content from https://en.opensuse.org/openSUSE:Major_features to https://en.opensuse.org/Features_42.2. Make sure the Major_features page links to this page, directs developers there. Tell them they're late adding their features ;-)
 
-##### Write the Feature Guide
+#### Write the Feature Guide
 
 The Feature Guide forms the base of our release marketing. It is a large list of the most important features in openSUSE 13.1 with screenshots and a good organisation. See https://en.opensuse.org/Features
 
@@ -159,17 +159,17 @@ We've learned some lessons during the 12.3 product highlights writing, take thes
 * Get the KDE stuff from the KDE announcement, the GNOME stuff from the GNOME announcement, the kernel stuff from kernelnewbies.org and the H kernel archives as soon as you know which versions we'll ship! Put them on the Major_features page so you're ready with that.
 * Kick the artwork team: they need to get the final art in in time so the screenshots can be made! It is a blocker, also for the press kit.
 
-##### send press kit
+#### send press kit
 
 Get our list of press contacts and create SEPARATE mails for each of them. If you know them personally, try to add a special touch to the emails to make them really personal. Stay formal for those you don't know. Send out the mails... And be ready to reply to their questions and responses.
 
 Keep in mind that this can easily take a day with the nr of contacts we have and the replies they might sent.
 
-##### Assemble press kit.
+#### Assemble press kit.
 
 Gather everything and put it in a zip file in github (or somewhere else)
 
-##### Write 'reviewers guide', the mail for the press
+#### Write 'reviewers guide', the mail for the press
 
 We send the press a 'personalized' email. It contains some personal notes from whoever sends it (usually Jos/the CM).
 
@@ -218,7 +218,7 @@ https://github.com/openSUSE/Press-Kit/archive/master.zip
 preview of the announcement article on news.opensuse.org:
 https://news.opensuse.org/?p=15299&preview=true
 
-##### Create list of people who can be interviewed
+#### Create list of people who can be interviewed
 
 Release team, board members etc.
 
@@ -231,7 +231,7 @@ Details needed:
 
 
 
-##### Create a Press Kit and send it to the press
+#### Create a Press Kit and send it to the press
 
 This is the thing which gets us awesome reviews and "blogs like this":http://www.linux-magazine.com/Online/Blogs/Off-the-Beat-Bruce-Byfield-s-Blog/openSUSE-shows-how-to-promote-a-release
 
@@ -246,7 +246,7 @@ We create an awesome presskit containing:
 * reviewers guide
 * list of people who can be interviewed
 
-##### Get quotes from important people
+#### Get quotes from important people
 
 We usually quote one 'important' SUSE person first, putting the release into perspective. The second quote is usually a non-SUSE community member providing their viewpoint on how awesome the release is.
 
@@ -254,15 +254,15 @@ openSUSE team, the board and other people about their favorite features
 
 Making up the quotes as part of the drafting is the usual way: then let people look at them, modify the quotes and/or OK them.
 
-##### Let our PR Agencies have one last look at the announcement
+#### Let our PR Agencies have one last look at the announcement
 
 After this it should be really ready to get into the press kit... No more changes!
 
-##### Get feedback on the draft press announce
+#### Get feedback on the draft press announce
 
 Show the announce to people both engineering and in SUSE marketing for feedback. Incorporate changes.
 
-##### Create a draft press announcement
+#### Create a draft press announcement
 
 Take the feature highlights and use them to compose a first draft press announcement.
 Some tips:
@@ -274,22 +274,22 @@ Some tips:
 
 Check our previous announcements for more details. 12.3 is here: http://lists.opensuse.org/opensuse-announce/2013-03/msg00001.html
 
-##### Write Press Announcement
+#### Write Press Announcement
 
 Take the feature highlights and use them to compose a press announcement. Look at earlier announcements for the how
 
-##### Write community announcement for news.o.o
+#### Write community announcement for news.o.o
 
 Based on the announcement and the feature guide & esp highlights, write a draft announcement for news.opensuse.org. This is the MAJOR announcement everybody will link to so it has to KICK ASS!
 
 
-##### Get screenshots taken
+#### Get screenshots taken
 
 Bug the openSUSE Artwork team and get help from the openSUSE team: we need screenshots. See https://en.opensuse.org/Screenshots
 
 We need them as soon as the Artwork is final. Start at RC1 and finish at RC2. See the Screenshot Guidelines in the https://en.opensuse.org/openSUSE:Product_highlights_writing wiki page!
 
-##### Assemble the Product highlights
+#### Assemble the Product highlights
 
 This is about creating a short-list of the best, most awesome, coolest features in openSUSE Leap 42.2. It is CRUCIAL in writing the press announcement, the openSUSE Leap 42.2 portal wiki page and the news.o.o announcement as well as for the press.
 
@@ -315,18 +315,18 @@ Main task for everything around the release announcement:
 and finally, the press kit for the press which contains all of the above in addition to a link to the GM, quotes, reviewers guide, list of people who can be interviewed, and gets send to them a week before the release.
 
 
-##### Shop: update wiki
+#### Shop: update wiki
 
 * https://en.opensuse.org/Buy_openSUSE
 * https://de.opensuse.org/openSUSE_kaufen
 
-##### update shop.opensuse.org
+#### update shop.opensuse.org
 
 source code is at
 
 https://github.com/openSUSE/shop.o.o
 
-##### request new box image and link
+#### request new box image and link
 
 request new box image to put on the home page
 request link to shop
@@ -456,19 +456,19 @@ https://en.opensuse.org/SDB:Official_documentation
 
 Ping Frank Sundermeyer about it
 
-##### fix upgrade instructions in wiki
+#### fix upgrade instructions in wiki
 
 http://en.opensuse.org/Upgrade needs to be adjusted for new release
 
-##### check all wiki pages on release day
+#### check all wiki pages on release day
 
 make sure all 15.1 pages are in good shape and the links between pages work
 
-##### install Leap 15.1 wiki pages as default
+#### install Leap 15.1 wiki pages as default
 
 move e.g. https://en.opensuse.org/Features_42.1 to https://en.opensuse.org/Features
 
-##### update wiki pages
+#### update wiki pages
 
 Make sure all pages reference $VERSION correctly
 
@@ -483,7 +483,7 @@ Make sure all pages reference $VERSION correctly
 * https://en.opensuse.org/Package_repositories
 * https://en.opensuse.org/Additional_package_repositories
 
-##### move previous release to archive
+#### move previous release to archive
 
 move all $VERSION-1 articles to Archive
 
@@ -507,7 +507,7 @@ Start kicking the artwork team: we need the release counter updated!
 
 https://github.com/openSUSE/countdown.o.o
 
-##### Create social media backgrounds and badges
+#### Create social media backgrounds and badges
 
 We need a series of badges and social media backgrounds. Think twitter, facebook, G+ and website banners in various sizes. Ask the artwork team!
 
