@@ -55,9 +55,9 @@ a mix of stuck tools and other breakages usually leads to packages deviating fro
 Compare packages in SLE vs Leap and identify differences to sync up again.
 Update SLE-workarounds as needed.
 
-#### create 15.2 component in weblate
+#### create component for a new Leap version in weblate
 
-a Leap 15.2 component needs to be created in weblate to collect all projects related to translating leap 15.2
+A Leap 15.X component needs to be created in weblate to collect all projects related to translating leap 15.X
 
 #### enable i586 packages that need it
 Responsible: rel-eng
