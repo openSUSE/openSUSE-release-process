@@ -6,15 +6,16 @@
 openSUSE Leap 15.4 roadmap of deadlines and snapshots
 ==================================================
 
-Version:                0.1
-Date:                   2021-06-22
+Version:                0.2
+Date:                   2021-08-04
+
 Product:                openSUSE Leap 15.4
 
 Leap Release Manager:   Lubos Kocman
 Editors:                Lubos Kocman
 
 ------------------------------------------------------------------------------
-Wed, July 2nd, 2021       Start of Development phase
+Wed, July 2, 2021       Start of Development phase
 
 o openSUSE Leap and Backports OBS projects are set up.
 o openSUSE Leap 15.4 is Alpha.
@@ -22,16 +23,26 @@ o SUSE:SLE-15-SP4:GA is being synced to OBS
 o Release checklist for Leap 15.4 is in progress-o-o
 
 ------------------------------------------------------------------------------
+Wed, July 8, 2021       Engineering Interlock
+o Shortly after Interlock for SUSE Linux Enteprise
+
+------------------------------------------------------------------------------
+Wed, Feb 02, 2022       Late Feature Request Cutoff for SLE
+o Every feature with a code delivery for SUSE Linux Enterprise after this date requires an ECO and may be targeted post FCS date. Does not apply for Leap code-drops.
+o After this date only P1 bugfixes, important security fixes and pre-agreed important P2 fixes are accepted in SUSE Linux Enterprise. This does not apply for Leap code-drops.
+
+------------------------------------------------------------------------------
 Wed, Feb 16, 2022       Checkin Deadline for Beta
 
 o Deadline is at 15:00 UTC
-o Deadline for any package removals.
+o Deadline for any package removals from Leap.
 o Deadline corresponds with SLE 15 SP3 Public Beta code submission deadline
 
 ------------------------------------------------------------------------------
 Wed, Feb 23, 2022       Beta build is done
 
 o openSUSE Leap 15.4 is Beta
+o Maintenance team starts working on maintenance setup 
 
 
 ------------------------------------------------------------------------------
@@ -42,11 +53,12 @@ o Corresponds with SLE 15 SP4 Public RC code submission deadline
 o Only important bugfixes should be accepted after this point
 
 ------------------------------------------------------------------------------
-Wed, April 28, 2022       RC build is done
+Wed, April 27, 2022       RC build is done
 
 o RC build is done
 o Maintenance setup is done
-o Code freeze.
+o Leap Code freeze.
+o Backports project freeze ahead of Leap
 
 ------------------------------------------------------------------------------
 Fri, May 14, 2022       Deadline for Documentation and Translations
@@ -59,22 +71,22 @@ Wed, May 11, 2022       Gold Master code submission deadline
 o Gold Master followed by a public release the next week on Wednesday
 
 ------------------------------------------------------------------------------
-Fri, May 18, 2022       Gold Master build is done
+Fri, May 27, 2022       Gold Master build is done
 
-o Gold Master followed by a public release the next week on Wednesday
+o Gold Master followed by a public release in two weeks on Wednesday
 
 ------------------------------------------------------------------------------
-Wed, Jun 2, 2022       Public Availability of the Release
+Wed, Jun 8, 2022       Public Availability of the Release
 
 o openSUSE Leap 15.4 will be released to the public at 12:00 UTC
 
 ------------------------------------------------------------------------------
-Wed, Jun 2, 2022       Release retrospective survey is open
+Wed, Jun 8, 2022       Release retrospective survey is open
 
 o Release retro on survey.opensuse.org is open right after GA
 
 ------------------------------------------------------------------------------
-Wed, Jun 16, 2022     Collect feedback from the retrospective
+Wed, Jun 22, 2022     Collect feedback from the retrospective
 
 o Share feedback of the retrospective with community.
 
