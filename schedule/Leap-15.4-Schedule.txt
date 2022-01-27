@@ -36,7 +36,7 @@ Wed, Feb 16, 2022       Checkin Deadline for Beta
 
 o Deadline is at 15:00 UTC
 o Deadline for any package removals from Leap.
-o Deadline corresponds with SLE 15 SP3 Public Beta code submission deadline
+o Deadline corresponds with SLE 15 SP4 Public Beta code submission deadline
 
 ------------------------------------------------------------------------------
 Wed, Feb 23, 2022       Beta build is done
