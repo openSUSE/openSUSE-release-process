@@ -39,7 +39,7 @@ o Deadline for any package removals from Leap.
 o Deadline corresponds with SLE 15 SP4 Public Beta code submission deadline
 
 ------------------------------------------------------------------------------
-Wed, Feb 23, 2022       Beta build is done
+Wed, March 2, 2022       Beta build is done
 
 o openSUSE Leap 15.4 is Beta
 o Maintenance team starts working on maintenance setup 
