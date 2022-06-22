@@ -91,3 +91,19 @@ Wed, Jun 22, 2022     Collect feedback from the retrospective
 o Share feedback of the retrospective with community.
 
 ------------------------------------------------------------------------------
+Wed, Oct 5th, 2022       Quarterly Update 1
+
+o Respin of installation images, if we identify a reason to respin (can be skipped)
+
+------------------------------------------------------------------------------
+Wed, Jan 18th, 2023       Quarterly Update 2
+
+o Respin of installation images, if we identify a reason to respin (can be skipped)
+
+------------------------------------------------------------------------------
+Wed, May 3rd, 2023       Quarterly Update 3
+
+o  Respin of installation images, if we identify a reason to respin (can be skipped)
+
+------------------------------------------------------------------------------
+
