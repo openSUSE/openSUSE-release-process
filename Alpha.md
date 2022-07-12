@@ -4,7 +4,7 @@ Calendar: ${Product}:Start of Development phase
 #### Create openSUSE:Leap:X.Y project in OBS
 Responsible: rel-eng
 
-Send email to autobuild@suse.de to setup the openSUSE:Leap:X.Y project.
+Send email to autobuild@suse.de to setup the openSUSE:Leap:X.Y and openSUSE:Leap:X.Y:ToTest project.
 
 #### add link to openSUSE project
 Blocks: ask for scc enablement
