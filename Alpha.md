@@ -176,12 +176,6 @@ save search with a name and share them
 We need to sync changes from certain SLE packages from SUSE:SLE-15-SPX:GA to Leap
 An example would be installation-images
 
-#### verify staging UEFI certificate
-
-The UEFI certificate in staging and rings needs to be equal. If there's something wrong, like openQA not booting verify by checking /etc/uefi/certs in the shim package in Leap vs Factory. Use openssl to dump the certificates:
-
-    openssl x509 -noout -text -nameopt multiline,utf8,-esc_msb -inform DER -in $file
-
 #### ask for kernel submission
 Responsible: rel-eng
 
