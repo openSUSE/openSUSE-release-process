@@ -19,7 +19,18 @@ This will also make Leap X.Y record visible at https://api.opensuse.org/public/s
 
 #### set up :Images subproject
 
-set up the :Images subproject, including Containers: namespace. Use project copy as with main project
+set up the :Images and Images:ToTest subproject, including Containers: namespace. Use project copy as with main project
+
+#### setup subproject for containers
+Responsible: favogt
+
+* create subproject in openSUSE:Containers
+* set release target
+* adjust and run totest manager
+* create openQA job group
+* sync to openQA
+* make obs publish to the correct directory
+* add to get.o.o
 
 
 #### run desktop-file translation extractor
@@ -40,17 +51,6 @@ Run
     git commit -m update
     git push
 
-#### setup :Images subproject
-Responsible: favogt
-
-* create :Images and Images:ToTest subproject (use prjcopy)
-* create subproject in openSUSE:Containers
-* set release target
-* adjust and run totest manager
-* create openQA job group
-* sync to openQA
-* make obs publish to the correct directory
-* add to get.o.o
 
 #### clarify source code offer
 Responsible: rel-mgmt
