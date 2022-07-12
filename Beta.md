@@ -1,11 +1,26 @@
 # Beta
 Calendar: ${Product}: Beta build is done
 
+#### create update channel
+Responsible: rel-mgmt
+
+In contrast to the main project (#52034) the update projects are meant to start empty. So we create them manually
+
+* The update projects (don't forget :NonFree) need to be created, including attributes (excl OBS:Maintained which will be added later).
+* add the new projects to openSUSE:Maintenance meta
+* The obs backend mapping file needs to be adjusted to to sync the repos to the correct place on download.opensuse.org
+
 #### Maintenance openQA setup
 Responsible: qa
 
 Give quality assurance a heads up that Beta build is done. So they can work on the mainteannce setup and start with testing.
 Please create request for QA and loop in openSUSE Maintenance team.
+
+#### release maintenance test updates
+Responsible: mschnitzer
+
+maintenance needs to release test updates in the update channel
+
 
 #### submit translation packages
 

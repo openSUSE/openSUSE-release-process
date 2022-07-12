@@ -265,21 +265,6 @@ create a test plan for people to manually test the distribution
 New Plan for Leap 15.X:
 https://docs.google.com/spreadsheets/d/1AGKijKpKiJCB616-bHVoNQuhWHpQLHPWCb3m1p6gXPc/edit#gid=94909276
 
-
-#### release maintenance test updates
-Responsible: mschnitzer
-
-maintenance needs to release test updates in the update channel
-
-#### create update channel
-Responsible: rel-mgmt
-
-In contrast to the main project (#52034) the update projects are meant to start empty. So we create them manually
-
-* The update projects (don't forget :NonFree) need to be created, including attributes (excl OBS:Maintained which will be added later).
-* add the new projects to openSUSE:Maintenance meta
-* The obs backend mapping file needs to be adjusted to to sync the repos to the correct place on download.opensuse.org
-
 #### publishing and mirror setup
 Responsible: rel-mgmt
 
