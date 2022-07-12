@@ -51,10 +51,6 @@ use nonftp2publishfilter.py tool
 
 some packages accidentally diverge from sle. try to merge as many as possible
 
-#### sync :NonFree
-
-I think we forgot to activate the update crawler for the :NonFree project. So we should sync with Factory at least once now.
-
 #### eliminate duplicate binaries
 
 packages with duplicate binaries need to be cleaned up as OBS has undefined behavior with those
@@ -201,10 +197,6 @@ All ECR/IPRQ documents (newly generated tarbal from the iprq/) should be revised
 #### Send Gold Master announcement for developers
 
 send the information that 15.1 is Gold to opensuse-factory and devel@
-
-#### check manual was generated for OSP
-
-ping docu team and ask if the pdf was generated and sent to OSP
 
 #### announce GM deadline internally
 
