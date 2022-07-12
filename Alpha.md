@@ -95,12 +95,6 @@ after copying the sources and before the whole thing builds prjconf needs to be 
 * replace old version with new version everywhere
 * enable %_with_betatest
 
-#### verify rpm changelog cutoff date
-
-RPM changelogs are cut off at a specific date. The date for that may need to be updated
-
-https://bugzilla.opensuse.org/show_bug.cgi?id=1129753
-
 #### update .treeinfo file to new version
 
 the treeinfo file in skelcd needs to contain the new version:
