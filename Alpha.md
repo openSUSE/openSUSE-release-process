@@ -53,6 +53,10 @@ Responsible: favogt
 * make obs publish to the correct directory
 * add to get.o.o
 
+#### update openSUSE-release package
+Responsible: rel-eng
+
+the openSUSE-release package lists some suggested packages, eg java. That may need updating before the release.
 
 #### run desktop-file translation extractor
 Responsible: favogt

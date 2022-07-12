@@ -1,6 +1,27 @@
 # GM
 Calendar: ${Product}: Gold Master build is done
 
+#### enable OBS:Maintained attribute in :Update project
+
+This is typically set after we do not accept any more changes to GM.
+Every new submit request does go to submit channel.
+
+The :Update project needs to have
+
+    <attributes>
+    <attribute name="Maintained" namespace="OBS"/>
+    <attribute name="BranchTarget" namespace="OBS"/>
+    <attribute name="ApprovedRequestSource" namespace="OBS"/>
+    </attributes>
+
+=>
+
+    $ osc meta attribute -c -a OBS:Maintained openSUSE:Leap:15.4:Update
+
+And set update project:
+
+    $ osc meta attribute -c -a OBS:UpdateProject -s openSUSE:Leap:15.1:Update openSUSE:Leap:15.1
+
 #### old files kept in pontifex2:/srv/ftp/pub/opensuse/distribution/leap/15.2/repo/oss/
 Responsible: rel-mgmt
 
