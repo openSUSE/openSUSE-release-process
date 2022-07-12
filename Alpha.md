@@ -127,10 +127,10 @@ the CI for YaST needs to be configured to submit packages for the new release fr
 * yast2-docker
 * skelcd-control-openSUSE
 
-#### add openqa upgrade tests to/from 15.1
+#### add openqa upgrade tests to/from previous release
 Responsible: mgriessmeier
 
-upgrade tests need to include 15.1
+upgrade tests need to include previous release (e.g. 15.4 for Leap 15.5)
 
 #### create external sources list
 
@@ -169,11 +169,6 @@ save search with a name and share them
 
 We need to sync changes from certain SLE packages from SUSE:SLE-15-SPX:GA to Leap
 An example would be installation-images
-
-#### ask for kernel submission
-Responsible: rel-eng
-
-ask the kernel submission to prepare a Leap variant based on the SLE kernel
 
 #### enable bots/tools
 Responsible: rel-mgmt
