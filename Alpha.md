@@ -177,11 +177,6 @@ set up bugzilla queries for the new release
 
 save search with a name and share them
 
-#### sync changes from SLE packages
-
-We need to sync changes from certain SLE packages from SUSE:SLE-15-SPX:GA to Leap
-An example would be installation-images
-
 #### enable bots/tools
 Responsible: rel-mgmt
 
@@ -198,6 +193,28 @@ enable bots and tools
 Add the new release to
 
 * trigger rebuilds
+
+#### update all packages that hardcode the distribution version
+
+All packages that hardcode the distribution version somehow need to be updated with the current version number
+
+* openSUSE.product.in and openSUSE-Addon-NonOss.product.in in 000package-groups
+* skelcd-control-openSUSE
+* branding-openSUSE
+* MozillaFirefox-branding-openSUSE
+
+if needed add local hacks. getting the fix into the build package for example usually takes a way too long time for us. track any local hacks here and don't close ticket before done. Otherwise we may forget them.
+
+
+Problably only for major versions:
+
+* installation-images
+
+#### sync changes from SLE packages
+
+We need to sync changes from certain SLE packages from SUSE:SLE-15-SPX:GA to Leap
+An example would be installation-images
+
 
 #### upload schedule internally
 Responsible: rel-mgmt
@@ -311,49 +328,18 @@ the new release needs a new branding
 * KDE loading screen
 * Headline image for Yast sidebar
 
-
-#### update all packages that hardcode the distribution version
-
-All packages that hardcode the distribution version somehow need to be updated with the current version number
-
-* openSUSE.product.in and openSUSE-Addon-NonOss.product.in in 000package-groups
-* skelcd-control-openSUSE
-* build
-* branding-openSUSE
-* kiwi-boot-descriptions
-* MozillaFirefox-branding-openSUSE
-
-if needed add local hacks. getting the fix into the build package for example usually takes a way too long time for us. track any local hacks here and don't close ticket before done. Otherwise we may forget them.
-
-
-Problably only for major versions:
-
-* installation-images
-
-#### enable iso syncing to openQA
-Responsible: okurz
-
-the rsync.pl script needs to be adjust to sync the isos to openQA
-
-when doing that the directory for changes needs to be created
-  # cd /var/lib/snapshot-changes/opensuse/
-  # mkdir 15.1
-  # chown factory-news 15.1
-  # setfacl -m u:geekotest:rwx 15.1
-
-run rsync.pl and make sure an entry is created in snapshot-changes. Then symlink the current build:
-  # sudo -u geekotest ln -s $BUILDNR current
-
-edit /etc/apache2/conf.d/factory-package-news.conf for the new release
-
 #### Add new version in Bugzilla
 
-https://et.innerweb.novell.com/project_pages/prod_bugz_edit_vrsms.jsp?bcid=1&lid=0&pid=53824
+Make a request for SUSE IT to add new openSUSE Leap version to bugzilla
+https://sd.suse.com/servicedesk/customer/portal/1
 
 #### setup openQA
 Responsible: okurz
 
-update job group for new release: https://openqa.opensuse.org/parent_group_overview/3
+Make a request for openQA https://progress.opensuse.org/projects/openqatests/issues
+to update job group for new release: https://openqa.opensuse.org/parent_group_overview/3
+
+Happens here: https://github.com/os-autoinst/opensuse-jobgroups
 
 adjust description and link of the parent group if needed
 
@@ -370,14 +356,13 @@ The staging group may need to be renamed an re-created in order to preserve old 
 
 add upgrade tests from previous release
 
-#### bootstrap
-Responsible: rel-eng
+#### enable iso syncing to openQA
+Responsible: okurz
 
-* build ring0 against ring0 of the previous release
-* when ring0 is built remove the bootstrap aid
-* bootstrap ring1
-* let the whole project build (later)
-* undo any bootstrap changes, such as brp-extract-translations
+Make a request for openQA https://progress.opensuse.org/projects/openqatests/issues
+to setup iso syncing
+
+https://github.com/os-autoinst/openqa-trigger-from-obs
 
 #### copy sources of previous release
 Responsible: rel-mgmt
