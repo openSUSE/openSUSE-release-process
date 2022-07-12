@@ -117,12 +117,6 @@ notify all maintainers who have packages in Leap about the fact
 
 https://github.com/openSUSE/openSUSE-release-tools/blob/master/devel-project.py
 
-#### update rpm-groups.pot
-
-rpm-groups.pot is not created automatically. Run once to generate the pot file
-
-https://github.com/yast/yast-translations
-
 #### notify cloud/container/appliance teams of the upcoming release
 
 There is a number of clouds/3rd party hosting out there where openSUSE is
