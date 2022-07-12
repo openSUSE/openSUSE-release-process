@@ -507,13 +507,6 @@ http://en.opensuse.org/Upgrade needs to be adjusted for new release
 
 make sure all pages for current Leap release (15.X) are in good shape and the links between pages work
 
-
-#### [functional][u] disable iso download in openQA
-
-smartypants go to openQA to download the final iso. Needs to be disable to avoid overloading the server.
-
-Either by removing permission from the files or apache access rules.
-
 #### update roadmap
 
 mark milestone as released in https://en.opensuse.org/openSUSE:Roadmap
