@@ -3,6 +3,7 @@ Calendar: ${Product}: RC build is done
 
 #### update desktop file translations
 
+There was quite a discussion about this in https://progress.opensuse.org/issues/100023
 * in weblate commit all pending changes
 
 In desktop-file-translations:
@@ -14,8 +15,9 @@ In desktop-file-translations:
 
 #### clean up build fails
 
+Needs to happen at beginning of Beta phase
+
 be more agressive with build fails
-- harass maintainers
 - wipebinaries of failed packages after checking whatdependson
 - wipebinaries of unresolvables
 - file delete requests
@@ -35,29 +37,10 @@ packages with duplicate binaries need to be cleaned up as OBS has undefined beha
 
 run `osc staging -p PROJECT check_duplicate_binaries`
 
-https://build.opensuse.org/package/view_file/openSUSE:Leap:15.1:Staging/dashboard/duplicate_binaries?expand=1
-
 #### make sure new maintenance packages end up in the release
 
 maintenance probably released several packages that are new in the previous release. We need to make sure to collect them for the new release
 
-#### enable OBS:Maintained attribute in :Update project
-
-The :Update project needs to have
-
-    <attributes>
-    <attribute name="Maintained" namespace="OBS"/>
-    <attribute name="BranchTarget" namespace="OBS"/>
-    <attribute name="ApprovedRequestSource" namespace="OBS"/>
-    </attributes>
-
-=>
-
-    $ osc meta attribute -c -a OBS:Maintained openSUSE:Leap:15.1:Update
-
-And set update project:
-
-    $ osc meta attribute -c -a OBS:UpdateProject -s openSUSE:Leap:15.1:Update openSUSE:Leap:15.1
 
 #### remove beta marks
 Blocks: remove README.beta from oss repository
@@ -85,7 +68,9 @@ devel:openSUSE:Factory/openSUSE-EULAs needs to be up to date to include all rele
 
 The sources are at github: https://github.com/openSUSE/openSUSE-EULAs
 
-#### submit translation packages
+#### submit translation packages to Leap
+
+Let's submit translations at the beginning of RC phase.
 
 Packages that contain translations may need to be updated and submitted
 
@@ -104,10 +89,11 @@ Packages that contain translations may need to be updated and submitted
     osc sr
 
 #### verify piwik works
+Talk to Doug
 
+#### submit translation packages to Leap
 
-
-#### submit translation packages
+Let's submit translations at the END of RC phase, after the deadline for Translations https://en.opensuse.org/openSUSE:Roadmap.
 
 Packages that contain translations may need to be updated and submitted
 
@@ -183,6 +169,6 @@ Ping everyone listed in https://en.opensuse.org/OpenSUSE_Localization_Teams to m
 
 Fix the links to the statistics.
 
-#### disable Factory submitter
+#### sync :NonFree
 
-disable the FCC submitter
+We should sync :NonFree with Factory
