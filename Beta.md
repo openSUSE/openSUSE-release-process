@@ -181,14 +181,7 @@ internally and externally
 the nvidia drivers need to be uploaded as soon as the kernel ABI is stable enough
 
 #### Call for testing - BetaPizza Parties
-
-
-
-#### get signed shim
-
-Talk to security to request and submit a properly signed shim
-
-Shim is mean to be built on a stable distro, eg $Leap-.1. During the submission period to Microsoft it may not be possible to update some packages, eg binutils or openssl to make sure the build stays reproducible. After acquiring the new signature, submit shim to the stable distro to get it officially built and released. Fetch the rpm and put it in the "shim-leap" package for repacking in other code streams like $Leap and TW.
+Responsible: ddemaio
 
 #### call for translation
 
