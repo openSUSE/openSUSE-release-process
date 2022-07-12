@@ -22,6 +22,16 @@ be more agressive with build fails
 - wipebinaries of unresolvables
 - file delete requests
 
+#### get rid of repochecker failures
+Responsible: rel-eng
+
+remaining repo checker failures need to be fixed:
+https://build.opensuse.org/package/view_file/openSUSE:Leap:15.1:Staging/dashboard/repo_checker
+
+Also, the whitelist should be reviewed if it lists too much
+
+https://build.opensuse.org/package/show/openSUSE:Backports:SLE-15-SP4:Staging/dashboard
+
 #### set up redirects for repository structure on download.o.o
 
 The paths referenced in this view:
@@ -111,6 +121,12 @@ Packages that contain translations may need to be updated and submitted
     osc ci
     osc sr
 
+#### communicate translation deadline
+Responsible: AdaLovelace
+
+last translation packages should be submitted Monday of the GM week. So the deadline should be Sunday.
+
+
 #### make sure nvidia packages are ready for GA
 
 NVidia drivers are nowadays usually ready way before GA. Ping the driver maintainer to make sure that is the case actually.
@@ -172,3 +188,7 @@ Fix the links to the statistics.
 #### sync :NonFree
 
 We should sync :NonFree with Factory
+
+#### update instlux files
+
+the instlux files on the isos need to be updated to show the current version

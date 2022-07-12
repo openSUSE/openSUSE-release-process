@@ -53,6 +53,11 @@ Responsible: favogt
 * make obs publish to the correct directory
 * add to get.o.o
 
+#### set end of life attribute in product file
+Responsible: rel-mgmt
+
+/etc/products.d/Leap.prod should have the endoflife option set
+
 #### update openSUSE-release package
 Responsible: rel-eng
 
