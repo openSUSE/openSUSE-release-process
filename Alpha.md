@@ -6,6 +6,27 @@ Responsible: rel-eng
 
 Send email to autobuild@suse.de to setup the openSUSE:Leap:X.Y and openSUSE:Leap:X.Y:ToTest project.
 
+#### Enable sync sources and binaries from releavant SUSE:SLE project from IBS to OBS
+
+(check whether the SUSE:SLE-15-SPX project already exists, prior making the request)
+Please send a request to autobuild@suse.de to sync binaries and sources for SUSE:SLE sources and binaries
+Blacklist for packages that need to be skipped from sync can be found here https://en.opensuse.org/Portal:Leap:Jump/OBS/Blacklist
+
+This should ideally be send at least day ahead of the SLE-X-SPY Beta1 date.
+
+mailto: autobuild@suse.de
+subject: please sync sources and binaries for SUSE:SLE-X-SPY:GA to OBS after Beta1
+
+Hello Autobuild team,
+
+could you please enable sync of sources and binaries for SUSE:SLE-X-SPY:GA to OBS right after the Beta1
+which is expected happen on DD.MM.YYYY. We need them as openSUSE Leap is based on these binaries.
+
+Blacklist of packages that should not be synced, is maintained by autobuild team.
+
+
+Thank you
+
 #### add link to openSUSE project
 Blocks: ask for scc enablement
 
@@ -62,25 +83,20 @@ Responsible: rel-mgmt
 #### ask for scc enablement
 Responsible: rel-mgmt
 
-
-
 #### announce start of development
 Responsible: rel-mgmt
 
-Send mail to factory and devel mailing lists to announce start of the development phase for a new new distro. 
+Send mail to factory and devel mailing lists to announce start of the development phase for a new new distro.
 
 Schedule a short online kickoff event  for the community (1-2h), with announcement at least a week ahead.
 Prepare a short introduction covering change in the new version of openSUSE Leap.
 
-
 #### Add required checks to staging projects
-Responsible: coolo
+Responsible: mlin7442
 
 We need the required checks for every staging project setup manually.
 
 There is also no osc command for that atm, so it's quite manual.
-
-
 
 #### Update 000update-repos config.yml
 Responsible: rel-eng
@@ -109,10 +125,6 @@ Adjust https://github.com/openSUSE/packages-i18n/blob/master/50-tools/urls_opens
 legaldb needs to scan the newly created project. Since it was copied legaldb didn't see requests so doesn't know about the packages in it.
 
 It's configured on botmaster as /srv/go-config/legal-auto-projects-opensuse
-
-#### copy images subproject
-
-create the :Images and :Images:ToTest subprojects
 
 #### copy WSL subproject
 
@@ -176,16 +188,12 @@ Responsible: rel-mgmt
 enable bots and tools
 
 * totest manager
-* origin-manager (jimmy)
 * snapshot announcer (make sure to fix links in the template)
-* manager_42 (probably obsoleted by origin-manager -> jimmy)
-* update_crawler (may also be replaced by origin-manager)
 * build fail reminder
-* staging bot (jimmy)
-* openqa commments (has a different name now, ask jimmy)
+* staging bot for Backports
 * duplicate binaries
-* support package rebuild
 * package list generator
+* package finder
 
 Add the new release to
 
@@ -224,9 +232,13 @@ Update development related pages with information about the new release
 #### submit new Factory packages to Leap
 Responsible: rel-eng
 
-for all packages that were added to Factory after the last leap release, set up https://build.opensuse.org/project/show/openSUSE:42:Factory-Candidates-Check to check build success and activate the https://github.com/openSUSE/osc-plugin-factory/blob/master/fcc_submitter.py
+Make sure to talk to Bernhard to turn off the bug bot to avoid spamming bugzilla before submitting packages.
+Let's not spam everyone's mailbox.
 
-Make sure to talk to Bernhard to turn off the bug bot to avoid spamming bugzilla.
+Once disabled:
+This is currently a manual effort, to submit packages to main project. Only packages that build will make it.
+We're not using https://github.com/openSUSE/osc-plugin-factory/blob/master/fcc_submitter.py
+
 
 #### prepare get.opensuse.org
 Responsible: rel-mgmt
@@ -250,29 +262,9 @@ Responsible: rel-mgmt
 
 create a test plan for people to manually test the distribution
 
-New Plan for Leap 15.2:
+New Plan for Leap 15.X:
 https://docs.google.com/spreadsheets/d/1AGKijKpKiJCB616-bHVoNQuhWHpQLHPWCb3m1p6gXPc/edit#gid=94909276
 
-#### Enable sync sources and binaries from releavant SUSE:SLE project from IBS to OBS
-
-Please send a request to autobuild@suse.de to sync binaries and sources for SUSE:SLE sources and binaries
-Blacklist for packages that need to be skipped from sync can be found here https://en.opensuse.org/Portal:Leap:Jump/OBS/Blacklist
-
-This should ideally be send at least day ahead of the SLE-X-SPY Beta1 date.
-
-mailto: autobuild@suse.de
-subject: please sync sources and binaries for SUSE:SLE-X-SPY:GA to OBS after Beta1
-
-Hello Autobuild team,
-
-could you please enable sync of sources and binaries for SUSE:SLE-X-SPY:GA to OBS right after the Beta1
-which is expected happen on DD.MM.YYYY. We need them as openSUSE Leap is based on these binaries.
-
-Here is a list of packages that should remain blacklisted: (please describe changes if any)
-https://en.opensuse.org/Portal:Leap:Jump/OBS/Blacklist
-
-
-Thank you
 
 #### release maintenance test updates
 Responsible: mschnitzer
