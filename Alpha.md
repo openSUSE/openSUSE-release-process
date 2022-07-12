@@ -372,49 +372,32 @@ Also ask for dispatchprios to be adjusted.
 
 When done copy old project to new one with full history:
 
-	$ osc api /source/openSUSE:Leap:15.2?cmd=copy\&oproject=openSUSE:Leap:15.1\&withhistory=1\&comment=branch+from+15.1 -X POST
+	$ osc api /source/openSUSE:Leap:15.5?cmd=copy\&oproject=openSUSE:Leap:15.4\&withhistory=1\&comment=branch+from+15.4 -X POST
 
 Adjust prj meta, add reviews etc (check previous release)
 
-        $ osc meta prj -e openSUSE:Leap:15.2
+        $ osc meta prj -e openSUSE:Leap:15.5
 
 Then copy the rest:
 
 	$ for i in \
 		NonFree \
-		Rings \
-		Rings:0-Bootstrap \
-		Rings:1-MinimalX \
-		Staging Staging:A \
-		Staging:A:DVD; do \
 		echo $i; \
-		osc api /source/openSUSE:Leap:15.2:$i?cmd=copy\&oproject=openSUSE:Leap:15.1:$i\&withhistory=1\&comment=branch+from+15.1 -X POST; \
+		osc api /source/openSUSE:Leap:15.5:$i?cmd=copy\&oproject=openSUSE:Leap:15.4:$i\&withhistory=1\&comment=branch+from+15.4 -X POST; \
 		done
 
 Ask an obs admin to copy the signkey for the staging projects from the previous release
 
 To adjust link files osc co -u the project, then
 
-	sed -i -e 's/openSUSE:Leap:15.1/openSUSE:Leap:15.2/' */_link
+	sed -i -e 's/openSUSE:Leap:15.4/openSUSE:Leap:15.5/' */_link
 
 Fix non oss release file:
 
-        osc api /source/openSUSE:Leap:15.2:NonFree/000release-packages/_aggregate -e
+        osc api /source/openSUSE:Leap:15.5:NonFree/000release-packages/_aggregate -e
 
 * make sure prjconf contains _with_betatest macros
 * don't forget _service in _project
-
-Fix rpmlint-AGGR in ring0
-
-        osc api /source/openSUSE:Leap:15.2:Rings:0-Bootstrap/rpmlint-mini-AGGR/_aggregate -e
-
-
-
-
-#### upgrade windows 10 image in openQA
-Responsible: rel-mgmt
-
-get QA to upgrade the Windows 10 image in openQA, it's based on a very old version meanwhile and doesn't reflect reality anymore.
 
 #### rename product from openSUSE to Leap
 Responsible: rel-mgmt
