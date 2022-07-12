@@ -291,11 +291,6 @@ https://en.opensuse.org/Portal:Leap:Jump/OBS/Blacklist
 
 Thank you
 
-#### adjust lookup file
-
-00Meta/lookup.yml needs to be adjusted.
-All references to Factory, 15.0, FORK or Devel; need point to 15.1
-
 #### release maintenance test updates
 Responsible: mschnitzer
 
