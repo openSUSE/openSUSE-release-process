@@ -171,9 +171,10 @@ set up bugzilla queries for the new release
 
 save search with a name and share them
 
-#### submit missing SLE packages
+#### sync changes from SLE packages
 
-submit packages from SUSE:SLE-15-SP2:GA to Leap
+We need to sync changes from certain SLE packages from SUSE:SLE-15-SPX:GA to Leap
+An example would be installation-images
 
 #### verify staging UEFI certificate
 
