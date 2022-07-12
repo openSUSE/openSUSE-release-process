@@ -465,12 +465,6 @@ Responsible: rel-mgmt
 
 get QA to upgrade the Windows 10 image in openQA, it's based on a very old version meanwhile and doesn't reflect reality anymore.
 
-#### *update AppStream
-
-AppStream had to be forked in 15.1 for ARM. it's not useful for anything in SLE. sync it up again in SP2 for the sake of it
-
-https://bugzilla.opensuse.org/show_bug.cgi?id=1125898
-
 #### rename product from openSUSE to Leap
 Responsible: rel-mgmt
 
