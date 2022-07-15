@@ -459,11 +459,6 @@ make sure all pages for current Leap release (15.X) are in good shape and the li
 
 mark milestone as released in https://en.opensuse.org/openSUSE:Roadmap
 
-#### Create release counter
-
-Start kicking the artwork team: we need the release counter updated!
-
-https://github.com/openSUSE/countdown.o.o
 
 #### Social media marketing
 

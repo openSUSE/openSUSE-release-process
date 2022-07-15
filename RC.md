@@ -145,9 +145,6 @@ maintenance updates from the update project need to be merged back into the main
 There should be a way to do this by means of obs
 
 
-#### make counter.o.o/link point to new portal
-
-https://counter.opensuse.org/link/ should point to https://en.opensuse.org/Portal:15.1?pk_campaign=counter
 
 
 #### prepare get.opensuse.org
@@ -192,3 +189,4 @@ We should sync :NonFree with Factory
 #### update instlux files
 
 the instlux files on the isos need to be updated to show the current version
+
