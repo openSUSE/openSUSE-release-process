@@ -1,11 +1,26 @@
 # Beta
 Calendar: ${Product}: Beta build is done
 
+#### create update channel
+Responsible: rel-mgmt
+
+In contrast to the main project (#52034) the update projects are meant to start empty. So we create them manually
+
+* The update projects (don't forget :NonFree) need to be created, including attributes (excl OBS:Maintained which will be added later).
+* add the new projects to openSUSE:Maintenance meta
+* The obs backend mapping file needs to be adjusted to to sync the repos to the correct place on download.opensuse.org
+
 #### Maintenance openQA setup
 Responsible: qa
 
 Give quality assurance a heads up that Beta build is done. So they can work on the mainteannce setup and start with testing.
 Please create request for QA and loop in openSUSE Maintenance team.
+
+#### release maintenance test updates
+Responsible: mschnitzer
+
+maintenance needs to release test updates in the update channel
+
 
 #### submit translation packages
 
@@ -25,10 +40,12 @@ Packages that contain translations may need to be updated and submitted
     osc ci
     osc sr
 
-#### clean up SLE-workarounds
+#### clean up temporary SLE forks
 Responsible: rel-eng
 
-clean up the SLE-workarounds subproject. Check which packages got merged and remove them. Verify the remaining ones are progressing.
+clean up the any temporary SLE forks from subproject.
+These forks are only done in Backports projects, not in toplevel openSUSE:Leap
+Subprojects are FactoryFork, SLEFork
 
 #### get rid of repochecker failures
 Responsible: rel-eng
@@ -37,6 +54,8 @@ remaining repo checker failures need to be fixed:
 https://build.opensuse.org/package/view_file/openSUSE:Leap:15.1:Staging/dashboard/repo_checker
 
 Also, the whitelist should be reviewed if it lists too much
+
+https://build.opensuse.org/package/show/openSUSE:Backports:SLE-15-SP4:Staging/dashboard
 
 #### ask community to add repo xml
 
@@ -74,22 +93,15 @@ Responsible: rel-mgmt
 - ask for date for erf interlock
 - present
 
-#### sync prjconf to build package
-Responsible: rel-eng
-
-make sure the prjconf of the distr is added to the build package via pull request upstream
-
 #### mirror the release internally
 Responsible: rel-mgmt
 
 there are some developers that like to have the release accessible internally via NFS. Ask Rudi to mirror it.
 
-#### update openSUSE-release package
-Responsible: rel-eng
-
-the openSUSE-release package lists some suggested packages, eg java. That may need updating before the release.
-
 #### run desktop-file translation extractor
+
+There was quite a discussion about this in https://progress.opensuse.org/issues/100023
+we need to do this early, as it seems that we need a collaboration from SLES team.
 
 the extractor of desktop file translations that pushed to github needs to be enabled
 
@@ -117,12 +129,6 @@ notify all maintainers who have packages in Leap about the fact
 
 https://github.com/openSUSE/openSUSE-release-tools/blob/master/devel-project.py
 
-#### update rpm-groups.pot
-
-rpm-groups.pot is not created automatically. Run once to generate the pot file
-
-https://github.com/yast/yast-translations
-
 #### notify cloud/container/appliance teams of the upcoming release
 
 There is a number of clouds/3rd party hosting out there where openSUSE is
@@ -136,9 +142,6 @@ Docker: Fabian Vogt
 WSL: Scott Reeves
 Vagrant: Dan Cermak
 
-#### enable openQA maintenance testing
-
-openQA and the bot needs to be set up to also test maintenance updates for the new release
 
 #### verify betaversion in product files
 
@@ -147,9 +150,10 @@ also change the PublishFlags setting
 
 Changes there will trigger rebuild so has to be done in advance
 
-#### submit translation packages
+#### submit translation packages to devel projects and Factory
 
 Packages that contain translations may need to be updated and submitted
+This should happen rather regularly.
 
 * [] system:install:head/package-translations
 * [] X11:common:Factory/desktop-translations
@@ -159,7 +163,7 @@ Packages that contain translations may need to be updated and submitted
 * [] devel:openSUSE:Factory/openSUSE-EULAs
 
 
-#### submit translation packages
+#### submit translation packages to Leap
 
 Packages that contain translations may need to be updated and submitted
 
@@ -187,14 +191,7 @@ internally and externally
 the nvidia drivers need to be uploaded as soon as the kernel ABI is stable enough
 
 #### Call for testing - BetaPizza Parties
-
-
-
-#### get signed shim
-
-Talk to security to request and submit a properly signed shim
-
-Shim is mean to be built on a stable distro, eg $Leap-.1. During the submission period to Microsoft it may not be possible to update some packages, eg binutils or openssl to make sure the build stays reproducible. After acquiring the new signature, submit shim to the stable distro to get it officially built and released. Fetch the rpm and put it in the "shim-leap" package for repacking in other code streams like $Leap and TW.
+Responsible: ddemaio
 
 #### call for translation
 
@@ -217,4 +214,5 @@ Talk to Adrian or some other build service admin
 #### Make sure hot-patched change being upstreamed
 Responsible: rel-eng
 
+Let's collect any patches/hotfixes that we make for Leap here and didn't make it upstream, typically we have them in subprojects.
 We've hot-patched change in the several packages, those change should go to upstream either to github or OBS.

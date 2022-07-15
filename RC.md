@@ -3,6 +3,7 @@ Calendar: ${Product}: RC build is done
 
 #### update desktop file translations
 
+There was quite a discussion about this in https://progress.opensuse.org/issues/100023
 * in weblate commit all pending changes
 
 In desktop-file-translations:
@@ -14,11 +15,22 @@ In desktop-file-translations:
 
 #### clean up build fails
 
+Needs to happen at beginning of Beta phase
+
 be more agressive with build fails
-- harass maintainers
 - wipebinaries of failed packages after checking whatdependson
 - wipebinaries of unresolvables
 - file delete requests
+
+#### get rid of repochecker failures
+Responsible: rel-eng
+
+remaining repo checker failures need to be fixed:
+https://build.opensuse.org/package/view_file/openSUSE:Leap:15.1:Staging/dashboard/repo_checker
+
+Also, the whitelist should be reviewed if it lists too much
+
+https://build.opensuse.org/package/show/openSUSE:Backports:SLE-15-SP4:Staging/dashboard
 
 #### set up redirects for repository structure on download.o.o
 
@@ -35,29 +47,10 @@ packages with duplicate binaries need to be cleaned up as OBS has undefined beha
 
 run `osc staging -p PROJECT check_duplicate_binaries`
 
-https://build.opensuse.org/package/view_file/openSUSE:Leap:15.1:Staging/dashboard/duplicate_binaries?expand=1
-
 #### make sure new maintenance packages end up in the release
 
 maintenance probably released several packages that are new in the previous release. We need to make sure to collect them for the new release
 
-#### enable OBS:Maintained attribute in :Update project
-
-The :Update project needs to have
-
-    <attributes>
-    <attribute name="Maintained" namespace="OBS"/>
-    <attribute name="BranchTarget" namespace="OBS"/>
-    <attribute name="ApprovedRequestSource" namespace="OBS"/>
-    </attributes>
-
-=>
-
-    $ osc meta attribute -c -a OBS:Maintained openSUSE:Leap:15.1:Update
-
-And set update project:
-
-    $ osc meta attribute -c -a OBS:UpdateProject -s openSUSE:Leap:15.1:Update openSUSE:Leap:15.1
 
 #### remove beta marks
 Blocks: remove README.beta from oss repository
@@ -85,7 +78,9 @@ devel:openSUSE:Factory/openSUSE-EULAs needs to be up to date to include all rele
 
 The sources are at github: https://github.com/openSUSE/openSUSE-EULAs
 
-#### submit translation packages
+#### submit translation packages to Leap
+
+Let's submit translations at the beginning of RC phase.
 
 Packages that contain translations may need to be updated and submitted
 
@@ -104,10 +99,11 @@ Packages that contain translations may need to be updated and submitted
     osc sr
 
 #### verify piwik works
+Talk to Doug
 
+#### submit translation packages to Leap
 
-
-#### submit translation packages
+Let's submit translations at the END of RC phase, after the deadline for Translations https://en.opensuse.org/openSUSE:Roadmap.
 
 Packages that contain translations may need to be updated and submitted
 
@@ -124,6 +120,12 @@ Packages that contain translations may need to be updated and submitted
     osc vc         # beautify *.changes: 'M-x sort-lines' and 'M-x delete-duplicate-lines'
     osc ci
     osc sr
+
+#### communicate translation deadline
+Responsible: AdaLovelace
+
+last translation packages should be submitted Monday of the GM week. So the deadline should be Sunday.
+
 
 #### make sure nvidia packages are ready for GA
 
@@ -143,9 +145,6 @@ maintenance updates from the update project need to be merged back into the main
 There should be a way to do this by means of obs
 
 
-#### make counter.o.o/link point to new portal
-
-https://counter.opensuse.org/link/ should point to https://en.opensuse.org/Portal:15.1?pk_campaign=counter
 
 
 #### prepare get.opensuse.org
@@ -183,13 +182,11 @@ Ping everyone listed in https://en.opensuse.org/OpenSUSE_Localization_Teams to m
 
 Fix the links to the statistics.
 
-#### update openSUSE:Localization_guide
-Responsible: AdaLovelace
+#### sync :NonFree
 
-Update https://en.opensuse.org/openSUSE:Localization_guide to document the Weblate workflow
+We should sync :NonFree with Factory
 
-When done, link it from https://en.opensuse.org/Portal:15.1
+#### update instlux files
 
-#### disable Factory submitter
+the instlux files on the isos need to be updated to show the current version
 
-disable the FCC submitter

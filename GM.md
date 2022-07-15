@@ -1,6 +1,38 @@
 # GM
 Calendar: ${Product}: Gold Master build is done
 
+#### submit translation packages
+
+Packages that contain translations may need to be updated and submitted
+
+* package-translations
+* desktop-translations : X11:common:Factory
+* yast2-trans : YaST:Head
+* yast2-slide-show : system:install:head
+* skelcd-openSUSE : system:install:head
+* openSUSE-EULAs: devel:openSUSE:Factory
+
+#### enable OBS:Maintained attribute in :Update project
+
+This is typically set after we do not accept any more changes to GM.
+Every new submit request does go to submit channel.
+
+The :Update project needs to have
+
+    <attributes>
+    <attribute name="Maintained" namespace="OBS"/>
+    <attribute name="BranchTarget" namespace="OBS"/>
+    <attribute name="ApprovedRequestSource" namespace="OBS"/>
+    </attributes>
+
+=>
+
+    $ osc meta attribute -c -a OBS:Maintained openSUSE:Leap:15.4:Update
+
+And set update project:
+
+    $ osc meta attribute -c -a OBS:UpdateProject -s openSUSE:Leap:15.1:Update openSUSE:Leap:15.1
+
 #### old files kept in pontifex2:/srv/ftp/pub/opensuse/distribution/leap/15.2/repo/oss/
 Responsible: rel-mgmt
 
@@ -20,18 +52,9 @@ OBS team (Marco) said, they upload their files to pontifex2 and there is only th
 
 #### prepare GM on download server
 
-Plan for 15.1
-
-* log in to download.opensuse.org (pontifex) before ttm released GM to download.o.o!
-* hardlink files from 15.1/iso into e.g. 15.1/iso-devel in ftp-stage
-* wait for some mirrors to catch up
-* sync the change to ftp
-* install a redirect rule 15.1/iso into 15.1/iso-devel
-* wait for ttm to release final build and publish_distro to do it's initial work
-* disable rsync pushing for 15.1 in /etc/rsyncd-internal.conf so obs can't spoil the fun
-* remove world access from iso/ so only staging mirrors can pull it
-* disable publish_distro for 15.1 (~mirror/bin)
-* rename iso images to final names
+Disable publishing of ftp-stage to ftp-prod.
+Publish GM data to ftp-prod something like week ahead of time.
+Once this is done simply ping Doug/opensuse-marketing, with links to the GM images, as he would like to provide an early access to press.
 
 #### remind maintenance to enable their update crawler
 
@@ -43,59 +66,37 @@ Some submission may not have made it into GM. Communicate to maintenance to subm
 
 #### create publish filter for NON_FTP_PACKAGES
 
-need to add PublishFilter: lines to prjconf of the :Update project to prevent packages in NON_FTP_PACKAGES.group from publishing in maintenance updates
+Marcus seem to have his own publish filter. Ping him that this needs to be done.
+
+Was:
+maintenance team need to add PublishFilter: lines to prjconf of the :Update project to prevent packages in NON_FTP_PACKAGES.group from publishing in maintenance updates
 
 use nonftp2publishfilter.py tool
 
-#### sync with SLE
+#### Verify that images are signed
 
-some packages accidentally diverge from sle. try to merge as many as possible
+* We no longer have to rename isos, nor sign them manually.
+* Verify that isos are signed with openSUSE key
 
-#### sync :NonFree
+check that we have signature for checksum files eg:
+e.g. openSUSE-Leap-15.4-DVD-x86_64-Media.iso.sha256.asc
 
-I think we forgot to activate the update crawler for the :NonFree project. So we should sync with Factory at least once now.
+Check that the build number is not part of -Media*sha256 files
 
-#### eliminate duplicate binaries
+$ cat openSUSE-Leap-15.4-DVD-x86_64-Media.iso.sha256
+4683345f242397c7fd7d89a50731a120ffd60a24460e21d2634e783b3c169695
+openSUSE-Leap-15.4-DVD-x86_64-Media.iso
 
-packages with duplicate binaries need to be cleaned up as OBS has undefined behavior with those
+Check the signature of the .asc files
 
-https://build.opensuse.org/package/view_file/openSUSE:Leap:15.1:Staging/dashboard/duplicate_binaries?expand=1
+gpg: Signature made Mon 30 May 2022 07:05:44 PM CEST
+gpg:                using RSA key B88B2FD43DBDC284
 
-#### get rid of repochecker failures
-
-remaining repo checker failures need to be fixed:
-https://build.opensuse.org/package/view_file/openSUSE:Leap:15.1:Staging/dashboard/repo_checker
-
-Also, the whitelist should be reviewed if it lists too much
-
-#### get iso images signed
-
-* rename iso and .sha256 file to not include Build* anymore
-* fix name in .sha256 files
-* ask autobuild to sign the files
 
 #### turn off tools
 
 * switch off bots
-  * <del>totest manager</del>
-  * <del>snapshot announcer</del>
-  * <del>manager_42</del>
-  * <del>update_crawler</del>
-  * <del>build fail reminder</del>
-  * <del>staging bot</del>
-  * <del>staaging report</del>
-* remove 15.1 from
-  * <del>trigger rebuilds</del>
-  * <del>pkglistgen</del>
 
-#### communicate translation deadline
-Responsible: AdaLovelace
-
-last translation packages should be submitted Monday of the GM week. So the deadline should be Sunday.
-
-#### update instlux files
-
-the instlux files on the isos need to be updated to show the current version
 
 #### submit translation packages
 
@@ -108,18 +109,6 @@ Packages that contain translations may need to be updated and submitted
 * skelcd-openSUSE : system:install:head
 * openSUSE-EULAs: devel:openSUSE:Factory
 
-#### release manager checklist for GA
-
-On download.o.o:
-
-on release day every once in a while scan for mirrors as mirror user:
-
-    mb scan -a -d /distribution/leap/15.1 -j4
-
-In the morning of the release day add the access bits again to make the
-content show up and give mirrors time to catch up adding the bits.
-
-Remove the redirect rule before 12:00 UTC
 
 
 #### translate openSUSE-EULAs
@@ -202,26 +191,39 @@ All ECR/IPRQ documents (newly generated tarbal from the iprq/) should be revised
 
 send the information that 15.1 is Gold to opensuse-factory and devel@
 
-#### check manual was generated for OSP
-
-ping docu team and ask if the pdf was generated and sent to OSP
-
 #### announce GM deadline internally
 
 we should announce the GM deadline internally just as SLE does
 
-#### set end of life attribute in product file
-Responsible: rel-mgmt
+#### notify SCC team about Goldmaster
 
-/etc/products.d/Leap.prod should have the endoflife option set
+notify SCC team about GM and release time
 
-#### submit translation packages
+#### tell maintenance&security about GM
 
-Packages that contain translations may need to be updated and submitted
+security@suse.de and maintenance@opensuse.org should know that the new release is in maintenance mode now.
+Also remind the about the GA date so they are extra careful about not releasing stuff that could spoil the GA experience.
+This was agreed to be done 3 weeks prior GA. So teams have time to test the setup.
 
-* package-translations
-* desktop-translations : X11:common:Factory
-* yast2-trans : YaST:Head
-* yast2-slide-show : system:install:head
-* skelcd-openSUSE : system:install:head
-* openSUSE-EULAs: devel:openSUSE:Factory
+#### update web site with new languages
+Responsible: AdaLovelace
+
+both landing page and search page got translations for new languages. The languages need to be added to index.html
+
+https://github.com/openSUSE/landing-page
+https://github.com/openSUSE/searchPage
+
+#### Switch count down to hourly rendering
+
+Remind Doug/ to switch the cron job that renders the countdown to hourly if not already done.
+
+#### ask maintenance to remove the test updates
+
+the test updates need to be removed from the update channel at some point before GA. Ask maintenance@opensuse.org
+
+There needs to be some maintenance update left always, otherwise YOU complains. So execute only when there are real updates.
+
+#### communicate GM issues to marketing
+
+If there are any known issues in Leap GM as marketing needs to know about them to decide how to communicate them.
+Could be any last minute issues, that were found in the product.

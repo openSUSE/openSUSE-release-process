@@ -26,6 +26,13 @@ lock the main project and NonFree
     <enable/>
   </lock>
 
+#### scan mirrors
+
+On download.o.o:
+
+on release day every once in a while scan for mirrors as mirror user:
+
+    mb scan -a -d /distribution/leap/15.5 -j4
 
 #### update release number in IRC channel topic
 
@@ -36,18 +43,6 @@ This needs to be updated to 42.2 by an IRC channel admin
 <blockquote>
 /query chanserv access #opensuse-project list
 </blockquote>
-
-#### notify studio team about Goldmaster
-
-notify studio team about GM and release time
-
-#### update web site with new languages
-Responsible: AdaLovelace
-
-both landing page and search page got translations for new languages. The languages need to be added to index.html
-
-https://github.com/openSUSE/landing-page
-https://github.com/openSUSE/searchPage
 
 ##### translate social media messages
 
@@ -104,27 +99,6 @@ Needs to be updated to current version or be made more generic
 
 Verify get.o.o has the correct data and links.
 Usually the -Current links are wrong.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #### Release Announcement
 
@@ -352,8 +326,6 @@ source code is at
 
 https://github.com/openSUSE/shop.o.o
 
-
-
 #### notify mirror admins
 
 notify mirror@opensuse.org about the release
@@ -366,15 +338,9 @@ the update test repo needs to be set up
 
 change symlink openSUSE-current in distribution/, update/, source/ and debug/ to point to new release
 
-#### Switch count down to hourly rendering
+Make sure that this is also changed, for sources and debug.
 
-Remind darix to switch the cron job that renders the countdown to hourly if not already done.
-
-#### make GM images available
-
-several parties need access to the GM images
-
-Usually via password protected place on http://download.opensuse.org/press/
+Needs to be done on both ftp-stage, and ftp.
 
 #### install google alerts
 
@@ -397,7 +363,7 @@ https://news.opensuse.org/2019/04/30/help-promote-opensuse-leap-15-1/
 
 #### Adapt http://mirrors.opensuse.org to list the new release
 
-Adapt the mirrorbrain "markers" and the index header template to list which mirrors provide the new release
+Reach out to heroes to adopt mirrorcache (if needed) and the index header template to list which mirrors provide the new release.
 
 Template file is
 olaf.i.o.o:/srv/www/vhosts/mirrors.opensuse.org/index.html
@@ -418,20 +384,6 @@ available as option. Leap needs to be uploaded there.
 Contacts:
 Azure: Alexander Osthof
 EC2: Robert Schweickert
-
-
-
-#### tell maintenance&security about GM
-
-security@suse.de and maintenance@opensuse.org should know that the new release is in maintenance mode now.
-Also remind the about the GA date so they are extra careful about not releasing stuff that could spoil the GA experience.
-This was agreed to be done 3 weeks prior GA. So teams have time to test the setup.
-
-#### ask maintenance to remove the test updates
-
-the test updates need to be removed from the update channel at some point before GA. Ask maintenance@opensuse.org
-
-There needs to be some maintenance update left always, otherwise YOU complains. So execute only when there are real updates.
 
 #### find external BT seeders
 
@@ -462,16 +414,12 @@ create ticket for infra team such as https://sd.suse.com/servicedesk/customer/po
 
 create a hangout with all the marketing guys to come up with creative things how to promote the release (to find ideas like the green smoke thing on 12.3)
 
-#### communicate GM issues to marketing
-
-If there are any known issues in GM marketing needs to know about them to decide how to communicate them
-
 #### publish docu
 
 doc.opensuse.org
 https://en.opensuse.org/SDB:Official_documentation
 
-Ping Frank Sundermeyer about it
+Ping Frank Sundermeyer or Lukas Kucharczyk about it
 
 
 ##### update wiki pages
@@ -507,22 +455,9 @@ http://en.opensuse.org/Upgrade needs to be adjusted for new release
 
 make sure all pages for current Leap release (15.X) are in good shape and the links between pages work
 
-
-#### [functional][u] disable iso download in openQA
-
-smartypants go to openQA to download the final iso. Needs to be disable to avoid overloading the server.
-
-Either by removing permission from the files or apache access rules.
-
 #### update roadmap
 
 mark milestone as released in https://en.opensuse.org/openSUSE:Roadmap
-
-#### Create release counter
-
-Start kicking the artwork team: we need the release counter updated!
-
-https://github.com/openSUSE/countdown.o.o
 
 
 #### Social media marketing
