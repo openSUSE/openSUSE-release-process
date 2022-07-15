@@ -4,7 +4,12 @@ Calendar: ${Product}:Start of Development phase
 #### Create openSUSE:Leap:X.Y project in OBS
 Responsible: rel-eng
 
-Send email to autobuild@suse.de to setup the openSUSE:Leap:X.Y and openSUSE:Leap:X.Y:ToTest project.
+Send email to autobuild@suse.de to setup following projects
+
+openSUSE:Leap:X.Y
+openSUSE:Leap:X.Y:ToTest
+openSUSE:Leap:15.4:ARM
+openSUSE:Leap:15.4:ARM:ToTest
 
 #### Enable sync sources and binaries from releavant SUSE:SLE project from IBS to OBS
 
@@ -40,7 +45,7 @@ This will also make Leap X.Y record visible at https://api.opensuse.org/public/s
 
 #### set up :Images subproject
 
-set up the :Images and Images:ToTest subproject, including Containers: namespace. Use project copy as with main project
+set up the :Images and Images:ToTest as well as ARM:Images and ARM:Images:ToTest subprojects, including Containers: namespace. Use project copy as with main project
 
 #### setup subproject for containers
 Responsible: favogt
