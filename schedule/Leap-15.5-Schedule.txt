@@ -1,0 +1,123 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                           openSUSE Leap                               !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+openSUSE Leap 15.5 roadmap of deadlines and snapshots
+==================================================
+
+Version:                0.1
+Date:                   2021-07-15
+
+Product:                openSUSE Leap 15.5
+
+Leap Release Manager:   Lubos Kocman
+Editors:                Lubos Kocman
+
+------------------------------------------------------------------------------
+Fri, July 15, 2022       Start of Development phase
+
+o openSUSE Leap and Backports OBS projects are set up.
+o openSUSE Leap 15.5 is Alpha.
+o SUSE:SLE-15-SP5:GA is being synced to OBS
+o Release checklist for Leap 15.5 is in progress-o-o
+
+------------------------------------------------------------------------------
+Fri, July 29, 2022       SLES Features are Submitted to E&I
+o Features must be in JIRA and submitted to E&I
+
+------------------------------------------------------------------------------
+Fri, September 9, 2022   SLES Final Decision and Feedback Deadline for features
+o Starts late feature process
+
+------------------------------------------------------------------------------
+Wed, September 21, 2022  Engineering Interlock
+o Week after Interlock for SUSE Linux Enteprise
+
+------------------------------------------------------------------------------
+Fri, September 30, 2022       SLES Code Drop Deadline for partners
+o Informative! SLES code drop deadline for SUSE's partners
+
+------------------------------------------------------------------------------
+Wed, Jan 25, 2023      Checkin Deadline for Beta
+
+o Deadline is at 15:00 UTC
+o Deadline for any package removals from Leap.
+o Deadline corresponds with SLE 15 SP5 late feature cutoff deadline and Snap 3 prior Public Beta
+
+------------------------------------------------------------------------------
+Wed, Jan 25, 2023       Late Feature Request Cutoff for SLE
+o Every feature with a code delivery for SUSE Linux Enterprise after this date requires an ECO and may be targeted post FCS date. Does not apply for Leap code-drops.
+o After this date only P1 bugfixes, important security fixes and pre-agreed important P2 fixes are accepted in SUSE Linux Enterprise. This does not apply for Leap code-drops.
+
+------------------------------------------------------------------------------
+Wed, Feb 16, 2023       Beta build is done
+
+o Week after SLES 15 SP5 Public Beta
+o openSUSE Leap 15.5 is Beta
+o Maintenance team starts working on maintenance setup 
+
+
+------------------------------------------------------------------------------
+Thu, April 6th, 2023       Checkin Deadline for RC
+
+o Deadline is at 15:00 UTC
+o Corresponds with a deadline for two weekly snapshots prior to SLE's Public RC
+o Only important bugfixes should be accepted after this point
+
+------------------------------------------------------------------------------
+Wed, April 27, 2023       RC build is done
+
+o RC build is done
+o Maintenance setup is done
+o Leap Code freeze.
+o Backports project freeze ahead of Leap
+o Stop using snapshot of SLES 15 SP5 changes
+
+------------------------------------------------------------------------------
+Wed, May 11, 2023       Gold Master code submission deadline
+
+o In sync with SLES GMC candidate code submission deadline
+
+------------------------------------------------------------------------------
+Fri, May 14, 2022       Deadline for Documentation and Translations
+
+o All translations were pulled this has to happen prior GM
+
+------------------------------------------------------------------------------
+Wed, May 31, 2023       Gold Master build is done
+
+o Leap is GOLD
+
+------------------------------------------------------------------------------
+Wed, Jun 7, 2023       Public Availability of the Release
+
+o openSUSE Leap 15.5 will be released to the public at 12:00 UTC
+
+------------------------------------------------------------------------------
+Thu, Jun 8, 2024       Release retrospective survey is open
+
+o Release retro on survey.opensuse.org is open right after GA
+
+------------------------------------------------------------------------------
+Thu, Jun 22, 2024     Collect feedback from the retrospective
+
+o Share feedback of the retrospective with community.
+
+------------------------------------------------------------------------------
+Wed, Oct 4th, 2024       Quarterly Update 1
+
+o Respin of installation images, if we identify a reason to respin (can be skipped)
+
+------------------------------------------------------------------------------
+Wed, Jan 17th, 2024       Quarterly Update 2
+
+o Respin of installation images, if we identify a reason to respin (can be skipped)
+
+------------------------------------------------------------------------------
+Wed, May 8th, 2024       Quarterly Update 3
+
+o  Respin of installation images, if we identify a reason to respin (can be skipped)
+
+------------------------------------------------------------------------------
+
