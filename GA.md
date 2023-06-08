@@ -381,6 +381,12 @@ some bot also may need adjustment
 When a new openSUSE Leap version is released, this should be published in all 3 main CSPs (AWS, Azure & Google).
 Contact for getting this done is either via mail to public-cloud-dev@susecloud.net or informing us in the #help-public-cloud channel on Slack.
 
+#### openSUSE WSL Image 
+
+Please contact WSL team to publish WSL for the new Leap version
+
+Contact: Scott Bradnick or #discuss-wsl on slack.
+
 #### find external BT seeders
 
 For future reference: .torrent files are added into pontifex:/var/lib/hefurd and the service needs a restart.
