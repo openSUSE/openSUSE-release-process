@@ -378,12 +378,8 @@ some bot also may need adjustment
 
 #### get openSUSE in the Cloud
 
-There is a number of clouds/3rd party hosting out there where openSUSE is
-available as option. Leap needs to be uploaded there.
-
-Contacts:
-Azure: Alexander Osthof
-EC2: Robert Schweickert
+When a new openSUSE Leap version is released, this should be published in all 3 main CSPs (AWS, Azure & Google).
+Contact for getting this done is either via mail to public-cloud-dev@susecloud.net or informing us in the #help-public-cloud channel on Slack.
 
 #### find external BT seeders
 
