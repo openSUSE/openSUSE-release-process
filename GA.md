@@ -306,26 +306,6 @@ http://lists.opensuse.org/opensuse-translation/2013-11/msg00009.html
 the release needs to be  be announced on the opensuse-announce list
 
 
-#### shop.opensuse.org
-
-##### request new box image and link
-
-request new box image to put on the home page
-request link to shop
-
-contact is Gerlinde Regensburger <gr@opensourcepress.de>
-
-##### Shop: update wiki
-
-* https://en.opensuse.org/Buy_openSUSE
-* https://de.opensuse.org/openSUSE_kaufen
-
-##### update shop.opensuse.org
-
-source code is at
-
-https://github.com/openSUSE/shop.o.o
-
 #### notify mirror admins
 
 notify mirror@opensuse.org about the release
