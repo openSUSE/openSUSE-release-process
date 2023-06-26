@@ -58,6 +58,13 @@ Responsible: favogt
 * make obs publish to the correct directory
 * add to get.o.o
 
+
+#### Set up Vagrant publisher
+Responsible: rel-mgmt
+
+Make sure that openSUSE:Leap:X.Y is part of OSRT gocd/vagrant-publisher.gocd.yaml
+https://github.com/openSUSE/openSUSE-release-tools/pull/2978/files
+
 #### set end of life attribute in product file
 Responsible: rel-mgmt
 
