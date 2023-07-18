@@ -44,3 +44,9 @@ Example:
     Total 0 (delta 0), reused 0 (delta 0)
     To github.com:openSUSE/skelcd-openSUSE.git
     * [new tag]         Leap_15.1-GM -> Leap_15.1-GM
+
+#### Ask SUSE IT to add new WSL image to employee laptops
+Once the new WSL image is available in MS Store, we should ask SUSE IT to enroll it on employee Windows laptops.
+
+Ticket for the past reference
+https://sd.suse.com/servicedesk/customer/portal/1/SD-87599
