@@ -50,3 +50,11 @@ Once the new WSL image is available in MS Store, we should ask SUSE IT to enroll
 
 Ticket for the past reference
 https://sd.suse.com/servicedesk/customer/portal/1/SD-87599
+
+
+#### Refresh openSUSE Leap mock configs
+
+Add a new Leap version and let's makee sure that EOL versions are no longer present.
+
+Example PR
+https://github.com/rpm-software-management/mock/pull/1175/files
