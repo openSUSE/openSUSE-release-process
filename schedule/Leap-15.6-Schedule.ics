@@ -5,18 +5,18 @@ PRODID:-//schedule2vcal 0.6//EN
 
 BEGIN:VEVENT
 X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-0
-DTSTAMP:20230628T164730
+UID:2023-08-22T00:15:44CEST-0
+DTSTAMP:20230821T221544
 DTSTART:20230715
 DTEND:20230716
 SUMMARY:openSUSE Leap 15.6: Start of Development phase
-DESCRIPTION:o openSUSE Leap and Backports OBS projects are set up.\no openSUSE Leap 15.5 is Alpha.\no SUSE:SLE-15-SP5:GA is being synced to OBS\no Release checklist for Leap 15.5 is in progress-o-o
+DESCRIPTION:o openSUSE Leap and Backports OBS projects are set up.\no openSUSE Leap 15.6 is Alpha.\no SUSE:SLE-15-SP6:GA is being synced to OBS\no Release checklist for Leap 15.6 is in progress-o-o
 END:VEVENT
 
 BEGIN:VEVENT
 X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-1
-DTSTAMP:20230628T164730
+UID:2023-08-22T00:15:44CEST-1
+DTSTAMP:20230821T221544
 DTSTART:20230721
 DTEND:20230722
 SUMMARY:openSUSE Leap 15.6: SLES Features are Submitted to E&I
@@ -25,181 +25,152 @@ END:VEVENT
 
 BEGIN:VEVENT
 X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-2
-DTSTAMP:20230628T164730
-DTSTART:20230909
-DTEND:20230910
-SUMMARY:openSUSE Leap 15.6: 2023   SLES Final Decision and Feedback Deadline for features
+UID:2023-08-22T00:15:44CEST-2
+DTSTAMP:20230821T221544
+DTSTART:20230920
+DTEND:20230921
+SUMMARY:openSUSE Leap 15.6: SLES Final Decision and Feedback Deadline for features
 DESCRIPTION:o Starts late feature process
 END:VEVENT
 
 BEGIN:VEVENT
 X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-3
-DTSTAMP:20230628T164730
-DTSTART:20230921
-DTEND:20230922
-SUMMARY:openSUSE Leap 15.6: 2023  Engineering Interlock
-DESCRIPTION:o Week after Interlock for SUSE Linux Enteprise
-END:VEVENT
-
-BEGIN:VEVENT
-X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-4
-DTSTAMP:20230628T164730
-DTSTART:20230930
-DTEND:20231001
+UID:2023-08-22T00:15:44CEST-3
+DTSTAMP:20230821T221544
+DTSTART:20230929
+DTEND:20230930
 SUMMARY:openSUSE Leap 15.6: 2023       SLES Code Drop Deadline for partners
 DESCRIPTION:o Informative! SLES code drop deadline for SUSE's partners
 END:VEVENT
 
 BEGIN:VEVENT
 X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-5
-DTSTAMP:20230628T164730
-DTSTART:20240125
-DTEND:20240126
-SUMMARY:openSUSE Leap 15.6: Checkin Deadline for Beta
-DESCRIPTION:o Deadline is at 15:00 UTC\no Deadline for any package removals from Leap.\no Deadline corresponds with SLE 15 SP5 late feature cutoff deadline and Snap 3 prior Public Beta
+UID:2023-08-22T00:15:44CEST-4
+DTSTAMP:20230821T221544
+DTSTART:20231018
+DTEND:20231019
+SUMMARY:openSUSE Leap 15.6: Engineering Interlock
+DESCRIPTION:o Week after Interlock for SUSE Linux Enteprise (Oct 11th)
 END:VEVENT
 
 BEGIN:VEVENT
 X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-6
-DTSTAMP:20230628T164730
-DTSTART:20240125
-DTEND:20240126
-SUMMARY:openSUSE Leap 15.6: Late Feature Request Cutoff for SLE
-DESCRIPTION:o Every feature with a code delivery for SUSE Linux Enterprise after this date requires an ECO and may be targeted post FCS date. Does not apply for Leap code-drops.\no After this date only P1 bugfixes\, important security fixes and pre-agreed important P2 fixes are accepted in SUSE Linux Enterprise. This does not apply for Leap code-drops.
+UID:2023-08-22T00:15:44CEST-5
+DTSTAMP:20230821T221544
+DTSTART:20240129
+DTEND:20240130
+SUMMARY:openSUSE Leap 15.6: SLES Feature Cut-off
+DESCRIPTION:o Informative! No new feature code is accepted in SLES. SR containing new features/updates will be rejected.
 END:VEVENT
 
 BEGIN:VEVENT
 X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-7
-DTSTAMP:20230628T164730
-DTSTART:20240211
-DTEND:20240212
-SUMMARY:openSUSE Leap 15.6: Checkin deadline for Beta (ALL packages)
-DESCRIPTION:For ALL packages\nDeadline: 15:00 CET
-END:VEVENT
-BEGIN:VEVENT
-X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-8
-DTSTAMP:20230628T164730
-DTSTART:20240216
-DTEND:20240217
-SUMMARY:openSUSE Leap 15.6: Beta build is done
-DESCRIPTION:o Week after SLES 15 SP5 Public Beta\no openSUSE Leap 15.5 is Beta\no Maintenance team starts working on maintenance setup 
+UID:2023-08-22T00:15:44CEST-6
+DTSTAMP:20230821T221544
+DTSTART:20240221
+DTEND:20240222
+SUMMARY:openSUSE Leap 15.6: 2024      Checkin Deadline for Beta
+DESCRIPTION:o Deadline is at 15:00 UTC\no Deadline for any package removals from Leap.\no Deadline corresponds with SLE 15 SP6 late feature cutoff deadline\no Every feature with a code delivery for SUSE Linux Enterprise after this date requires an ECO and may be targeted post FCS date. Does not apply for Leap code-drops.\no After this date only P1 bugfixes\, important security fixes and pre-agreed important P2 fixes are accepted in SUSE Linux Enterprise. This does not apply for Leap code-drops.
 END:VEVENT
 
 BEGIN:VEVENT
 X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-9
-DTSTAMP:20230628T164730
-DTSTART:346380406
-DTEND:346380407
-SUMMARY:openSUSE Leap 15.6: 24       Checkin Deadline for RC
-DESCRIPTION:o Deadline is at 15:00 UTC\no Corresponds with a deadline for two weekly snapshots prior to SLE's Public RC\no Only important bugfixes should be accepted after this point
+UID:2023-08-22T00:15:44CEST-7
+DTSTAMP:20230821T221544
+DTSTART:345020228
+DTEND:345020301
+SUMMARY:openSUSE Leap 15.6: 4       Beta build is done
+DESCRIPTION:o openSUSE Leap 15.6 is Beta\no Maintenance team starts working on maintenance setup 
 END:VEVENT
 
 BEGIN:VEVENT
 X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-10
-DTSTAMP:20230628T164730
+UID:2023-08-22T00:15:44CEST-8
+DTSTAMP:20230821T221544
+DTSTART:345020319
+DTEND:345020320
+SUMMARY:openSUSE Leap 15.6: 4       Final Product ABI and Crypto
+DESCRIPTION:o Informative! SLE Final Product ABI and Crypto
+END:VEVENT
+
+BEGIN:VEVENT
+X-GWITEM-TYPE:NOTE
+UID:2023-08-22T00:15:44CEST-9
+DTSTAMP:20230821T221544
+DTSTART:345020417
+DTEND:345020418
+SUMMARY:openSUSE Leap 15.6: 024       Checkin Deadline for RC
+DESCRIPTION:o Deadline is at 15:00 UTC\no Only important bugfixes should be accepted after this point\no Corresponds with a deadline for two weekly snapshots prior to SLE's Public RC
+END:VEVENT
+
+BEGIN:VEVENT
+X-GWITEM-TYPE:NOTE
+UID:2023-08-22T00:15:44CEST-10
+DTSTAMP:20230821T221544
 DTSTART:20240427
 DTEND:20240428
 SUMMARY:openSUSE Leap 15.6: 4       RC build is done
-DESCRIPTION:o RC build is done\no Maintenance setup is done\no Leap Code freeze.\no Backports project freeze ahead of Leap\no Stop using snapshot of SLES 15 SP5 changes
+DESCRIPTION:o RC build is done\no Maintenance setup is done\no Leap Code freeze.\no Backports project freeze ahead of Leap\no Stop using snapshot of SLES 15 SP6 changes
 END:VEVENT
 
 BEGIN:VEVENT
 X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-11
-DTSTAMP:20230628T164730
-DTSTART:20240511
-DTEND:20240512
-SUMMARY:openSUSE Leap 15.6: Gold Master code submission deadline
-DESCRIPTION:o In sync with SLES GMC candidate code submission deadline
+UID:2023-08-22T00:15:44CEST-11
+DTSTAMP:20230821T221544
+DTSTART:20240503
+DTEND:20240504
+SUMMARY:openSUSE Leap 15.6: Security audit gate
+DESCRIPTION:o Security audit gate
 END:VEVENT
 
 BEGIN:VEVENT
 X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-12
-DTSTAMP:20230628T164730
-DTSTART:20220514
-DTEND:20220515
-SUMMARY:openSUSE Leap 15.6: Deadline for Documentation and Translations
-DESCRIPTION:o All translations were pulled this has to happen prior GM
+UID:2023-08-22T00:15:44CEST-12
+DTSTAMP:20230821T221544
+DTSTART:20240516
+DTEND:20240517
+SUMMARY:openSUSE Leap 15.6: Gold Master Candidate code submission deadline
+DESCRIPTION:o Deadline is at 15:00 UTC\no In sync with SLES GMC candidate code submission deadline\no All translations were pulled
 END:VEVENT
 
 BEGIN:VEVENT
 X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-13
-DTSTAMP:20230628T164730
-DTSTART:20240531
-DTEND:20240601
-SUMMARY:openSUSE Leap 15.6: Gold Master build is done
-DESCRIPTION:o Leap is GOLD
+UID:2023-08-22T00:15:44CEST-13
+DTSTAMP:20230821T221544
+DTSTART:345020606
+DTEND:345020607
+SUMMARY:openSUSE Leap 15.6: 4       Gold Master build is done
+DESCRIPTION:o Leap is GOLD (SLES GM planned for 30th May)
 END:VEVENT
 
 BEGIN:VEVENT
 X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-14
-DTSTAMP:20230628T164730
-DTSTART:20240607
-DTEND:20240608
+UID:2023-08-22T00:15:44CEST-14
+DTSTAMP:20230821T221544
+DTSTART:20240611
+DTEND:20240612
 SUMMARY:openSUSE Leap 15.6: Public Availability of the Release
-DESCRIPTION:o openSUSE Leap 15.5 will be released to the public at 12:00 UTC
+DESCRIPTION:o openSUSE Leap 15.6 will be released to the public at 12:00 UTC
 END:VEVENT
 
 BEGIN:VEVENT
 X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-15
-DTSTAMP:20230628T164730
-DTSTART:20240608
-DTEND:20240609
+UID:2023-08-22T00:15:44CEST-15
+DTSTAMP:20230821T221544
+DTSTART:20240611
+DTEND:20240612
 SUMMARY:openSUSE Leap 15.6: Release retrospective survey is open
 DESCRIPTION:o Release retro on survey.opensuse.org is open right after GA
 END:VEVENT
 
 BEGIN:VEVENT
 X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-16
-DTSTAMP:20230628T164730
-DTSTART:20240622
-DTEND:20240623
+UID:2023-08-22T00:15:44CEST-16
+DTSTAMP:20230821T221544
+DTSTART:20240623
+DTEND:20240624
 SUMMARY:openSUSE Leap 15.6: Collect feedback from the retrospective
 DESCRIPTION:o Share feedback of the retrospective with community.
-END:VEVENT
-
-BEGIN:VEVENT
-X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-17
-DTSTAMP:20230628T164730
-DTSTART:346381004
-DTEND:346381005
-SUMMARY:openSUSE Leap 15.6: Quarterly Update 1
-DESCRIPTION:o Respin of installation images\, if we identify a reason to respin (can be skipped)
-END:VEVENT
-
-BEGIN:VEVENT
-X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-18
-DTSTAMP:20230628T164730
-DTSTART:346380117
-DTEND:346380118
-SUMMARY:openSUSE Leap 15.6: 5       Quarterly Update 2
-DESCRIPTION:o Respin of installation images\, if we identify a reason to respin (can be skipped)
-END:VEVENT
-
-BEGIN:VEVENT
-X-GWITEM-TYPE:NOTE
-UID:2023-06-28T18:47:30CEST-19
-DTSTAMP:20230628T164730
-DTSTART:346380508
-DTEND:346380509
-SUMMARY:openSUSE Leap 15.6: Quarterly Update 3
-DESCRIPTION:o  Respin of installation images\, if we identify a reason to respin (can be skipped)
 END:VEVENT
 
 END:VCALENDAR
