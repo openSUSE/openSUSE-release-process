@@ -98,17 +98,17 @@ Thu, June 6th, 2024       Gold Master build is done
 o Leap is GOLD (SLES GM planned for 30th May)
 
 ------------------------------------------------------------------------------
-Wed, Jun 11, 2024       Public Availability of the Release
+Wed, Jun 12, 2024       Public Availability of the Release
 
 o openSUSE Leap 15.6 will be released to the public at 12:00 UTC
 
 ------------------------------------------------------------------------------
-Wed, Jun 11, 2024       Release retrospective survey is open
+Wed, Jun 12, 2024       Release retrospective survey is open
 
 o Release retro on survey.opensuse.org is open right after GA
 
 ------------------------------------------------------------------------------
-Wed, Jun 23, 2024     Collect feedback from the retrospective
+Wed, Jun 26, 2024     Collect feedback from the retrospective
 
-o Share feedback of the retrospective with community.
+o Share feedback of the retrospective with community. (could be shared on osc2024)
 
