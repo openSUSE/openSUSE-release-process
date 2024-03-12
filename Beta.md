@@ -98,6 +98,15 @@ Responsible: rel-mgmt
 
 there are some developers that like to have the release accessible internally via NFS. Ask Rudi to mirror it.
 
+#### mirrors.opensuse.org
+Responsible: rel-mgmt
+
+Display new release on mirrors.opensuse.org and some other reports like https://download.opensuse.org/report/download?group=project
+Login to https://download.opensuse.org/login and add entries for new release to https://download.opensuse.org/app/project
+
+Similar to how previous releases are defined. Prio column defines order on mirrors.opensuse.org . If prio has negative value - then it will be only on the toolbar.
+
+
 #### run desktop-file translation extractor
 
 There was quite a discussion about this in https://progress.opensuse.org/issues/100023
